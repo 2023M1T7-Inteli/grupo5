@@ -85,6 +85,8 @@ texture_normal = ExtResource( 13 )
 texture_hover = ExtResource( 14 )
 
 [node name="buttonFx" type="AudioStreamPlayer" parent="."]
+volume_db = -19.227
+autoplay = true
 
 [connection signal="pressed" from="musica" to="." method="_on_musica_pressed"]
 [connection signal="pressed" from="botãojogar" to="." method="_on_botojogar_pressed"]
