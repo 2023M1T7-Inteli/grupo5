@@ -1,6 +1,6 @@
 extends Area2D
 
-#Aqui estão os cógios da interação. Onde o item coletável irá transportar o jogador para outra tela (portal).
+#Aqui estão os códigos da interação. Onde o item coletável irá transportar o jogador para outra tela (portal).
 
 #Função que corresponde ao contato entre os corpos (personagem e item).
 func _on_item1_body_entered(body):
