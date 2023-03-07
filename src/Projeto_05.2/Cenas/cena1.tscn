@@ -211,7 +211,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 7/z_index = 0
 
 [sub_resource type="DynamicFont" id=20]
-size = 32
+size = 23
 font_data = ExtResource( 18 )
 
 [node name="Node2D" type="Node2D"]
@@ -421,13 +421,13 @@ texture = ExtResource( 16 )
 script = ExtResource( 17 )
 
 [node name="Label" type="Label" parent="Chamar2"]
-margin_left = -37.2
-margin_top = -64.0
-margin_right = 28.8
-margin_bottom = -13.0
+margin_left = -56.4
+margin_top = -62.6667
+margin_right = 45.6
+margin_bottom = -11.6667
 custom_fonts/font = SubResource( 20 )
-text = "FALE COM
-A MAE"
+text = "FALE COM A MAE
+E"
 align = 1
 
 [node name="HUD" type="CanvasLayer" parent="."]

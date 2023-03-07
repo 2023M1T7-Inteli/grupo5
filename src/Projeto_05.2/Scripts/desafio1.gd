@@ -19,7 +19,7 @@ func _process(delta):
 
 #Aqui quando pegamos os itens 1, 2 e 3 eles somem e contam 3 pontos para o jogador.
 func _on_coletavel1_body_entered(body):
-	Global.pontos = Global.pontos + 3
+	Global.pontos = Global.pontos + 1
 	$coletavel1.queue_free()
 	
 #Aqui quando pegamos o coletavel 4, 5 e 6 eles somem e contam mais 3 pontos para o jogador.

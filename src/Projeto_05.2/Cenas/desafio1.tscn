@@ -733,7 +733,6 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 19 )
 
 [node name="pausar" parent="." instance=ExtResource( 20 )]
-visible = false
 
 [node name="coletavel2" type="Area2D" parent="."]
 position = Vector2( 416, 352 )
