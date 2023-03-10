@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "Sereia é o personagem que irá introduzir a histtória.",
+	"display_name": "Sereia",
+	"display_name_bool": true,
+	"id": "character-1675894687.json",
+	"mirror_portraits": false,
+	"name": "Sereia",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 100,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Example Assets/portraits/df-3.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
