@@ -1,0 +1,177 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://personagem 2/Pixilart Sprite Sheet (1).png" type="Texture" id=1]
+[ext_resource path="res://Scripts/personagem.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 23 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "andandodireitaa"
+length = 0.66
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 26, 23, 26, 29 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "andandoEsquerda"
+length = 0.33
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 6, 9, 3 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "andandodireta"
+length = 0.33
+loop = true
+
+[sub_resource type="Animation" id=4]
+resource_name = "animação"
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.16, 0.32 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 3, 4, 5 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "parado"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "respirando"
+length = 0.66
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 12, 15 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 26.0192
+
+[node name="personagem" type="KinematicBody2D" groups=["Player"]]
+position = Vector2( -316, -166 )
+z_index = -1
+script = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 1120, 522 )
+scale = Vector2( 4, 2.5 )
+texture = ExtResource( 1 )
+hframes = 36
+vframes = 4
+frame = 23
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 954, 524 )
+scale = Vector2( 4, 2.5 )
+texture = ExtResource( 1 )
+hframes = 36
+vframes = 4
+frame = 6
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2")
+anims/RESET = SubResource( 10 )
+anims/andandodireitaa = SubResource( 11 )
+
+[node name="AnimationTree2" type="AnimationTree" parent="."]
+tree_root = SubResource( 12 )
+anim_player = NodePath("../AnimationPlayer2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/andandoEsquerda = SubResource( 8 )
+anims/andandodireta = SubResource( 3 )
+"anims/animação" = SubResource( 4 )
+anims/parado = SubResource( 6 )
+anims/respirando = SubResource( 7 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 5 )
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1028, 520 )
+shape = SubResource( 9 )
