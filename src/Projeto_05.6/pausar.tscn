@@ -34,13 +34,13 @@ text = "JOGO PAUSADO"
 align = 1
 
 [node name="continuar" type="TouchScreenButton" parent="ColorRect"]
-position = Vector2( -17.75, -15.5 )
-scale = Vector2( 0.25, 0.25 )
+position = Vector2( -24.75, -0.25 )
+scale = Vector2( 0.358458, 0.61747 )
 normal = ExtResource( 6 )
 
 [node name="Button" type="TouchScreenButton" parent="ColorRect"]
-position = Vector2( -9.25, -29 )
-scale = Vector2( 0.25, 0.25 )
+position = Vector2( -12.75, -26.25 )
+scale = Vector2( 0.386287, 0.535713 )
 normal = ExtResource( 5 )
 
 [node name="Alaland" type="Sprite" parent="ColorRect"]
