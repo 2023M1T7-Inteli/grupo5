@@ -1,5 +1,6 @@
 extends Control
-
+#manu
+#manu
 #Declaração de variáveis para tocar música no menu.
 onready var musicaTocando = $musica/AudioStreamPlayer
 onready var musicaBotao = $buttonFx
