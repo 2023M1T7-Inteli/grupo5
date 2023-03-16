@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/espaço_seta.png-68f247d5bec1e6a449e9b6edcd3e4081.stex"
+path="res://.import/espaço_seta.png-01302b489b5f4af88581ed1cefbbbfa9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://console/espaço_seta.png"
-dest_files=[ "res://.import/espaço_seta.png-68f247d5bec1e6a449e9b6edcd3e4081.stex" ]
+source_file="res://console/espaço_seta.png"
+dest_files=[ "res://.import/espaço_seta.png-01302b489b5f4af88581ed1cefbbbfa9.stex" ]
 
 [params]
 
