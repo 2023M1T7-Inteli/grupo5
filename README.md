@@ -8,7 +8,7 @@
 
 ## BumbaTech
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Davi Rosalino Glória Motta</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Rodrigues Sotto Maior</a>, <a href="https://www.linkedin.com/in/victorbarq/">Manuela Dina De Mula Cury</a>, <a href="https://www.linkedin.com/in/victorbarq/">Marco Antonio Rizzi Meneguetti</a>, <a href="https://www.linkedin.com/in/victorbarq/">Luigi Otávio Neves Macedo</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Davi Rosalino Glória Motta</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Rodrigues Sotto Maior</a>, <a href="https://www.linkedin.com/in/victorbarq/">Manuela Dina De Mula Cury</a>, <a href="https://www.linkedin.com/in/victorbarq/">Marco Antonio Rizzi Meneguetti</a>, <a href="https://www.linkedin.com/in/luigi-ot%C3%A1vio-904475234/">Luigi Otávio Neves Macedo</a>
 
 ## Descrição
 
