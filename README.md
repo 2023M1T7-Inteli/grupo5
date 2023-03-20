@@ -4,17 +4,17 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Ala Land
 
-## Nome do Grupo
+## BumbaTech
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Davi Rosalino Glória Motta</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Rodrigues Sotto Maior</a>, <a href="https://www.linkedin.com/in/victorbarq/">Manuela Dina De Mula Cury</a>, <a href="https://www.linkedin.com/in/victorbarq/">Marco Antonio Rizzi Meneguetti</a>, <a href="https://www.linkedin.com/in/victorbarq/">Luigi Otávio Neves Macedo</a>
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
+📜 Um pouco sobre Ala Land:
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
+O projeto "Ala Land" consiste em um jogo do subconjunto "serious games". O parceiro de projeto em questão que está nos auxiliando é a UFAL - Universidade Federal de Alagoas. Com o foco em ensinar lógia computacional, "Ala Land" traz para dentro das telas a retrospectiva da cultura alagoana de maneira intuitiva e dinâmica. 
 <br><br>
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
@@ -22,12 +22,22 @@ Meu projeto é um exemplo de como utilizar o github.
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+💡Objetivos:
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+
+Ala Land pensa principalmente nop analfabetismo digital das crianças, e a falta de conhecimento dos docentes sobre a importância da tecnologia atrelada à educação.Com a colaboração da UFAL - Universidade Federal de Alagoas, conseguimos dados disponíveis para a realização do jogo: idade das crianças que vão jogar (entre 6 e 11 anos), a afinidade destas e dos professores com a tecnologia (que é nenhuma ou muito baixa), o objetivo do projeto (ensinar de um modo interativo, divertido e simples) e os recursos disponíveis para a programação do jogo.
+
+Qual é a solução proposta?
+Desenvolver o pensamento computacional nas crianças, e sensibilizar os docentes, através de um jogo simples e didático de smartphone.
+
+Como a solução proposta deverá ser utilizada?
+O jogo será apresentado aos docentes das instituições, a fim de que entendam o jogo e apresentem-no aos discentes. Após a introdução do jogo, o(a) professor(a) deve instruir e ajudar os alunos a utilizarem o jogo, a fim de que os alunos alcancem o desenvolvimento individual.
+
+Quais os benefícios trazidos pela solução proposta?
+Com a solução proposta, crianças que não têm acesso a um ensino com o conhecimentos de tecnologia e programação conseguirão aprender sobre linguagem computacional, programação e matemática, por meio de desafios divertidos e encorajadores presentes no jogo proposto.
+
+Qual será o critério de sucesso e qual medida será utilizada para o avaliar?
+O critério de sucesso será a aprendizagem que as crianças e professores terão com novos conceitos e habilidades de programação e linguagem computacional. A medida para avaliar os professores será de como eles utilizaram o jogo nas aulas. Os critérios de avaliação dos alunos serão as atividades propostas antes e depois do contato com o jogo, a fim de computar os ensinamentos adquiridos pelos alunos durante os desafios.
 
 ## 🛠 Estrutura de pastas
 
@@ -36,11 +46,12 @@ May the force be with you!
 |-->docs<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
+  &emsp;|GDD - Grupo 5 - Turma 7<br>
+  &emsp;|GDD 0.4 - Grupo 5 - Turma 7<br>
+  &emsp;|GDD 0.5.5 - Grupo 5 - Turma 7<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
+  &emsp;|-->windows_02<br>
 |-->imagens<br>
 |-->src<br>
 |readme.md<br>
@@ -62,19 +73,15 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação! Apenas executável! Baixe os arquivos disponíveis em <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/execut%C3%A1veis/windows_02"></a>
+Encontre o Projeto.exe na pasta executáveis e execute-o como qualquer outro programa.
+
 
 <b>HTML:</b>
 
-Não há instalação!
+Não há instalação! Baixe os arquivos disponíveis em <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/docs/html_05.5"></a>
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
 ## 💻 Configuração para Desenvolvimento
