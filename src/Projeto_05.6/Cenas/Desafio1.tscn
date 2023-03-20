@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://Cenas/continuar.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/dedo2.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=10]
 [ext_resource path="res://console/botão_pausar.png" type="Texture" id=11]
 [ext_resource path="res://carregamento/printsetas.jpg" type="Texture" id=12]
+[ext_resource path="res://Scripts/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=13]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=14]
 [ext_resource path="res://chão/chao-corrigido.png" type="Texture" id=15]
 [ext_resource path="res://fonte/Ningst Only Peace Font by 7Ntypes.otf" type="DynamicFontData" id=16]
@@ -1186,6 +1187,10 @@ texture = ExtResource( 31 )
 position = Vector2( 882, 547 )
 normal = ExtResource( 24 )
 script = ExtResource( 1 )
+
+[node name="pontoSom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
+volume_db = 9.495
 
 [connection signal="body_entered" from="coletavel1" to="." method="_on_coletavel1_body_entered"]
 [connection signal="body_entered" from="coletavel4" to="." method="_on_coletavel4_body_entered"]

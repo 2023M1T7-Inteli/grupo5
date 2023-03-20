@@ -1,4 +1,5 @@
 extends Node2D
+onready var pontoSom = $pontoSom
 
 #Aqui estamos colocando a tela preta no canto direito do desafio para receber os comandos.
 #Declarando uma variável para a coleta do item.
@@ -31,11 +32,17 @@ func _process(delta):
 func _on_coletavel1_body_entered(body):
 	Global.pontos = Global.pontos + 1
 	$coletavel1.queue_free()
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
 	
 #Aqui quando pegamos o coletavel 4, 5 e 6 eles somem e contam mais 3 pontos para o jogador.
 func _on_coletavel4_body_entered(body):
 	Global.pontos = Global.pontos + 1
 	$coletavel4.queue_free()
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
 
 func _on_BotaoPausar_pressed():
 	Global.pausar = true
@@ -43,18 +50,31 @@ func _on_BotaoPausar_pressed():
 func _on_coletavel2_body_entered(body):
 	$coletavel2.queue_free()
 	Global.pontos = Global.pontos + 1
-
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
+	
 func _on_coletavel3_body_entered(body):
 	$coletavel3.queue_free()
 	Global.pontos = Global.pontos + 1
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
 	
 func _on_coletavel5_body_entered(body):
 	$coletavel5.queue_free()
 	Global.pontos = Global.pontos + 1
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
 
 func _on_coletavel6_body_entered(body):
 	$coletavel6.queue_free()
 	Global.pontos = Global.pontos + 1
+	pontoSom.play()
+	yield(get_tree().create_timer(0.2), "timeout")
+	pontoSom.stop()
+	
 
 func _on_continuar1_pressed():
 	$Tut1/continuar1.visible = false
