@@ -17,7 +17,7 @@
 O projeto "Ala Land" consiste em um jogo do subconjunto "serious games". O parceiro de projeto em questão que está nos auxiliando é a UFAL - Universidade Federal de Alagoas. Com o foco em ensinar lógia computacional, "Ala Land" traz para dentro das telas a retrospectiva da cultura alagoana de maneira intuitiva e dinâmica. 
 <br><br>
 <p align="center">
-<img src=""C:\Users\Inteli\Documents\GitHub\grupo5\imagens\printmenu.jpg"" alt="NOME DO JOGO" border="0">
+<img src="C:\Users\Inteli\Documents\GitHub\grupo5\imagens\printmenu.jpg" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
