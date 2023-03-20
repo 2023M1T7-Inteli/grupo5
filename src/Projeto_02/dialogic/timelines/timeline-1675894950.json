@@ -1,0 +1,71 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Olá, garoto(a)! Bem vindo à Maceió. Eu sou a sereia. Para onde você está indo?"
+		},
+		{
+			"choice": "Estou indo para a escola, sereia! Porém, eu preciso de um barco.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Eu posso te ajudar. Mas, você terá que me ajudar a encontrar meu barco por meio de um desafio de lógica de programação. Você consegue?"
+		},
+		{
+			"choice": "Claro que sim! Vamos nessa!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Venha conversar comigo e pressione a tecla \"E\" do teclado"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675894950.json",
+		"name": "my_history"
+	}
+}
