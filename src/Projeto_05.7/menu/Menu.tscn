@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/alaland.png" type="Texture" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://botões/botaocancelar.png.png" type="Texture" id=12]
 [ext_resource path="res://botões/ajudamarrom1.png.png" type="Texture" id=13]
 [ext_resource path="res://botões/ajudamarrom.png.png" type="Texture" id=14]
+[ext_resource path="res://menu/logo.gd" type="Script" id=15]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -52,6 +53,7 @@ autoplay = true
 position = Vector2( 504, 192 )
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 2 )
+script = ExtResource( 15 )
 
 [node name="botãojogar" type="TextureButton" parent="."]
 margin_left = 458.0
