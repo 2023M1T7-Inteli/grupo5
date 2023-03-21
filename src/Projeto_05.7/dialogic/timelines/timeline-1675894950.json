@@ -1,0 +1,57 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oxi, meu filho, já está na hora de você ir para a escola! Infelizmente hoje não conseguirei te acompanhar"
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então você terá de ir sozinho."
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mas não se esqueça: voce terá de seguir reto pelos coqueiros, depois pegar sua jangada e descer o rio até o litoral."
+		},
+		{
+			"character": "character-1675894687.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Fique atento, pois na floresta e no rio existem criaturas mágicas, entao se você encontrar alguma delas, fuja e não atenda ao seus chamados! Vá com Deus, meu filho!"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675894950.json",
+		"name": "my_history"
+	}
+}
