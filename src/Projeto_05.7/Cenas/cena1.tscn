@@ -437,7 +437,7 @@ position = Vector2( 745, 389 )
 shape = SubResource( 9 )
 
 [node name="personagem" parent="." groups=["garoto"] instance=ExtResource( 3 )]
-position = Vector2( -557, -71 )
+position = Vector2( -557, -56 )
 z_index = 1
 __meta__ = {
 "_edit_group_": true
@@ -452,6 +452,7 @@ volume_db = -15.0
 autoplay = true
 
 [node name="pausar" parent="." instance=ExtResource( 15 )]
+visible = false
 z_index = 10
 
 [connection signal="body_entered" from="item1" to="item1" method="_on_item1_body_entered"]
