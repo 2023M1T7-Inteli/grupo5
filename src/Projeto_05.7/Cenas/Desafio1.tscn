@@ -1051,6 +1051,7 @@ margin_bottom = -427.0
 custom_fonts/font = SubResource( 8 )
 
 [node name="pausar" parent="." instance=ExtResource( 22 )]
+visible = false
 z_index = 10
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -1079,36 +1080,33 @@ custom_fonts/font = SubResource( 39 )
 text = "FASE 1 - Floresta da Sal-Gema"
 
 [node name="Printconsole2" type="Sprite" parent="Tut2"]
-position = Vector2( 484, 330 )
-scale = Vector2( 0.3, 0.3 )
+position = Vector2( 881, 380 )
+scale = Vector2( 0.277209, 0.356185 )
 texture = ExtResource( 5 )
 
 [node name="printsetas" type="Sprite" parent="Tut2"]
-position = Vector2( 478, 176 )
+position = Vector2( 873, 172 )
 scale = Vector2( 0.253093, 0.218807 )
 texture = ExtResource( 12 )
 
 [node name="Pontos" type="Sprite" parent="Tut2"]
-position = Vector2( 482, 499 )
+position = Vector2( 698, 515 )
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 4 )
 
 [node name="Label4" type="Label" parent="Tut2"]
-margin_left = 162.0
-margin_top = 83.0
-margin_right = 653.0
-margin_bottom = 595.0
-rect_scale = Vector2( 1.4337, 1.2515 )
+margin_left = 65.0
+margin_top = 88.0
+margin_right = 556.0
+margin_bottom = 600.0
+rect_scale = Vector2( 1.4482, 2.16302 )
 custom_fonts/font = SubResource( 41 )
 text = "                              Instruções:
 . Use as setas do console para se locomover.
 
-
 . Após selecionar as setas dê o PLAY no botão 
 roxo e o personagem irá executar os movimentos.
 Aguarde terminar.
-
-
 
 . Colete todos os sal-gemas e colete
 todos os pontos:
@@ -1142,11 +1140,11 @@ custom_fonts/font = SubResource( 39 )
 text = "FASE 1 - Floresta da Sal-Gema"
 
 [node name="Label2" type="Label" parent="Tut1"]
-margin_left = 76.0
-margin_top = 129.0
-margin_right = 284.0
-margin_bottom = 270.0
-rect_scale = Vector2( 1.46428, 1.31844 )
+margin_left = 53.0
+margin_top = 103.0
+margin_right = 261.0
+margin_bottom = 244.0
+rect_scale = Vector2( 1.67049, 3.04285 )
 custom_fonts/font = SubResource( 40 )
 text = "       OBJETIVOS:
 . Colete as sal-gemas
@@ -1156,16 +1154,15 @@ text = "       OBJETIVOS:
 "
 
 [node name="Label3" type="Label" parent="Tut1"]
-margin_left = 417.0
-margin_top = 65.0
-margin_right = 817.0
-margin_bottom = 398.0
-rect_scale = Vector2( 1.4484, 1.36505 )
+margin_left = 415.0
+margin_top = -26.0
+margin_right = 815.0
+margin_bottom = 305.0
+rect_scale = Vector2( 1.49049, 2.52976 )
 custom_fonts/font = SubResource( 41 )
 text = "
 
                  SAL-GEMAS:
-
          O sal-gema é como um tesouro 
 guardado na terra, e para encontrá-lo, 
 os mineiros precisam cavar muito fundo, 
@@ -1178,12 +1175,13 @@ fazer vidro, sal e canos.
 "
 
 [node name="SalGema" type="Sprite" parent="Tut1"]
-position = Vector2( 663, 444 )
+position = Vector2( 169, 373 )
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 31 )
 
 [node name="continuar1" type="TouchScreenButton" parent="Tut1"]
-position = Vector2( 882, 547 )
+position = Vector2( 853, 527 )
+scale = Vector2( 1.18828, 2.00618 )
 normal = ExtResource( 24 )
 script = ExtResource( 1 )
 

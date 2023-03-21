@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corais - cópia 2.png-db3837f28466e4eea147a68cc794db4d.stex"
+path="res://.import/corais - cópia 2.png-5b442d5afbcb33dbaf4e40efb335b3d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://itensdodesafio/corais - cópia 2.png"
-dest_files=[ "res://.import/corais - cópia 2.png-db3837f28466e4eea147a68cc794db4d.stex" ]
+source_file="res://itensdodesafio/corais - cópia 2.png"
+dest_files=[ "res://.import/corais - cópia 2.png-5b442d5afbcb33dbaf4e40efb335b3d0.stex" ]
 
 [params]
 
