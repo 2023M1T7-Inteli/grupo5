@@ -8,6 +8,7 @@ onready var musicaTocando = $musica/AudioStreamPlayer
 onready var musicBotao = $buttonFx
 #Quando o mapa carregar, os pontos do jogador será 0.
 func _ready():
+	$garotodesafio1.visible = false
 	$dedo1.visible = false
 	$dedo2.visible = false
 	$Tut2/continuar2.visible = false
@@ -84,5 +85,6 @@ func _on_continuar1_pressed():
 	# Quando pressionado esse botão, o color rerect 1, fica invisível e o color rect 2, torna-se visível, a mesma coisa para o botão "continuar" 1 e 2
 
 func _on_continuar2_pressed():
+	$garotodesafio1.visible = true
 	$Tut2.visible = false
 	# Quando pressionado esse botão, o color rect 2, fica invisível

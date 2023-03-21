@@ -1051,6 +1051,7 @@ margin_bottom = -427.0
 custom_fonts/font = SubResource( 8 )
 
 [node name="pausar" parent="." instance=ExtResource( 22 )]
+z_index = 10
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )

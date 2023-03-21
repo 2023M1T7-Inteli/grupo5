@@ -26,6 +26,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		$Sprite.visible = false
 		$Sprite2.visible = true
+		movimento.y += 2
 		movimento.x += velocidade 
 		andaJogador2.play("andandodireitaa")
 	
@@ -35,6 +36,7 @@ func _physics_process(delta):
 		$Sprite.flip_h = false
 		$Sprite.visible = true
 		$Sprite2.visible = false
+		movimento.y += 2
 		movimento.x -= velocidade
 		andaJogador.play("andandoEsquerda")
 		
