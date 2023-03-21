@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://personagem 2/mãeSprite Sheet.png" type="Texture" id=1]
 [ext_resource path="res://chão/New Piskel (12).png" type="Texture" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://Imagens/fundo.png" type="Texture" id=19]
 [ext_resource path="res://HUD/seta_andar.png" type="Texture" id=20]
 [ext_resource path="res://HUD/botaoconversar.png.png" type="Texture" id=21]
+[ext_resource path="res://Cenas/cena1.gd" type="Script" id=22]
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 136, 108 )
@@ -212,6 +213,7 @@ tracks/0/keys = {
 extents = Vector2( 31, 31 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 22 )
 
 [node name="Fundo" type="Sprite" parent="."]
 position = Vector2( 499, 339 )
@@ -435,14 +437,11 @@ position = Vector2( 745, 389 )
 shape = SubResource( 9 )
 
 [node name="personagem" parent="." groups=["garoto"] instance=ExtResource( 3 )]
-position = Vector2( -559, -74 )
+position = Vector2( -557, -71 )
 z_index = 1
 __meta__ = {
 "_edit_group_": true
 }
-
-[node name="pausar" parent="." instance=ExtResource( 15 )]
-visible = false
 
 [node name="Dialog" parent="." instance=ExtResource( 6 )]
 timeline = "timeline-1675894950.json"
@@ -451,6 +450,9 @@ timeline = "timeline-1675894950.json"
 stream = ExtResource( 18 )
 volume_db = -15.0
 autoplay = true
+
+[node name="pausar" parent="." instance=ExtResource( 15 )]
+z_index = 10
 
 [connection signal="body_entered" from="item1" to="item1" method="_on_item1_body_entered"]
 [connection signal="body_entered" from="interação1/Area2D" to="interação1" method="_on_Area2D_body_entered"]
