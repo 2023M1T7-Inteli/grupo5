@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botão_pausar.png-46ff52f9aca9b32a72f9e2fc991e1b3d.stex"
+path="res://.import/botão_pausar.png-2182b03132edbd4b5dd9a3f3718e18be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://console/botão_pausar.png"
-dest_files=[ "res://.import/botão_pausar.png-46ff52f9aca9b32a72f9e2fc991e1b3d.stex" ]
+source_file="res://console/botão_pausar.png"
+dest_files=[ "res://.import/botão_pausar.png-2182b03132edbd4b5dd9a3f3718e18be.stex" ]
 
 [params]
 
