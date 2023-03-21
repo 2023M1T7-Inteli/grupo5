@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://personagem 2/mãeSprite Sheet.png" type="Texture" id=1]
 [ext_resource path="res://chão/New Piskel (12).png" type="Texture" id=2]
@@ -19,9 +19,10 @@
 [ext_resource path="res://Cenas/Chamar.gd" type="Script" id=17]
 [ext_resource path="res://music/cena1.ogg" type="AudioStream" id=18]
 [ext_resource path="res://Imagens/fundo.png" type="Texture" id=19]
-[ext_resource path="res://HUD/seta_andar.png" type="Texture" id=20]
-[ext_resource path="res://HUD/botaoconversar.png.png" type="Texture" id=21]
+[ext_resource path="res://Cenas/HUD.tscn" type="PackedScene" id=20]
+[ext_resource path="res://personagemoficial.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Cenas/cena1.gd" type="Script" id=22]
+[ext_resource path="res://BotãoPausar.tscn" type="PackedScene" id=23]
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 136, 108 )
@@ -390,30 +391,7 @@ scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 16 )
 script = ExtResource( 17 )
 
-[node name="HUD" type="CanvasLayer" parent="."]
-
-[node name="Gamepad" type="Node2D" parent="HUD"]
-
-[node name="direita" type="TouchScreenButton" parent="HUD/Gamepad"]
-modulate = Color( 1, 1, 1, 0.462745 )
-position = Vector2( 914, 511 )
-scale = Vector2( 3, 3 )
-normal = ExtResource( 20 )
-action = "ui_right"
-
-[node name="esquerda" type="TouchScreenButton" parent="HUD/Gamepad"]
-modulate = Color( 1, 1, 1, 0.462745 )
-position = Vector2( 893, 591 )
-rotation = -3.14159
-scale = Vector2( 3, 3 )
-normal = ExtResource( 20 )
-action = "ui_left"
-
-[node name="conversar" type="TouchScreenButton" parent="HUD/Gamepad"]
-position = Vector2( 65, 493 )
-scale = Vector2( 2, 2 )
-normal = ExtResource( 21 )
-action = "ui_e"
+[node name="HUD" parent="." instance=ExtResource( 20 )]
 
 [node name="interação1" type="Node2D" parent="."]
 position = Vector2( -416, 49 )
@@ -444,11 +422,9 @@ position = Vector2( 745, 389 )
 shape = SubResource( 9 )
 
 [node name="personagem" parent="." groups=["garoto"] instance=ExtResource( 3 )]
+visible = false
 position = Vector2( -557, -71 )
 z_index = 1
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Dialog" parent="." instance=ExtResource( 6 )]
 timeline = "timeline-1675894950.json"
@@ -459,7 +435,15 @@ volume_db = -15.0
 autoplay = true
 
 [node name="pausar" parent="." instance=ExtResource( 15 )]
+visible = false
 z_index = 10
+
+[node name="BotãoPausar" parent="." instance=ExtResource( 23 )]
+position = Vector2( 960, 14 )
+
+[node name="personagemoficial" parent="." instance=ExtResource( 21 )]
+position = Vector2( -676, -119 )
+scale = Vector2( 2.3, 2.3 )
 
 [connection signal="body_entered" from="item1" to="item1" method="_on_item1_body_entered"]
 [connection signal="body_entered" from="interação1/Area2D" to="interação1" method="_on_Area2D_body_entered"]

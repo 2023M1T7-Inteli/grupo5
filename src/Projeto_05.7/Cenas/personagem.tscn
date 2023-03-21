@@ -131,9 +131,12 @@ tracks/0/keys = {
 radius = 26.0192
 
 [node name="personagem" type="KinematicBody2D" groups=["Player"]]
-position = Vector2( -316, -166 )
+position = Vector2( -355, -145 )
 z_index = -1
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 1120, 522 )

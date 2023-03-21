@@ -4,3 +4,4 @@ extends Node
 var pontos = 0
 var pausar = false
 var mao = 0
+var sinalPesca = false

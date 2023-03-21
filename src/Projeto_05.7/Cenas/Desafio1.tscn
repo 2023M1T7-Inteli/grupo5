@@ -10,7 +10,7 @@
 [ext_resource path="res://console/base_console.png" type="Texture" id=8]
 [ext_resource path="res://console/seta_pequena.png" type="Texture" id=9]
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=10]
-[ext_resource path="res://console/botão_pausar.png" type="Texture" id=11]
+[ext_resource path="res://BotãoPausar.tscn" type="PackedScene" id=11]
 [ext_resource path="res://carregamento/printsetas.jpg" type="Texture" id=12]
 [ext_resource path="res://Scripts/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=13]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=14]
@@ -679,11 +679,7 @@ position = Vector2( 504, 512 )
 scale = Vector2( 3.5, 3.5 )
 normal = ExtResource( 29 )
 
-[node name="BotãoPausar" type="TouchScreenButton" parent="."]
-position = Vector2( 944, 8 )
-scale = Vector2( 2.5, 2.5 )
-normal = ExtResource( 11 )
-action = "Pause"
+[node name="BotãoPausar" parent="." instance=ExtResource( 11 )]
 
 [node name="EspaçoSeta" type="Sprite" parent="."]
 position = Vector2( 694, 611 )
@@ -1143,9 +1139,9 @@ text = "FASE 1 - Floresta da Sal-Gema"
 
 [node name="Label2" type="Label" parent="Tut1"]
 margin_left = 76.0
-margin_top = 129.0
+margin_top = 96.0
 margin_right = 284.0
-margin_bottom = 270.0
+margin_bottom = 237.0
 rect_scale = Vector2( 1.46428, 1.31844 )
 custom_fonts/font = SubResource( 40 )
 text = "       OBJETIVOS:
@@ -1156,17 +1152,16 @@ text = "       OBJETIVOS:
 "
 
 [node name="Label3" type="Label" parent="Tut1"]
-margin_left = 417.0
-margin_top = 65.0
-margin_right = 817.0
-margin_bottom = 398.0
+margin_left = 88.0
+margin_top = 161.0
+margin_right = 488.0
+margin_bottom = 494.0
 rect_scale = Vector2( 1.4484, 1.36505 )
 custom_fonts/font = SubResource( 41 )
 text = "
 
-                 SAL-GEMAS:
-
-         O sal-gema é como um tesouro 
+     SAL-GEMAS:
+. O sal-gema é como um tesouro 
 guardado na terra, e para encontrá-lo, 
 os mineiros precisam cavar muito fundo, 
 como se estivessem em uma aventura 
@@ -1178,7 +1173,7 @@ fazer vidro, sal e canos.
 "
 
 [node name="SalGema" type="Sprite" parent="Tut1"]
-position = Vector2( 663, 444 )
+position = Vector2( 189, 523 )
 scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 31 )
 
@@ -1197,7 +1192,6 @@ volume_db = 9.495
 [connection signal="body_entered" from="coletavel6" to="." method="_on_coletavel6_body_entered"]
 [connection signal="body_entered" from="saida" to="saida" method="_on_saida_body_entered"]
 [connection signal="pressed" from="iniciar" to="garotodesafio1" method="_on_iniciar_pressed"]
-[connection signal="pressed" from="BotãoPausar" to="." method="_on_BotaoPausar_pressed"]
 [connection signal="pressed" from="esquerda" to="garotodesafio1" method="_on_esquerda_pressed"]
 [connection signal="pressed" from="direita" to="garotodesafio1" method="_on_direita_pressed"]
 [connection signal="pressed" from="baixo" to="garotodesafio1" method="_on_baixo_pressed"]
