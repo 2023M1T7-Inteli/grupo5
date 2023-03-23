@@ -1078,7 +1078,7 @@ shape = SubResource( 63 )
 position = Vector2( -0.757578, 8.87411 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 6
+frame = 11
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
