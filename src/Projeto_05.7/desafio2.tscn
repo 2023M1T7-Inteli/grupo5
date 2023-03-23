@@ -11,8 +11,13 @@
 [ext_resource path="res://botão_playNOVO.png" type="Texture" id=9]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=10]
 [ext_resource path="res://Imagens/jangada_lado.png" type="Texture" id=11]
+<<<<<<< Updated upstream
 [ext_resource path="res://pescador.gd" type="Script" id=12]
 [ext_resource path="res://Imagens/chaoagua.png" type="Texture" id=13]
+=======
+[ext_resource path="res://bonecoteste.gd" type="Script" id=12]
+[ext_resource path="res://console/chaoagua.png" type="Texture" id=13]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSet" id=1]
 0/name = "quadrado_agua.png 0"
@@ -164,7 +169,11 @@ scale = Vector2( 0.222307, 0.23463 )
 script = ExtResource( 12 )
 
 [node name="Sprite" type="Sprite" parent="bonecoteste"]
+<<<<<<< Updated upstream
 position = Vector2( -2087.21, -61.7296 )
+=======
+position = Vector2( -2073.72, -61.7141 )
+>>>>>>> Stashed changes
 scale = Vector2( 5, 5 )
 texture = ExtResource( 11 )
 
