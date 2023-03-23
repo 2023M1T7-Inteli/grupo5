@@ -674,7 +674,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -702,7 +702,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -720,7 +720,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -739,7 +739,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -1078,7 +1078,7 @@ shape = SubResource( 63 )
 position = Vector2( -0.757578, 8.87411 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 11
+frame = 8
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1093,7 +1093,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1111,7 +1111,7 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1200,6 +1200,7 @@ margin_bottom = -427.0
 custom_fonts/font = SubResource( 8 )
 
 [node name="pausar" parent="." instance=ExtResource( 22 )]
+visible = false
 z_index = 10
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -1266,7 +1267,7 @@ todos os pontos:
 "
 
 [node name="continuar2" type="TouchScreenButton" parent="Tut2"]
-position = Vector2( 880, 549 )
+position = Vector2( 882, 547 )
 normal = ExtResource( 24 )
 
 [node name="Tut1" type="ColorRect" parent="."]
@@ -1340,6 +1341,7 @@ stream = ExtResource( 13 )
 volume_db = 9.495
 
 [node name="PreDesafio" type="Sprite" parent="."]
+visible = false
 position = Vector2( 591, 349 )
 texture = ExtResource( 33 )
 
@@ -1373,6 +1375,7 @@ scale = Vector2( 4.21053, 3.78948 )
 normal = ExtResource( 29 )
 
 [node name="DesafioMat1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1412,6 +1415,7 @@ position = Vector2( 215, -2 )
 normal = ExtResource( 41 )
 
 [node name="DesafioMat2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1451,6 +1455,7 @@ position = Vector2( 17, 14 )
 normal = ExtResource( 38 )
 
 [node name="DesafioMat3" type="Sprite" parent="."]
+visible = false
 position = Vector2( 462, 318 )
 scale = Vector2( 0.993056, 1.01 )
 texture = ExtResource( 33 )
@@ -1494,6 +1499,7 @@ scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 43 )
 
 [node name="TenteNovamente" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1527,6 +1533,7 @@ scale = Vector2( 5.6, 4.32 )
 normal = ExtResource( 48 )
 
 [node name="Premio" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1584,8 +1591,8 @@ normal = ExtResource( 40 )
 [connection signal="body_entered" from="Bau" to="." method="_on_Bau_body_entered"]
 [connection signal="body_entered" from="coletavel2" to="." method="_on_coletavel2_body_entered"]
 [connection signal="body_entered" from="coletavel3" to="." method="_on_coletavel3_body_entered"]
-[connection signal="pressed" from="Tut2/continuar2" to="." method="_on_continuar2_pressed"]
-[connection signal="pressed" from="Tut1/continuar1" to="." method="_on_continuar1_pressed"]
+[connection signal="released" from="Tut2/continuar2" to="." method="_on_continuar2_released"]
+[connection signal="released" from="Tut1/continuar1" to="." method="_on_continuar1_released"]
 [connection signal="pressed" from="PreDesafio/PreDesafio" to="." method="_on_PreDesafio_pressed"]
 [connection signal="pressed" from="DesafioMat1/RespostaCerta1" to="." method="_on_RespostaCerta1_pressed"]
 [connection signal="pressed" from="DesafioMat1/RespostaErrada11" to="." method="_on_RespostaErrada11_pressed"]
