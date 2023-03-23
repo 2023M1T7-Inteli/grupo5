@@ -8,10 +8,16 @@ onready var musicaTocando = $musica/AudioStreamPlayer
 onready var musicBotao = $buttonFx
 #Quando o mapa carregar, os pontos do jogador será 0.
 func _ready():
-	$garotodesafio1.visible = false
+	$PreDesafio.visible = false
+	$DesafioMat1.visible = false
+	$DesafioMat2.visible = false
+	$DesafioMat3.visible = false
+	$TenteNovamente.visible = false
+	$Premio.visible = false
 	$dedo1.visible = false
 	$dedo2.visible = false
-	$Tut2/continuar2.visible = false
+	$garotodesafio1.visible = false
+	
 #Aqui tem um código que não vamos utilizar no momento, mas poderá ser útil no futuro.
 #	get_tree().current_scene.add_child(interfaceg)
 
@@ -20,8 +26,9 @@ func _process(delta):
 	$ColorRect/pontosnume.text = String(Global.pontos)
 	
 	if Global.mao == 2:
-		$dedo.visible = false
+		$dedo2.visible = false
 		$dedo1.visible = true
+		$dedo.visible = false
 		
 	if Global.mao == 3:
 		$dedo1.visible = false
@@ -78,13 +85,79 @@ func _on_coletavel6_body_entered(body):
 	
 
 func _on_continuar1_pressed():
-	$Tut1/continuar1.visible = false
-	$Tut2/continuar2.visible = true
 	$Tut1.visible = false
 	$Tut2.visible = true
+	
 	# Quando pressionado esse botão, o color rerect 1, fica invisível e o color rect 2, torna-se visível, a mesma coisa para o botão "continuar" 1 e 2
 
 func _on_continuar2_pressed():
 	$garotodesafio1.visible = true
 	$Tut2.visible = false
 	# Quando pressionado esse botão, o color rect 2, fica invisível
+	
+
+func _on_Bau_body_entered(body):
+	if body.is_in_group("Playerdesafio"):
+		$PreDesafio.visible = true
+		$garotodesafio1.visible = false
+
+
+
+func _on_RespostaCerta1_pressed():
+	$DesafioMat2.visible = true
+	$DesafioMat1.visible = false
+	$garotodesafio1.visible = false
+
+	
+
+func _on_RespostaErrada11_pressed():
+	$DesafioMat1.visible = false
+	$TenteNovamente.visible = true
+	
+
+
+func _on_Resposta_errada_12_pressed():
+	$DesafioMat1.visible = false
+	$TenteNovamente.visible = true
+	
+
+
+func _on_RespostaCerta2_pressed():
+	$DesafioMat2.visible = false
+	$DesafioMat3.visible = true	
+
+func _on_RespostaErrada21_pressed():
+	$DesafioMat2.visible = false
+	$TenteNovamente.visible = true
+
+
+func _on_Resposta_errada_22_pressed():
+	$DesafioMat2.visible = false
+	$TenteNovamente.visible = true
+	
+func _on_RespostaCerta3_pressed():
+	$DesafioMat3.visible = false
+	$Premio.visible = true
+
+func _on_RespostaErrada31_pressed():
+	$DesafioMat3.visible = false
+	$TenteNovamente.visible = true
+
+func _on_Resposta_errada_32_pressed():
+	$DesafioMat3.visible = false
+	$TenteNovamente.visible = true
+
+func _on_TentarDenovo_pressed():
+	$TenteNovamente.visible = false
+	$DesafioMat1.visible = true
+
+func _on_Premio_pressed():
+	$Premio.visible = false
+	$Bau.visible = false
+	$garotodesafio1.visible = true
+	Global.pontos += 15
+	
+	
+func _on_PreDesafio_pressed():
+	$PreDesafio.visible = false
+	$DesafioMat1.visible = true

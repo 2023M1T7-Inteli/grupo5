@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=123 format=2]
 
 [ext_resource path="res://Cenas/continuar.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/dedo2.gd" type="Script" id=2]
@@ -36,6 +36,19 @@
 [ext_resource path="res://chão/chão1.png" type="Texture" id=34]
 [ext_resource path="res://Imagens/pixil-frame-0 (17).png" type="Texture" id=35]
 [ext_resource path="res://Cenas/mֶo 2.png" type="Texture" id=36]
+[ext_resource path="res://botões/baú_fechado_mov.png" type="Texture" id=37]
+[ext_resource path="res://botões/3botao.png" type="Texture" id=38]
+[ext_resource path="res://botões/28botao.png" type="Texture" id=39]
+[ext_resource path="res://Imagens/salgema1.png" type="Texture" id=40]
+[ext_resource path="res://botões/6botao.png" type="Texture" id=41]
+[ext_resource path="res://botões/7botao.png" type="Texture" id=42]
+[ext_resource path="res://botões/22botao.png" type="Texture" id=43]
+[ext_resource path="res://botões/11botao.png" type="Texture" id=44]
+[ext_resource path="res://botões/9botao.png" type="Texture" id=45]
+[ext_resource path="res://botões/17botao.png" type="Texture" id=46]
+[ext_resource path="res://Imagens/caixaPerguntas.png" type="Texture" id=47]
+[ext_resource path="res://botões/botão_voltar.png" type="Texture" id=48]
+[ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=49]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -291,6 +304,38 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 64, 0, 64 )
 16/shapes = [  ]
 16/z_index = 0
 
+[sub_resource type="AtlasTexture" id=76]
+atlas = ExtResource( 49 )
+region = Rect2( 0, 0, 40, 45 )
+
+[sub_resource type="AtlasTexture" id=77]
+atlas = ExtResource( 49 )
+region = Rect2( 40, 0, 40, 45 )
+
+[sub_resource type="AtlasTexture" id=78]
+atlas = ExtResource( 49 )
+region = Rect2( 80, 0, 40, 45 )
+
+[sub_resource type="AtlasTexture" id=79]
+atlas = ExtResource( 49 )
+region = Rect2( 120, 0, 40, 45 )
+
+[sub_resource type="AtlasTexture" id=80]
+atlas = ExtResource( 49 )
+region = Rect2( 160, 0, 40, 45 )
+
+[sub_resource type="AtlasTexture" id=81]
+atlas = ExtResource( 49 )
+region = Rect2( 200, 0, 40, 45 )
+
+[sub_resource type="SpriteFrames" id=75]
+animations = [ {
+"frames": [ SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ), SubResource( 81 ) ],
+"loop": true,
+"name": "SalGema",
+"speed": 5.0
+} ]
+
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 12.375, 12 )
 
@@ -299,7 +344,7 @@ size = 24
 font_data = ExtResource( 16 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 9.74992, 8.33333 )
+extents = Vector2( 9.74992, 10.5952 )
 
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 27, 21 )
@@ -457,6 +502,65 @@ extents = Vector2( 37.25, 1 )
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 4, 32 )
 
+[sub_resource type="RectangleShape2D" id=63]
+extents = Vector2( 38.6364, 61.8321 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 37 )
+region = Rect2( 100, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 37 )
+region = Rect2( 200, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 37 )
+region = Rect2( 300, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 37 )
+region = Rect2( 400, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 37 )
+region = Rect2( 500, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 37 )
+region = Rect2( 600, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 37 )
+region = Rect2( 700, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 37 )
+region = Rect2( 800, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=59]
+atlas = ExtResource( 37 )
+region = Rect2( 900, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=60]
+atlas = ExtResource( 37 )
+region = Rect2( 1000, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=61]
+atlas = ExtResource( 37 )
+region = Rect2( 1100, 0, 100, 100 )
+
+[sub_resource type="SpriteFrames" id=62]
+animations = [ {
+"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ) ],
+"loop": true,
+"name": "default",
+"speed": 7.0
+} ]
+
 [sub_resource type="RectangleShape2D" id=18]
 
 [sub_resource type="RectangleShape2D" id=19]
@@ -483,6 +587,30 @@ font_data = ExtResource( 17 )
 [sub_resource type="DynamicFont" id=40]
 font_data = ExtResource( 17 )
 
+[sub_resource type="DynamicFont" id=64]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=65]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=66]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=67]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=68]
+size = 43
+font_data = ExtResource( 17 )
+
+[sub_resource type="DynamicFont" id=69]
+size = 43
+font_data = ExtResource( 17 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 27 )
 
@@ -507,10 +635,10 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 33 )
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-margin_left = -86.0
-margin_top = -63.0
-margin_right = 1281.0
-margin_bottom = 666.0
+margin_left = -87.0
+margin_top = -56.0
+margin_right = 1280.0
+margin_bottom = 673.0
 color = Color( 0, 0, 0, 0.407843 )
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -535,18 +663,19 @@ margin_bottom = 95.1579
 color = Color( 0.67451, 0.294118, 0.0862745, 0.788235 )
 
 [node name="coletavel1" type="Area2D" parent="."]
-position = Vector2( 349, 347 )
+position = Vector2( 481, 286 )
 scale = Vector2( 0.8, 0.8 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="coletavel1"]
-position = Vector2( 2.5, -62.5 )
+[node name="Sprite" type="AnimatedSprite" parent="coletavel1"]
+position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
 position = Vector2( 21.1249, -15.7501 )
@@ -562,21 +691,22 @@ custom_fonts/font = SubResource( 7 )
 text = ":"
 
 [node name="coletavel4" type="Area2D" parent="."]
-position = Vector2( 736, 232 )
+position = Vector2( 736, 268 )
 scale = Vector2( 0.7, 0.7 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="coletavel4"]
-position = Vector2( 1, 6 )
-scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+[node name="Sprite2" type="AnimatedSprite" parent="coletavel4"]
+position = Vector2( 28.8571, 9.25 )
+scale = Vector2( 1.41428, 1.36667 )
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
-position = Vector2( 22.8571, 45.7143 )
+position = Vector2( 25.7144, 10.5952 )
 shape = SubResource( 9 )
 
 [node name="coletavel5" type="Area2D" parent="."]
@@ -585,32 +715,35 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="coletavel5"]
-position = Vector2( 19, -8 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+[node name="Sprite2" type="AnimatedSprite" parent="coletavel5"]
+position = Vector2( 36, 32 )
+scale = Vector2( 1.15, 1.14444 )
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
 position = Vector2( 33, 29 )
 shape = SubResource( 9 )
 
 [node name="coletavel6" type="Area2D" parent="."]
-position = Vector2( 728, 373 )
+position = Vector2( 734, 373 )
 scale = Vector2( 1.2, 1.2 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="coletavel6"]
-position = Vector2( 9.99994, -7.50003 )
-scale = Vector2( 0.8, 0.8 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+[node name="Sprite2" type="AnimatedSprite" parent="coletavel6"]
+position = Vector2( 16, 22.9167 )
+scale = Vector2( 0.991665, 1.01852 )
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
-position = Vector2( 20.8334, 20.8334 )
+position = Vector2( 18.3333, 15.8333 )
 shape = SubResource( 9 )
 
 [node name="pontosarea" type="Area2D" parent="."]
@@ -930,39 +1063,59 @@ rotation = -1.5708
 scale = Vector2( 3, 3 )
 texture = ExtResource( 9 )
 
+[node name="Bau" type="Area2D" parent="."]
+position = Vector2( 304, 287 )
+scale = Vector2( 0.66, 0.655 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bau"]
+position = Vector2( 1.51517, -1.52667 )
+shape = SubResource( 63 )
+
+[node name="Baú" type="AnimatedSprite" parent="Bau"]
+position = Vector2( -0.757578, 8.87411 )
+scale = Vector2( 1.13636, 1.16603 )
+frames = SubResource( 62 )
+frame = 6
+playing = true
+
 [node name="coletavel2" type="Area2D" parent="."]
-position = Vector2( 416, 349 )
+position = Vector2( 486, 224 )
 scale = Vector2( 0.8, 0.8 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Pixil-frame-0(5)-Cópia3" type="Sprite" parent="coletavel2"]
-position = Vector2( -3.75, -62.5 )
-scale = Vector2( 1.4, 1.4 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+[node name="Sprite" type="AnimatedSprite" parent="coletavel2"]
+position = Vector2( 19.2624, -17.275 )
+scale = Vector2( 1.41188, 1.37889 )
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 3
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
 position = Vector2( 13.75, -16.25 )
 shape = SubResource( 18 )
 
 [node name="coletavel3" type="Area2D" parent="."]
-position = Vector2( 491, 332 )
+position = Vector2( 485, 132 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Pixil-frame-0(5)-Cópia4" type="Sprite" parent="coletavel3"]
-position = Vector2( -10, -35 )
-scale = Vector2( 1.12, 1.12 )
-texture = ExtResource( 31 )
-hframes = 4
-vframes = 2
+[node name="Sprite" type="AnimatedSprite" parent="coletavel3"]
+position = Vector2( 15.0625, 16.5 )
+scale = Vector2( 1.04687, 1.08889 )
+frames = SubResource( 75 )
+animation = "SalGema"
+frame = 4
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
-position = Vector2( 6, 2 )
+position = Vector2( 10, 15 )
 shape = SubResource( 19 )
 
 [node name="dedo" type="Sprite" parent="."]
@@ -1186,6 +1339,238 @@ script = ExtResource( 1 )
 stream = ExtResource( 13 )
 volume_db = 9.495
 
+[node name="PreDesafio" type="Sprite" parent="."]
+position = Vector2( 591, 349 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="PreDesafio"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -718.0
+margin_top = -461.0
+margin_right = 561.0
+margin_bottom = 373.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="PreDesafio"]
+position = Vector2( -74, -51 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="PreDesafio"]
+margin_left = -373.0
+margin_top = -224.0
+margin_right = 238.0
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 64 )
+text = "Você acaba de encontrar um baú de sal-gemas!
+Para abrir o baú responda ao desafio:
+"
+align = 1
+autowrap = true
+
+[node name="PreDesafio" type="TouchScreenButton" parent="PreDesafio"]
+position = Vector2( 324, 154 )
+scale = Vector2( 4.21053, 3.78948 )
+normal = ExtResource( 29 )
+
+[node name="DesafioMat1" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat1"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat1"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat1"]
+margin_left = -247.0
+margin_top = -161.0
+margin_right = 347.0
+margin_bottom = -48.0
+custom_fonts/font = SubResource( 65 )
+text = "Quanto é 4 + 3?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta1" type="TouchScreenButton" parent="DesafioMat1"]
+position = Vector2( 15, -1 )
+normal = ExtResource( 42 )
+
+[node name="RespostaErrada11" type="TouchScreenButton" parent="DesafioMat1"]
+position = Vector2( -193, -1 )
+normal = ExtResource( 45 )
+
+[node name="Resposta errada 12" type="TouchScreenButton" parent="DesafioMat1"]
+position = Vector2( 215, -2 )
+normal = ExtResource( 41 )
+
+[node name="DesafioMat2" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat2"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat2"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat2"]
+margin_left = -247.0
+margin_top = -179.0
+margin_right = 347.0
+margin_bottom = -66.0
+custom_fonts/font = SubResource( 66 )
+text = "Quanto é 8 + 9?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta2" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( 231, 14 )
+normal = ExtResource( 46 )
+
+[node name="RespostaErrada21" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( -184, 14 )
+normal = ExtResource( 44 )
+
+[node name="Resposta errada 22" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( 17, 14 )
+normal = ExtResource( 38 )
+
+[node name="DesafioMat3" type="Sprite" parent="."]
+position = Vector2( 462, 318 )
+scale = Vector2( 0.993056, 1.01 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat3"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -593.119
+margin_top = -425.743
+margin_right = 685.881
+margin_bottom = 408.257
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat3"]
+position = Vector2( 55.3846, -19.802 )
+scale = Vector2( 14.3496, 17.1617 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat3"]
+margin_left = -253.762
+margin_top = -181.188
+margin_right = 340.238
+margin_bottom = -68.1881
+custom_fonts/font = SubResource( 67 )
+text = "Quanto é 17 + 11?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta3" type="TouchScreenButton" parent="DesafioMat3"]
+position = Vector2( 17.1189, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 39 )
+
+[node name="RespostaErrada31" type="TouchScreenButton" parent="DesafioMat3"]
+position = Vector2( -187.301, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 41 )
+
+[node name="Resposta errada 32" type="TouchScreenButton" parent="DesafioMat3"]
+position = Vector2( 241.678, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 43 )
+
+[node name="TenteNovamente" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="TenteNovamente"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="TenteNovamente"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="TenteNovamente"]
+margin_left = -229.0
+margin_top = -155.0
+margin_right = 365.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 68 )
+text = "Não foi desta vez...
+Tente novamente!
+"
+align = 1
+autowrap = true
+
+[node name="TentarDenovo" type="TouchScreenButton" parent="TenteNovamente"]
+position = Vector2( -4, 16 )
+scale = Vector2( 5.6, 4.32 )
+normal = ExtResource( 48 )
+
+[node name="Premio" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="Premio"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="Premio"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="Premio"]
+margin_left = -287.0
+margin_top = -197.0
+margin_right = 379.0
+margin_bottom = -16.0
+rect_pivot_offset = Vector2( -449, -21 )
+custom_fonts/font = SubResource( 69 )
+text = "Você Conseguiu,
+Parabéns!!!
+"
+align = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Premio"]
+margin_left = -261.0
+margin_top = 100.0
+margin_right = 405.0
+margin_bottom = 281.0
+rect_pivot_offset = Vector2( -449, -21 )
+custom_fonts/font = SubResource( 69 )
+text = "coletar
+"
+align = 1
+autowrap = true
+
+[node name="Premio" type="TouchScreenButton" parent="Premio"]
+position = Vector2( -41, -75 )
+normal = ExtResource( 40 )
+
 [connection signal="body_entered" from="coletavel1" to="." method="_on_coletavel1_body_entered"]
 [connection signal="body_entered" from="coletavel4" to="." method="_on_coletavel4_body_entered"]
 [connection signal="body_entered" from="coletavel5" to="." method="_on_coletavel5_body_entered"]
@@ -1196,7 +1581,20 @@ volume_db = 9.495
 [connection signal="pressed" from="direita" to="garotodesafio1" method="_on_direita_pressed"]
 [connection signal="pressed" from="baixo" to="garotodesafio1" method="_on_baixo_pressed"]
 [connection signal="pressed" from="cima" to="garotodesafio1" method="_on_cima_pressed"]
+[connection signal="body_entered" from="Bau" to="." method="_on_Bau_body_entered"]
 [connection signal="body_entered" from="coletavel2" to="." method="_on_coletavel2_body_entered"]
 [connection signal="body_entered" from="coletavel3" to="." method="_on_coletavel3_body_entered"]
 [connection signal="pressed" from="Tut2/continuar2" to="." method="_on_continuar2_pressed"]
 [connection signal="pressed" from="Tut1/continuar1" to="." method="_on_continuar1_pressed"]
+[connection signal="pressed" from="PreDesafio/PreDesafio" to="." method="_on_PreDesafio_pressed"]
+[connection signal="pressed" from="DesafioMat1/RespostaCerta1" to="." method="_on_RespostaCerta1_pressed"]
+[connection signal="pressed" from="DesafioMat1/RespostaErrada11" to="." method="_on_RespostaErrada11_pressed"]
+[connection signal="pressed" from="DesafioMat1/Resposta errada 12" to="." method="_on_Resposta_errada_12_pressed"]
+[connection signal="pressed" from="DesafioMat2/RespostaCerta2" to="." method="_on_RespostaCerta2_pressed"]
+[connection signal="pressed" from="DesafioMat2/RespostaErrada21" to="." method="_on_RespostaErrada21_pressed"]
+[connection signal="pressed" from="DesafioMat2/Resposta errada 22" to="." method="_on_Resposta_errada_22_pressed"]
+[connection signal="pressed" from="DesafioMat3/RespostaCerta3" to="." method="_on_RespostaCerta3_pressed"]
+[connection signal="pressed" from="DesafioMat3/RespostaErrada31" to="." method="_on_RespostaErrada31_pressed"]
+[connection signal="pressed" from="DesafioMat3/Resposta errada 32" to="." method="_on_Resposta_errada_32_pressed"]
+[connection signal="pressed" from="TenteNovamente/TentarDenovo" to="." method="_on_TentarDenovo_pressed"]
+[connection signal="pressed" from="Premio/Premio" to="." method="_on_Premio_pressed"]
