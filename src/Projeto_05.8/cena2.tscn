@@ -117,7 +117,6 @@ shape = SubResource( 7 )
 position = Vector2( 945, 15 )
 
 [node name="pausar" parent="." instance=ExtResource( 12 )]
-visible = false
 z_index = 5
 
 [node name="jangadacommenino" parent="." instance=ExtResource( 4 )]

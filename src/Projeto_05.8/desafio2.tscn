@@ -14,7 +14,7 @@
 [ext_resource path="res://pescador.gd" type="Script" id=12]
 [ext_resource path="res://Imagens/chaoagua.png" type="Texture" id=13]
 [ext_resource path="res://personagem 2/Pixilart Sprite Sheet (1).png" type="Texture" id=14]
-[ext_resource path="res://console/setaAntiHorario.png" type="Texture" id=15]
+[ext_resource path="res://pixil-frame-0 (12).png" type="Texture" id=15]
 [ext_resource path="res://itensdodesafio/corais - cópia 3.png" type="Texture" id=16]
 [ext_resource path="res://fonte/Ningst Only Peace Font by 7Ntypes.otf" type="DynamicFontData" id=17]
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=18]
@@ -146,7 +146,6 @@ normal = ExtResource( 5 )
 action = "Pause"
 
 [node name="pausar" parent="." instance=ExtResource( 6 )]
-visible = false
 z_index = 5
 
 [node name="touchAvancar" type="TouchScreenButton" parent="."]
@@ -155,15 +154,9 @@ rotation = 3.14159
 scale = Vector2( 3, 3 )
 normal = ExtResource( 7 )
 
-[node name="touchEsquerda" type="TouchScreenButton" parent="."]
-position = Vector2( 274.447, 519.292 )
-rotation = 0.0194508
-scale = Vector2( 3, 3 )
-normal = ExtResource( 15 )
-
 [node name="touchDireita" type="TouchScreenButton" parent="."]
-position = Vector2( 154.377, 585.165 )
-rotation = -1.5766
+position = Vector2( 321.365, 596.343 )
+rotation = -2.77728
 scale = Vector2( 3, 3 )
 normal = ExtResource( 8 )
 
@@ -233,7 +226,6 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bonecoteste"]
 position = Vector2( -2096.17, -23.4282 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 87 )
 
 [node name="Sprite" type="Sprite" parent="bonecoteste"]
@@ -342,6 +334,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -360,6 +353,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -378,7 +372,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -397,7 +391,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -416,7 +410,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -435,7 +429,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -454,7 +448,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -473,7 +467,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -492,7 +486,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -511,7 +504,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -555,8 +547,13 @@ margin_bottom = 40.0
 custom_fonts/font = SubResource( 86 )
 text = ":"
 
+[node name="touchEsquerda" type="TouchScreenButton" parent="."]
+position = Vector2( 149.375, 587.159 )
+rotation = -1.57476
+scale = Vector2( 3, 3 )
+normal = ExtResource( 15 )
+
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]
-[connection signal="pressed" from="touchEsquerda" to="bonecoteste" method="_on_touchEsquerda_pressed"]
 [connection signal="pressed" from="touchDireita" to="bonecoteste" method="_on_touchDireita_pressed"]
 [connection signal="pressed" from="touchIniciar" to="bonecoteste" method="_on_touchIniciar_pressed"]
 [connection signal="body_entered" from="coletavel1" to="." method="_on_coletavel1_body_entered"]
@@ -569,3 +566,4 @@ text = ":"
 [connection signal="body_entered" from="coletavel8" to="." method="_on_coletavel8_body_entered"]
 [connection signal="body_entered" from="coletavel9" to="." method="_on_coletavel9_body_entered"]
 [connection signal="body_entered" from="coletavel10" to="." method="_on_coletavel10_body_entered"]
+[connection signal="pressed" from="touchEsquerda" to="bonecoteste" method="_on_touchEsquerda_pressed"]
