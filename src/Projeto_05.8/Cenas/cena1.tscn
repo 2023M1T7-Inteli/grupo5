@@ -394,7 +394,7 @@ script = ExtResource( 17 )
 [node name="HUD" parent="." instance=ExtResource( 20 )]
 
 [node name="interação1" type="Node2D" parent="."]
-position = Vector2( -416, 49 )
+position = Vector2( -368, 63 )
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true
@@ -409,8 +409,8 @@ anims/RESET = SubResource( 18 )
 anims/respirando = SubResource( 19 )
 
 [node name="Df-3" type="Sprite" parent="interação1"]
-position = Vector2( 636, 386 )
-scale = Vector2( 4, 2.5 )
+position = Vector2( 625.5, 375.306 )
+scale = Vector2( 2.7, 2.414 )
 texture = ExtResource( 1 )
 hframes = 10
 vframes = 2
