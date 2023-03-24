@@ -3,7 +3,7 @@ var comandos = []
 var graus = 90
 var anguloRad = deg2rad(graus)
 var rotaDireita = load("res://botões/botão_voltar.png")
-var rotaEsquerda = load("res://botões/botaoajuda.png.png")
+var rotaEsquerda = load("res://console/setaAntiHorario.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
 var speed = 250
@@ -18,15 +18,19 @@ func _on_touchDireita_pressed(): #adiciona os comandos no console
 	j += 1
 	while j <= 10:
 		if j == 1:
+			
 			$"../espaco1".texture = rotaDireita
 		
 		if j == 2:
+			
 			$"../espaco2".texture = rotaDireita
 		
 		if j == 3:
+		
 			$"../espaco3".texture = rotaDireita
 			
 		if j == 4:
+			
 			$"../espaco4".texture = rotaDireita
 		
 		if j == 5:
@@ -130,14 +134,32 @@ func _on_touchIniciar_pressed(): #botão que lê e executa o console
 	for i in range(0, comandos.size()):
 		if(comandos[i] == "direita"):
 			girarDireita()
-			yield(get_tree().create_timer(1.0), "timeout")
+			print("direita")
+			yield(get_tree().create_timer(1.2), "timeout")
 		elif(comandos[i] == "esquerda"):
 			girarEsquerda()
-			yield(get_tree().create_timer(1.0), "timeout")
+			print("esquerda")
+			yield(get_tree().create_timer(1.2), "timeout")
 		elif (comandos[i] == "avançar"):
 			movimentoReto()
-			yield(get_tree().create_timer(1.0), "timeout")
+			print("reto")
+			yield(get_tree().create_timer(1.2), "timeout")
 	comandos.clear()
+	if comandos == []:
+		$"../espaco1".texture = null
+		$"../espaco2".texture = null
+		$"../espaco3".texture = null
+		$"../espaco4".texture = null
+		$"../espaco5".texture = null
+		$"../espaco6".texture = null
+		$"../espaco7".texture = null
+		$"../espaco8".texture = null
+		$"../espaco9".texture = null
+		$"../espaco10".texture = null
+		j = 0
+		
+		
+	
 	
 func girarDireita(): #funções de movimento do personagem
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(anguloRad)
@@ -151,7 +173,18 @@ func _ready():
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2)
 	$Sprite.texture = pescador
 func _process(delta):
+	
 	if andando:
-		move_and_slide(2.65*$RayCast2D.cast_to)
-		yield(get_tree().create_timer(0.5),"timeout")
-		andando = false
+		$".".move_and_slide(2.659*$RayCast2D.cast_to)
+		if get_slide_collision(0) != null or $".".position.x > x + 200:
+			yield(get_tree().create_timer(0.475),"timeout")
+			andando = false
+#			if get_slide_collision(0) != null:
+#				self.position.x -= 5	
+#				andando = false
+			
+		#move_and_slide(Vector2(2,2))*$RayCast2D.cast_to
+		
+#		move_and_slide(2.7*$RayCast2D.cast_to)
+#		yield(get_tree().create_timer(0.5),"timeout")
+#		andando = false

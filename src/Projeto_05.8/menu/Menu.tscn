@@ -96,7 +96,7 @@ margin_top = 563.0
 margin_right = 976.0
 margin_bottom = 585.0
 rect_scale = Vector2( 2.32911, 1.85714 )
-text = "0.5.7"
+text = "0.5.8"
 
 [connection signal="pressed" from="musica" to="." method="_on_musica_pressed"]
 [connection signal="pressed" from="botãojogar" to="." method="_on_botojogar_pressed"]

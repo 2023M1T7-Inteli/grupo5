@@ -1,10 +1,30 @@
 {
 	"events": [
 		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1679420653.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"character": "character-1679420653.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Bla bla bla bla bla bla"
+			"text": "Ô meu filho! Está indo 'pra' escola? Tome cuidado que o mar 'tá' arretado! Use aqui minha jangadinha emprestada e boa sorte no caminho. Há muitos mistérios pelo rio."
 		}
 	],
 	"metadata": {

@@ -13,7 +13,7 @@ func _on_botaosair_pressed():
 #Aqui tem a função que faz o botão de orientação funcionar.
 func _on_Button_pressed(): #Botão de orientação.
 	musicaBotao.playing
-	yield(get_tree().create_timer(2), "timeout")
+	yield(get_tree().create_timer(0.25), "timeout")
 	$buttonFx.play()
 	get_tree().change_scene("res://Cenas/orientação.tscn")
 
