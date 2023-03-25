@@ -1,4 +1,5 @@
 extends KinematicBody2D
+
 var comandos = []
 var graus = 90
 var anguloRad = deg2rad(graus)
@@ -6,17 +7,14 @@ var rotaDireita = load("res://botões/botão_voltar.png")
 var rotaEsquerda = load("res://console/setaantihora.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
-var speed = 250
-var rotation_speed = 1.5
-var move = Vector2(0,0)
-var rotation_dir = 0
 var x = 0
 var y = 0
 var andando = false
 var j = 0
-func _on_touchDireita_pressed(): #adiciona os comandos no console
+
+func _on_touchDireita_pressed(): 
 	j += 1
-	while j <= 10:
+	while j <= 10: #load das sprites no console.
 		if j == 1:
 			
 			$"../espaco1".texture = rotaDireita
@@ -52,13 +50,12 @@ func _on_touchDireita_pressed(): #adiciona os comandos no console
 			$"../espaco10".texture = rotaDireita
 		break
 	
-	if (comandos.size() < 10):	
+	if (comandos.size() < 10):	#appenda 'direita' na lista de comandos.
 		comandos.append("direita")
-		print(comandos)
 	
 func _on_touchEsquerda_pressed():
 	j += 1
-	while j <= 10:
+	while j <= 10: #load das sprites no console.
 		if j == 1:
 			$"../espaco1".texture = rotaEsquerda
 		
@@ -91,11 +88,11 @@ func _on_touchEsquerda_pressed():
 		break
 	
 	if (comandos.size() < 10):	
-		comandos.append("esquerda")
-		print(comandos)
+		comandos.append("esquerda") #appenda 'esquerda' na lista de comandos.
+
 func _on_touchAvancar_pressed():
 	j += 1
-	while j <= 10:
+	while j <= 10: #load das sprites no console.
 		if j == 1:
 			$"../espaco1".texture = reto
 		
@@ -126,26 +123,27 @@ func _on_touchAvancar_pressed():
 		elif j == 10:
 			$"../espaco10".texture = reto
 		break
-	if (comandos.size() < 10):
+	if (comandos.size() < 10): #appenda 'avançar' na lista de comandos.
 		comandos.append("avançar")
-		print(comandos)
 	
-func _on_touchIniciar_pressed(): #botão que lê e executa o console
+func _on_touchIniciar_pressed(): #botão que lê e executa o console.
 	for i in range(0, comandos.size()):
+		
 		if(comandos[i] == "direita"):
-			girarDireita()
-			print("direita")
-			yield(get_tree().create_timer(1.2), "timeout")
+			girarDireita() #chama função girarDireita.
+			yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+			
 		elif(comandos[i] == "esquerda"):
-			girarEsquerda()
-			print("esquerda")
-			yield(get_tree().create_timer(1.2), "timeout")
+			girarEsquerda() #chama função girarEsquerda.
+			yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+			
 		elif (comandos[i] == "avançar"):
-			movimentoReto()
-			print("reto")
-			yield(get_tree().create_timer(1.2), "timeout")
-	comandos.clear()
-	if comandos == []:
+			movimentoReto() #chama função movimentoReto.
+			yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+			
+	comandos.clear() #limpa o array de comandos.
+	
+	if comandos == []: #console vazio se lista de comandos estiver vazia.
 		$"../espaco1".texture = null
 		$"../espaco2".texture = null
 		$"../espaco3".texture = null
@@ -157,34 +155,25 @@ func _on_touchIniciar_pressed(): #botão que lê e executa o console
 		$"../espaco9".texture = null
 		$"../espaco10".texture = null
 		j = 0
-		
-		
+
 	
-	
-func girarDireita(): #funções de movimento do personagem
+func girarDireita(): #função de rotação em 90 graus sentido horário.
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(anguloRad)
 	
-func girarEsquerda():
+func girarEsquerda():  #função de rotação em 90 graus sentido anti horário.
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-anguloRad)
-func movimentoReto():
+	
+func movimentoReto(): #função intermediária do avanço do personagem.
 	andando = true
 	
 func _ready():
-	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2)
-	$Sprite.texture = pescador
+	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2) #define a direção do eixo x positivo.
+	
 func _process(delta):
 	
 	if andando:
-		$".".move_and_slide(2.659*$RayCast2D.cast_to)
-		if get_slide_collision(0) != null or $".".position.x > x + 200:
-			yield(get_tree().create_timer(0.475),"timeout")
-			andando = false
-#			if get_slide_collision(0) != null:
-#				self.position.x -= 5	
-#				andando = false
+		$".".move_and_slide(2.659*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		if get_slide_collision(0) != null or $".".position.x > x + 200: #parar o personagem se colidir ou se x > x + 200.
+			yield(get_tree().create_timer(0.475),"timeout") #tempo que o personagem se move pra frente.
+			andando = false #'desativa' o andando 
 			
-		#move_and_slide(Vector2(2,2))*$RayCast2D.cast_to
-		
-#		move_and_slide(2.7*$RayCast2D.cast_to)
-#		yield(get_tree().create_timer(0.5),"timeout")
-#		andando = false
