@@ -1,9 +1,9 @@
 extends Sprite
+#Declaração de variáveis.
 var velocidade = 10
 var tempo = 1
 
-
-	
+#Função que sempre processa no mapa quando carregado.
 func _process(delta):
 	if tempo == 1:
 		while tempo == 1:

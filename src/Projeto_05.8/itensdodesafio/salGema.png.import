@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pixil-frame-0 (12).png-1c4fa02724a0b2c8b28b0d9e34911358.stex"
+path="res://.import/salGema.png-73130e13c97c1c005ab0a38b0757b635.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (12).png"
-dest_files=[ "res://.import/pixil-frame-0 (12).png-1c4fa02724a0b2c8b28b0d9e34911358.stex" ]
+source_file="res://itensdodesafio/salGema.png"
+dest_files=[ "res://.import/salGema.png-73130e13c97c1c005ab0a38b0757b635.stex" ]
 
 [params]
 

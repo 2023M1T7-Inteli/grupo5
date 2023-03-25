@@ -8,17 +8,17 @@
 [ext_resource path="res://pausar.tscn" type="PackedScene" id=6]
 [ext_resource path="res://console/seta_grande1-removebg-preview (1).png" type="Texture" id=7]
 [ext_resource path="res://botões/botão_voltar.png" type="Texture" id=8]
-[ext_resource path="res://botão_playNOVO.png" type="Texture" id=9]
+[ext_resource path="res://console/botão_playNOVO.png" type="Texture" id=9]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=10]
 [ext_resource path="res://Imagens/jangada_lado.png" type="Texture" id=11]
 [ext_resource path="res://pescador.gd" type="Script" id=12]
 [ext_resource path="res://Imagens/chaoagua.png" type="Texture" id=13]
 [ext_resource path="res://personagem 2/Pixilart Sprite Sheet (1).png" type="Texture" id=14]
-[ext_resource path="res://pixil-frame-0 (12).png" type="Texture" id=15]
+[ext_resource path="res://console/setaantihora.png" type="Texture" id=15]
 [ext_resource path="res://itensdodesafio/corais - cópia 3.png" type="Texture" id=16]
 [ext_resource path="res://fonte/Ningst Only Peace Font by 7Ntypes.otf" type="DynamicFontData" id=17]
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=18]
-[ext_resource path="res://salGema.png" type="Texture" id=19]
+[ext_resource path="res://itensdodesafio/salGema.png" type="Texture" id=19]
 [ext_resource path="res://desafio2.gd" type="Script" id=20]
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=21]
 
@@ -146,7 +146,7 @@ normal = ExtResource( 5 )
 action = "Pause"
 
 [node name="pausar" parent="." instance=ExtResource( 6 )]
-z_index = 5
+z_index = 15
 
 [node name="touchAvancar" type="TouchScreenButton" parent="."]
 position = Vector2( 100.378, 584.107 )
@@ -334,7 +334,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -353,7 +353,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -372,7 +372,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -391,7 +391,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -410,7 +410,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -429,7 +429,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -448,7 +448,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -467,7 +467,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -486,6 +486,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -504,6 +505,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]

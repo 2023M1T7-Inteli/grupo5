@@ -17,7 +17,7 @@
 [ext_resource path="res://itens/placa seta.png" type="Texture" id=15]
 [ext_resource path="res://placario.gd" type="Script" id=16]
 [ext_resource path="res://Cenas/HUD.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Scripts/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=18]
+[ext_resource path="res://itensdodesafio/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=18]
 [ext_resource path="res://Imagens/fundo.png" type="Texture" id=19]
 
 [sub_resource type="RectangleShape2D" id=1]

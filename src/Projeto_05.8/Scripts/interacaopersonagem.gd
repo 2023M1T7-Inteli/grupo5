@@ -5,10 +5,10 @@ var newDialog= Dialogic.start('teste')
 var dialogoLogic= false
 onready var interacao1 = $AnimationPlayer
 
+#Função que processa quando o mapa carrega.
 func _ready():
 	$"../Chamar".visible = true
-	
-	
+
 #Uma função que basicamnte vai dizer TRUE quando houver contato entre os corpos de interação.
 func _on_Area2D_body_entered(body):
 	dialogoLogic= true
@@ -17,14 +17,10 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	dialogoLogic= false
 
-#Basicamente aqui é o que acontece quando há interação entre os corpos.
+#Função que sempre processa quando a tela carrega.
 func _physics_process(delta):
 	interacao1.play("respirando")
-	
-	
 	#Se a interação for TRUE + "E" do teclado, haverá um diálago.
 	if dialogoLogic == true and Input.is_action_just_pressed("ui_e"):
 		$"../Chamar".visible = false
 		add_child(newDialog)
-		
-		

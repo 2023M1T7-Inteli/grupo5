@@ -4,7 +4,6 @@ extends Node2D
 var pegarItem1= get_tree().change_scene("res://desafio1.tscn")
 var pegarItem= false
 
-
 #Função que relaciona como TRUE o contato entre os objetos.
 func _on_Area2D_body_entered(body):
 	pegarItem = true
@@ -19,7 +18,3 @@ func _on_Area2D_body_exited(body):
 func _physics_process(delta):
 	if pegarItem == true and Input.is_action_just_pressed("ui_end"):
 		add_child(pegarItem1)
-		
-
-
-

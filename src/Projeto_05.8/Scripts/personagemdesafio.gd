@@ -12,7 +12,7 @@ var y
 var listaSetas = []
 onready var movimento = $AnimationPlayer
 
-#Movimentação do personagem
+#Função que lê quando o mapa é carregado.
 func _ready():
 	contador = 0
 	
@@ -36,6 +36,8 @@ func _ready():
 	$"../Cima3".visible = false
 	$"../Cima4".visible = false
 	
+#Função que sempre processa no mapa.
+#Função que executa os movimentos da lista.
 func _physics_process(delta):
 	if toqueDireita:
 		movimento.play("direita")
@@ -76,7 +78,7 @@ func _physics_process(delta):
 	if toqueEsquerda == false and toqueBaixo == false and toqueCima == false and toqueDireita == false:
 		movimento.play("parado")
 	
-
+#Função que executa quando clicar o botão de play no console.
 func _on_iniciar_pressed():
 	Global.mao = Global.mao + 1
 	x = $".".position.x
@@ -122,30 +124,34 @@ func _on_iniciar_pressed():
 		$"../Cima3".visible = false
 		$"../Cima4".visible = false
 	
-	
+#Função que manda o comando BAIXO para o personagem.
 func _on_baixo_pressed():
 	Global.mao = Global.mao + 1
 	listaSetas.append("baixo")
 	if listaSetas.size() < 5:
 		listaComandos.append("baixo")
 	
+#Função que manda o comando DIREITA para o personagem.
 func _on_direita_pressed():
 	Global.mao = Global.mao + 1
 	listaSetas.append("direita")
 	if listaSetas.size() < 5:
 		listaComandos.append("direita")
-		
+
+#Função que manda o comando CIMA para o personagem.
 func _on_cima_pressed():
 	listaSetas.append("cima")
 	if listaSetas.size() < 5:
 		listaComandos.append("cima")
 	
+#Função que manda o comando ESQUERDA para o personagem.
 func _on_esquerda_pressed():
 	listaSetas.append("esquerda")
 	if listaSetas.size() < 5:
 		listaComandos.append("esquerda")
 		
 func _process(delta):
+#Função que processa constantemente no mapa.
 	if listaSetas.size() < 5 and listaSetas.size() >= 1:
 		for i in range(len(listaSetas)):
 			if listaSetas[i] == "esquerda":
@@ -164,7 +170,7 @@ func _process(delta):
 			if listaSetas[i] == "baixo":
 				get_node("../Baixo"+str(i+1)).visible = true
 
-
+#Função que para o movimento quando o player encontra colisão.
 func _on_paredeinvisivel_body_entered(body):
 	toqueCima = false
 

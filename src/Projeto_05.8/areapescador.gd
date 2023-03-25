@@ -5,10 +5,11 @@ var newDialog= Dialogic.start('pescador')
 var dialogoLogic= false
 var i = false
 
+#Função que processa quando o mapa é carregado.
 func _ready():
 	$"../interagir".visible = true
 
-#Basicamente aqui é o que acontece quando há interação entre os corpos.
+#Função que processa constantemente quando o mapa é carregado.
 func _physics_process(delta):
 	#Se a interação for TRUE + "E" do teclado, haverá um diálago.
 	if dialogoLogic == true and Input.is_action_just_pressed("ui_e"):

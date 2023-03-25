@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botão_playNOVO.png-bbefe5dfe27ff07bccbc8a375532275e.stex"
+path="res://.import/botão_playNOVO.png-8909202845e281cc4ef57ae4f93d28b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://botão_playNOVO.png"
-dest_files=[ "res://.import/botão_playNOVO.png-bbefe5dfe27ff07bccbc8a375532275e.stex" ]
+source_file="res://console/botão_playNOVO.png"
+dest_files=[ "res://.import/botão_playNOVO.png-8909202845e281cc4ef57ae4f93d28b3.stex" ]
 
 [params]
 
