@@ -473,7 +473,7 @@ extents = Vector2( 166, 3 )
 extents = Vector2( 5, 122 )
 
 [sub_resource type="RectangleShape2D" id=27]
-extents = Vector2( 98, 2 )
+extents = Vector2( 102.5, 1.5 )
 
 [sub_resource type="RectangleShape2D" id=28]
 extents = Vector2( 3, 141.5 )
@@ -488,7 +488,7 @@ extents = Vector2( 136.25, 2 )
 extents = Vector2( 4, 65 )
 
 [sub_resource type="RectangleShape2D" id=32]
-extents = Vector2( 1.5, 173 )
+extents = Vector2( 2.5, 174.5 )
 
 [sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 1.5, 100 )
@@ -503,7 +503,7 @@ extents = Vector2( 37.25, 1 )
 extents = Vector2( 4, 32 )
 
 [sub_resource type="RectangleShape2D" id=63]
-extents = Vector2( 38.6364, 61.8321 )
+extents = Vector2( 20.0758, 21.1832 )
 
 [sub_resource type="AtlasTexture" id=50]
 atlas = ExtResource( 37 )
@@ -674,6 +674,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -701,6 +702,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -718,6 +720,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -736,6 +739,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -916,11 +920,11 @@ position = Vector2( 214, 222 )
 shape = SubResource( 23 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 367, 274 )
+position = Vector2( 367, 266 )
 shape = SubResource( 24 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 367, 349 )
+position = Vector2( 367, 354 )
 shape = SubResource( 25 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="paredeinvisivel"]
@@ -928,7 +932,7 @@ position = Vector2( 468, 147 )
 shape = SubResource( 26 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 627, 95 )
+position = Vector2( 623.5, 96.5 )
 shape = SubResource( 27 )
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="paredeinvisivel"]
@@ -940,15 +944,15 @@ position = Vector2( 613, 19 )
 shape = SubResource( 29 )
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 918.25, 148 )
+position = Vector2( 909.25, 143 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 776, 87 )
+position = Vector2( 776, 78 )
 shape = SubResource( 31 )
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="paredeinvisivel"]
-position = Vector2( 725.5, 275 )
+position = Vector2( 724.5, 273.5 )
 shape = SubResource( 32 )
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="paredeinvisivel"]
@@ -1062,19 +1066,17 @@ texture = ExtResource( 9 )
 [node name="Bau" type="Area2D" parent="."]
 position = Vector2( 304, 287 )
 scale = Vector2( 0.66, 0.655 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau"]
-position = Vector2( 1.51517, -1.52667 )
+position = Vector2( -9.09091, 59.542 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 63 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau"]
-position = Vector2( -0.757578, 8.87411 )
+position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 5
+frame = 9
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1089,7 +1091,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 1
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1107,7 +1109,7 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1196,6 +1198,7 @@ margin_bottom = -427.0
 custom_fonts/font = SubResource( 8 )
 
 [node name="pausar" parent="." instance=ExtResource( 22 )]
+visible = false
 z_index = 10
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -1204,6 +1207,7 @@ volume_db = -15.0
 autoplay = true
 
 [node name="Tut2" type="ColorRect" parent="."]
+visible = false
 margin_left = -9.0
 margin_right = 1031.0
 margin_bottom = 600.0
@@ -1266,6 +1270,7 @@ position = Vector2( 882, 547 )
 normal = ExtResource( 24 )
 
 [node name="Tut1" type="ColorRect" parent="."]
+visible = false
 margin_left = -14.0
 margin_top = 3.0
 margin_right = 1026.0
@@ -1336,6 +1341,7 @@ stream = ExtResource( 13 )
 volume_db = 9.495
 
 [node name="PreDesafio" type="Sprite" parent="."]
+visible = false
 position = Vector2( 591, 349 )
 texture = ExtResource( 33 )
 
@@ -1369,6 +1375,7 @@ scale = Vector2( 4.21053, 3.78948 )
 normal = ExtResource( 29 )
 
 [node name="DesafioMat1" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1408,6 +1415,7 @@ position = Vector2( 215, -2 )
 normal = ExtResource( 41 )
 
 [node name="DesafioMat2" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1447,6 +1455,7 @@ position = Vector2( 17, 14 )
 normal = ExtResource( 38 )
 
 [node name="DesafioMat3" type="Sprite" parent="."]
+visible = false
 position = Vector2( 462, 318 )
 scale = Vector2( 0.993056, 1.01 )
 texture = ExtResource( 33 )
@@ -1490,6 +1499,7 @@ scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 43 )
 
 [node name="TenteNovamente" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1523,6 +1533,7 @@ scale = Vector2( 5.6, 4.32 )
 normal = ExtResource( 48 )
 
 [node name="Premio" type="Sprite" parent="."]
+visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1534,6 +1545,7 @@ margin_right = 695.0
 margin_bottom = 408.0
 
 [node name="CaixaPerguntas" type="Sprite" parent="Premio"]
+visible = false
 position = Vector2( 60, -16 )
 scale = Vector2( 14.25, 17.3333 )
 texture = ExtResource( 47 )

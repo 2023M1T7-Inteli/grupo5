@@ -173,5 +173,3 @@ func _process(delta):
 #Função que para o movimento quando o player encontra colisão.
 func _on_paredeinvisivel_body_entered(body):
 	toqueCima = false
-
-
