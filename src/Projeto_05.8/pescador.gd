@@ -11,7 +11,7 @@ var x = 0
 var y = 0
 var andando = false
 var j = 0
-
+	
 func _on_touchDireita_pressed(): 
 	j += 1
 	while j <= 10: #load das sprites no console.
@@ -170,10 +170,21 @@ func _ready():
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2) #define a direção do eixo x positivo.
 	
 func _process(delta):
-	
 	if andando:
-		$".".move_and_slide(2.659*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
-		if get_slide_collision(0) != null or $".".position.x > x + 200: #parar o personagem se colidir ou se x > x + 200.
-			yield(get_tree().create_timer(0.475),"timeout") #tempo que o personagem se move pra frente.
+		#$".".move_and_slide(2.659*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		$".".move_and_slide(2.659*$RayCast2D.cast_to)
+		yield(get_tree().create_timer(0.475),"timeout")
+		andando = false
+		
+		if get_slide_collision(0) != null: #parar o personagem se colidir ou se x > x + 200.
+		 #tempo que o personagem se move pra frente.
+			self.position.x -= 5	
 			andando = false #'desativa' o andando 
+			
+		
+#	if get_slide_collision(0) != null or $".".position.x > x + 63:
+#		if get_slide_collision(0) != null:
+#			self.position.x -= 5	
+#		reto = false
+#		_on_touchIniciar_pressed()
 			
