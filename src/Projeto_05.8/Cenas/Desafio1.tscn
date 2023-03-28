@@ -1,4 +1,5 @@
 [gd_scene load_steps=123 format=2]
+[gd_scene load_steps=125 format=2]
 
 [ext_resource path="res://Cenas/continuar.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/dedo2.gd" type="Script" id=2]
@@ -641,6 +642,9 @@ texture = ExtResource( 33 )
 [node name="ColorRect2" type="ColorRect" parent="."]
 margin_right = 1280.0
 margin_left = -86.0
+margin_top = -73.0
+margin_right = 1281.0
+margin_bottom = 656.0
 color = Color( 0, 0, 0, 0.407843 )
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1077,6 +1081,7 @@ shape = SubResource( 63 )
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
+frame = 8
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
