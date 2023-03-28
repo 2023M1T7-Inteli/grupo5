@@ -679,7 +679,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -707,7 +707,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -725,7 +725,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -744,7 +744,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -1080,7 +1080,7 @@ shape = SubResource( 63 )
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1095,7 +1095,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 5
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1113,6 +1113,7 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1536,7 +1537,6 @@ scale = Vector2( 5.6, 4.32 )
 normal = ExtResource( 48 )
 
 [node name="Premio" type="Sprite" parent="."]
-visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1560,14 +1560,14 @@ margin_right = 379.0
 margin_bottom = -16.0
 rect_pivot_offset = Vector2( -449, -21 )
 custom_fonts/font = SubResource( 69 )
-text = "Você conseguiu,
+text = "Você conseguiu 15 sal-gemas,
 parabéns!
 "
 align = 1
 autowrap = true
 
 [node name="Premio" type="TouchScreenButton" parent="Premio"]
-position = Vector2( -41, -75 )
+position = Vector2( -41, -48 )
 normal = ExtResource( 40 )
 
 [node name="coletar1" type="Sprite" parent="Premio"]
@@ -1797,20 +1797,20 @@ scale = Vector2( 14.25, 17.3333 )
 texture = ExtResource( 47 )
 
 [node name="Label" type="Label" parent="Premio2"]
-margin_left = -287.0
-margin_top = -197.0
-margin_right = 379.0
-margin_bottom = -16.0
+margin_left = -265.0
+margin_top = -215.0
+margin_right = 401.0
+margin_bottom = 14.0
 rect_pivot_offset = Vector2( -449, -21 )
 custom_fonts/font = SubResource( 69 )
-text = "Você conseguiu,
+text = "Você conseguiu 15 sal-gemas,
 parabéns!
 "
 align = 1
 autowrap = true
 
 [node name="Premio2" type="TouchScreenButton" parent="Premio2"]
-position = Vector2( -41, -75 )
+position = Vector2( -41, -66 )
 normal = ExtResource( 40 )
 
 [node name="coletar2" type="Sprite" parent="Premio2"]
