@@ -49,6 +49,7 @@
 [ext_resource path="res://Imagens/caixaPerguntas.png" type="Texture" id=47]
 [ext_resource path="res://botões/botão_voltar.png" type="Texture" id=48]
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=49]
+[ext_resource path="res://Imagens/alaland.png" type="Texture" id=50]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -611,6 +612,9 @@ font_data = ExtResource( 17 )
 size = 43
 font_data = ExtResource( 17 )
 
+[sub_resource type="RectangleShape2D" id=82]
+extents = Vector2( 26.5, 19 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 27 )
 
@@ -635,10 +639,8 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 33 )
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-margin_left = -87.0
-margin_top = -56.0
 margin_right = 1280.0
-margin_bottom = 673.0
+margin_left = -86.0
 color = Color( 0, 0, 0, 0.407843 )
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1069,14 +1071,12 @@ scale = Vector2( 0.66, 0.655 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau"]
 position = Vector2( -9.09091, 59.542 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 63 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau"]
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 9
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1579,6 +1579,256 @@ autowrap = true
 position = Vector2( -41, -75 )
 normal = ExtResource( 40 )
 
+[node name="bau2" type="Area2D" parent="."]
+position = Vector2( -196, -335 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bau2"]
+position = Vector2( 821, 385 )
+shape = SubResource( 82 )
+
+[node name="Sprite" type="Sprite" parent="bau2"]
+position = Vector2( 834, 385 )
+scale = Vector2( 0.265625, 0.304688 )
+texture = ExtResource( 50 )
+
+[node name="PreDesafio2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 591, 349 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="PreDesafio2"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -718.0
+margin_top = -461.0
+margin_right = 561.0
+margin_bottom = 373.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="PreDesafio2"]
+position = Vector2( -74, -51 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="PreDesafio2"]
+margin_left = -373.0
+margin_top = -224.0
+margin_right = 238.0
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 64 )
+text = "Você acaba de encontrar um baú de sal-gemas!
+Para abrir o baú responda ao desafio:
+"
+align = 1
+autowrap = true
+
+[node name="PreDesafio1" type="TouchScreenButton" parent="PreDesafio2"]
+position = Vector2( 324, 154 )
+scale = Vector2( 4.21053, 3.78948 )
+normal = ExtResource( 29 )
+
+[node name="DesafioMat4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat4"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat4"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat4"]
+margin_left = -247.0
+margin_top = -161.0
+margin_right = 347.0
+margin_bottom = -48.0
+custom_fonts/font = SubResource( 65 )
+text = "Quanto é 9 - 3?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta11" type="TouchScreenButton" parent="DesafioMat4"]
+position = Vector2( 15, -1 )
+normal = ExtResource( 42 )
+
+[node name="RespostaErrada112" type="TouchScreenButton" parent="DesafioMat4"]
+position = Vector2( -193, -1 )
+normal = ExtResource( 45 )
+
+[node name="Resposta errada 122" type="TouchScreenButton" parent="DesafioMat4"]
+position = Vector2( 215, -2 )
+normal = ExtResource( 41 )
+
+[node name="DesafioMat5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat5"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat5"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat5"]
+margin_left = -247.0
+margin_top = -179.0
+margin_right = 347.0
+margin_bottom = -66.0
+custom_fonts/font = SubResource( 66 )
+text = "Quanto é 19 - 8
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta22" type="TouchScreenButton" parent="DesafioMat5"]
+position = Vector2( 231, 14 )
+normal = ExtResource( 46 )
+
+[node name="RespostaErrada212" type="TouchScreenButton" parent="DesafioMat5"]
+position = Vector2( -184, 14 )
+normal = ExtResource( 44 )
+
+[node name="Resposta errada 222" type="TouchScreenButton" parent="DesafioMat5"]
+position = Vector2( 17, 14 )
+normal = ExtResource( 38 )
+
+[node name="DesafioMat6" type="Sprite" parent="."]
+position = Vector2( 462, 318 )
+scale = Vector2( 0.993056, 1.01 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat6"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -593.119
+margin_top = -425.743
+margin_right = 685.881
+margin_bottom = 408.257
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat6"]
+position = Vector2( 55.3846, -19.802 )
+scale = Vector2( 14.3496, 17.1617 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="DesafioMat6"]
+margin_left = -253.762
+margin_top = -181.188
+margin_right = 340.238
+margin_bottom = -68.1881
+custom_fonts/font = SubResource( 67 )
+text = "Quanto é 69 - 47?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta3" type="TouchScreenButton" parent="DesafioMat6"]
+position = Vector2( 17.1189, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 39 )
+
+[node name="RespostaErrada31" type="TouchScreenButton" parent="DesafioMat6"]
+position = Vector2( -187.301, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 41 )
+
+[node name="Resposta errada 32" type="TouchScreenButton" parent="DesafioMat6"]
+position = Vector2( 241.678, -0.990082 )
+scale = Vector2( 1.00699, 0.990099 )
+normal = ExtResource( 43 )
+
+[node name="TenteNovamente2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="TenteNovamente2"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="TenteNovamente2"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="TenteNovamente2"]
+margin_left = -229.0
+margin_top = -155.0
+margin_right = 365.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 68 )
+text = "Não foi desta vez...
+Tente novamente!
+"
+align = 1
+autowrap = true
+
+[node name="TentarDenovo2" type="TouchScreenButton" parent="TenteNovamente2"]
+position = Vector2( -4, 16 )
+scale = Vector2( 5.6, 4.32 )
+normal = ExtResource( 48 )
+
+[node name="Premio2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 457, 314 )
+texture = ExtResource( 33 )
+
+[node name="ColorRect" type="ColorRect" parent="Premio2"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="Premio2"]
+visible = false
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="Premio2"]
+margin_left = -287.0
+margin_top = -197.0
+margin_right = 379.0
+margin_bottom = -16.0
+rect_pivot_offset = Vector2( -449, -21 )
+custom_fonts/font = SubResource( 69 )
+text = "Você Conseguiu,
+Parabéns!!!
+"
+align = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Premio2"]
+margin_left = -261.0
+margin_top = 100.0
+margin_right = 405.0
+margin_bottom = 281.0
+rect_pivot_offset = Vector2( -449, -21 )
+custom_fonts/font = SubResource( 69 )
+text = "coletar
+"
+align = 1
+autowrap = true
+
+[node name="Premio" type="TouchScreenButton" parent="Premio2"]
+position = Vector2( -41, -75 )
+normal = ExtResource( 40 )
+
 [connection signal="body_entered" from="coletavel1" to="." method="_on_coletavel1_body_entered"]
 [connection signal="body_entered" from="coletavel4" to="." method="_on_coletavel4_body_entered"]
 [connection signal="body_entered" from="coletavel5" to="." method="_on_coletavel5_body_entered"]
@@ -1606,3 +1856,16 @@ normal = ExtResource( 40 )
 [connection signal="pressed" from="DesafioMat3/Resposta errada 32" to="." method="_on_Resposta_errada_32_pressed"]
 [connection signal="pressed" from="TenteNovamente/TentarDenovo" to="." method="_on_TentarDenovo_pressed"]
 [connection signal="pressed" from="Premio/Premio" to="." method="_on_Premio_pressed"]
+[connection signal="body_entered" from="bau2" to="." method="_on_bau2_body_entered"]
+[connection signal="pressed" from="PreDesafio2/PreDesafio1" to="." method="_on_PreDesafio1_pressed"]
+[connection signal="pressed" from="DesafioMat4/RespostaCerta11" to="." method="_on_RespostaCerta11_pressed"]
+[connection signal="pressed" from="DesafioMat4/RespostaErrada112" to="." method="_on_RespostaErrada112_pressed"]
+[connection signal="pressed" from="DesafioMat4/Resposta errada 122" to="." method="_on_Resposta_errada_122_pressed"]
+[connection signal="pressed" from="DesafioMat5/RespostaCerta22" to="." method="_on_RespostaCerta22_pressed"]
+[connection signal="pressed" from="DesafioMat5/RespostaErrada212" to="." method="_on_RespostaErrada212_pressed"]
+[connection signal="pressed" from="DesafioMat5/Resposta errada 222" to="." method="_on_Resposta_errada_222_pressed"]
+[connection signal="pressed" from="DesafioMat6/RespostaCerta3" to="." method="_on_RespostaCerta3_pressed"]
+[connection signal="pressed" from="DesafioMat6/RespostaErrada31" to="." method="_on_RespostaErrada31_pressed"]
+[connection signal="pressed" from="DesafioMat6/Resposta errada 32" to="." method="_on_Resposta_errada_32_pressed"]
+[connection signal="pressed" from="TenteNovamente2/TentarDenovo2" to="." method="_on_TentarDenovo2_pressed"]
+[connection signal="pressed" from="Premio2/Premio" to="." method="_on_Premio_pressed"]
