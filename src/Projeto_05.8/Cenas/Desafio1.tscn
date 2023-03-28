@@ -1079,7 +1079,7 @@ shape = SubResource( 63 )
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 8
+frame = 1
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1709,6 +1709,7 @@ position = Vector2( 17, 14 )
 normal = ExtResource( 38 )
 
 [node name="DesafioMat6" type="Sprite" parent="."]
+visible = false
 position = Vector2( 462, 318 )
 scale = Vector2( 0.993056, 1.01 )
 texture = ExtResource( 33 )
