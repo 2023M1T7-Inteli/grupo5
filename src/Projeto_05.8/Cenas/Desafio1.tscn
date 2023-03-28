@@ -1738,12 +1738,10 @@ position = Vector2( 17.1189, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 39 )
 
-[node name="RespostaErrada31" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( -187.301, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 41 )
 
-[node name="Resposta errada 32" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( 241.678, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 43 )
