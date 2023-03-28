@@ -1747,7 +1747,6 @@ text = "Quanto é 69 - 47?
 align = 1
 autowrap = true
 
-[node name="RespostaCerta3" type="TouchScreenButton" parent="DesafioMat6"]
 [node name="RespostaCerta32" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( 17.1189, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
