@@ -23,6 +23,7 @@ func _ready():
 	$TenteNovamente2.visible = false
 	$DesafioMat4.visible = false
 	$DesafioMat5.visible = false
+	$Premio2.visible = false
 	
 #Aqui a função Process Delta sempre irá contabilizar os pontos do jogador no canto inferior direito.	
 func _process(delta):
@@ -205,4 +206,19 @@ func _on_Resposta_errada_222_pressed(): #Resposta errada
 func _on_RespostaCerta22_pressed(): #Resposta errada
 	$TenteNovamente2.visible = true
 	
+func _on_RespostaErrada312_pressed():
+	$TenteNovamente2.visible = true
+	
+func _on_RespostaCerta32_pressed():
+	$TenteNovamente2.visible = true
+	
+func _on_Resposta_errada_322_pressed():
+	$DesafioMat6.visible = false
+	$Premio2.visible = true
 
+func _on_Premio2_pressed():
+	Global.pontos += 15
+	$Premio2.visible = false
+	$garotodesafio1.visible = true
+	$bau2.queue_free()
+	

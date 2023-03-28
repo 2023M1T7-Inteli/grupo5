@@ -1,4 +1,4 @@
-[gd_scene load_steps=125 format=2]
+[gd_scene load_steps=126 format=2]
 
 [ext_resource path="res://Cenas/continuar.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/dedo2.gd" type="Script" id=2]
@@ -50,6 +50,7 @@
 [ext_resource path="res://botões/botão_voltar.png" type="Texture" id=48]
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=49]
 [ext_resource path="res://Imagens/alaland.png" type="Texture" id=50]
+[ext_resource path="res://botões/botao coletar.png" type="Texture" id=51]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -678,7 +679,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -706,7 +707,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -724,7 +725,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -743,7 +744,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -1094,7 +1095,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1112,7 +1113,6 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1560,20 +1560,8 @@ margin_right = 379.0
 margin_bottom = -16.0
 rect_pivot_offset = Vector2( -449, -21 )
 custom_fonts/font = SubResource( 69 )
-text = "Você Conseguiu,
-Parabéns!!!
-"
-align = 1
-autowrap = true
-
-[node name="Label2" type="Label" parent="Premio"]
-margin_left = -261.0
-margin_top = 100.0
-margin_right = 405.0
-margin_bottom = 281.0
-rect_pivot_offset = Vector2( -449, -21 )
-custom_fonts/font = SubResource( 69 )
-text = "coletar
+text = "Você conseguiu,
+parabéns!
 "
 align = 1
 autowrap = true
@@ -1581,6 +1569,11 @@ autowrap = true
 [node name="Premio" type="TouchScreenButton" parent="Premio"]
 position = Vector2( -41, -75 )
 normal = ExtResource( 40 )
+
+[node name="coletar1" type="Sprite" parent="Premio"]
+position = Vector2( 60, 202 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 51 )
 
 [node name="bau2" type="Area2D" parent="."]
 position = Vector2( -196, -335 )
@@ -1737,17 +1730,17 @@ text = "Quanto é 69 - 47?
 align = 1
 autowrap = true
 
-[node name="RespostaCerta3" type="TouchScreenButton" parent="DesafioMat6"]
+[node name="RespostaCerta32" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( 17.1189, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 39 )
 
-[node name="RespostaErrada31" type="TouchScreenButton" parent="DesafioMat6"]
+[node name="RespostaErrada312" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( -187.301, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 41 )
 
-[node name="Resposta errada 32" type="TouchScreenButton" parent="DesafioMat6"]
+[node name="Resposta errada 322" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( 241.678, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 43 )
@@ -1787,7 +1780,6 @@ scale = Vector2( 5.6, 4.32 )
 normal = ExtResource( 48 )
 
 [node name="Premio2" type="Sprite" parent="."]
-visible = false
 position = Vector2( 457, 314 )
 texture = ExtResource( 33 )
 
@@ -1811,27 +1803,20 @@ margin_right = 379.0
 margin_bottom = -16.0
 rect_pivot_offset = Vector2( -449, -21 )
 custom_fonts/font = SubResource( 69 )
-text = "Você Conseguiu,
-Parabéns!!!
+text = "Você conseguiu,
+parabéns!
 "
 align = 1
 autowrap = true
 
-[node name="Label2" type="Label" parent="Premio2"]
-margin_left = -261.0
-margin_top = 100.0
-margin_right = 405.0
-margin_bottom = 281.0
-rect_pivot_offset = Vector2( -449, -21 )
-custom_fonts/font = SubResource( 69 )
-text = "coletar
-"
-align = 1
-autowrap = true
-
-[node name="Premio" type="TouchScreenButton" parent="Premio2"]
+[node name="Premio2" type="TouchScreenButton" parent="Premio2"]
 position = Vector2( -41, -75 )
 normal = ExtResource( 40 )
+
+[node name="coletar2" type="Sprite" parent="Premio2"]
+position = Vector2( 63, 186 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 51 )
 
 [connection signal="body_entered" from="coletavel1" to="." method="_on_coletavel1_body_entered"]
 [connection signal="body_entered" from="coletavel4" to="." method="_on_coletavel4_body_entered"]
@@ -1868,8 +1853,8 @@ normal = ExtResource( 40 )
 [connection signal="pressed" from="DesafioMat5/RespostaCerta22" to="." method="_on_RespostaCerta22_pressed"]
 [connection signal="pressed" from="DesafioMat5/RespostaErrada212" to="." method="_on_RespostaErrada212_pressed"]
 [connection signal="pressed" from="DesafioMat5/Resposta errada 222" to="." method="_on_Resposta_errada_222_pressed"]
-[connection signal="pressed" from="DesafioMat6/RespostaCerta3" to="." method="_on_RespostaCerta3_pressed"]
-[connection signal="pressed" from="DesafioMat6/RespostaErrada31" to="." method="_on_RespostaErrada31_pressed"]
-[connection signal="pressed" from="DesafioMat6/Resposta errada 32" to="." method="_on_Resposta_errada_32_pressed"]
+[connection signal="pressed" from="DesafioMat6/RespostaCerta32" to="." method="_on_RespostaCerta32_pressed"]
+[connection signal="pressed" from="DesafioMat6/RespostaErrada312" to="." method="_on_RespostaErrada312_pressed"]
+[connection signal="pressed" from="DesafioMat6/Resposta errada 322" to="." method="_on_Resposta_errada_322_pressed"]
 [connection signal="pressed" from="TenteNovamente2/TentarDenovo2" to="." method="_on_TentarDenovo2_pressed"]
-[connection signal="pressed" from="Premio2/Premio" to="." method="_on_Premio_pressed"]
+[connection signal="pressed" from="Premio2/Premio2" to="." method="_on_Premio2_pressed"]
