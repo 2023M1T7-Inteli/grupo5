@@ -706,6 +706,7 @@ scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
 frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -1732,6 +1733,7 @@ align = 1
 autowrap = true
 
 [node name="RespostaCerta3" type="TouchScreenButton" parent="DesafioMat6"]
+[node name="RespostaCerta32" type="TouchScreenButton" parent="DesafioMat6"]
 position = Vector2( 17.1189, -0.990082 )
 scale = Vector2( 1.00699, 0.990099 )
 normal = ExtResource( 39 )
