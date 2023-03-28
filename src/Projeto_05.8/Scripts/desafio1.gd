@@ -19,6 +19,10 @@ func _ready():
 	$dedo2.visible = false
 	$garotodesafio1.visible = false
 	$Tut1.visible = true
+	$PreDesafio2.visible = false
+	$TenteNovamente2.visible = false
+	$DesafioMat4.visible = false
+	$DesafioMat5.visible = false
 	
 #Aqui a função Process Delta sempre irá contabilizar os pontos do jogador no canto inferior direito.	
 func _process(delta):
@@ -168,3 +172,37 @@ func _on_continuar1_released():
 	$Tut2/continuar2.position = Vector2(882,547)
 	$Tut1.visible = false
 	$Tut2.visible = true
+
+func _on_bau2_body_entered(body):
+	if body.is_in_group("Playerdesafio"):
+		$PreDesafio2.visible = true
+		$garotodesafio1.visible = false
+		
+func _on_PreDesafio1_pressed():
+	$PreDesafio2.visible = false
+	$DesafioMat4.visible = true
+	
+func _on_RespostaErrada112_pressed(): #Resposta errada
+	$TenteNovamente2.visible = true
+
+func _on_RespostaCerta11_pressed(): #Resposta errada
+	$TenteNovamente2.visible = true
+
+func _on_Resposta_errada_122_pressed():#Resposta certa 2
+	$DesafioMat4.visible = false
+	$DesafioMat5.visible = true
+
+func _on_TentarDenovo2_pressed(): #Resposta errada
+	$TenteNovamente2.visible = false
+
+func _on_RespostaErrada212_pressed():#Resposta certa 2
+	$DesafioMat5.visible = false
+	$DesafioMat6.visible = true
+	
+func _on_Resposta_errada_222_pressed(): #Resposta errada
+	$TenteNovamente2.visible = true
+
+func _on_RespostaCerta22_pressed(): #Resposta errada
+	$TenteNovamente2.visible = true
+	
+
