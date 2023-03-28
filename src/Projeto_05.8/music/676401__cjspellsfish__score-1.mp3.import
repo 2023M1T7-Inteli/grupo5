@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/676401__cjspellsfish__score-1.mp3-ce70df0740254c105c6b6cffeff24523.mp3str"
+
+[deps]
+
+source_file="res://music/676401__cjspellsfish__score-1.mp3"
+dest_files=[ "res://.import/676401__cjspellsfish__score-1.mp3-ce70df0740254c105c6b6cffeff24523.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

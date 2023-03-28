@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Imagens/fundo_agua_desafio2.png" type="Texture" id=1]
 [ext_resource path="res://personagemoficial.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://itensdodesafio/salGema.png" type="Texture" id=19]
 [ext_resource path="res://desafio2.gd" type="Script" id=20]
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=21]
+[ext_resource path="res://music/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=22]
 
 [sub_resource type="TileSet" id=1]
 0/name = "quadrado_agua.png 0"
@@ -88,7 +89,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=83]
-extents = Vector2( 9.74992, 10.5952 )
+extents = Vector2( 9.74992, 23.5729 )
 
 [sub_resource type="AtlasTexture" id=84]
 atlas = ExtResource( 19 )
@@ -397,7 +398,8 @@ frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
-position = Vector2( 25.7144, 10.5952 )
+position = Vector2( 25.7123, 1.45554 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 83 )
 
 [node name="coletavel5" type="Area2D" parent="."]
@@ -556,6 +558,9 @@ position = Vector2( 149.375, 587.159 )
 rotation = -1.57476
 scale = Vector2( 3, 3 )
 normal = ExtResource( 15 )
+
+[node name="pontoSom2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 22 )
 
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]
 [connection signal="pressed" from="touchDireita" to="bonecoteste" method="_on_touchDireita_pressed"]
