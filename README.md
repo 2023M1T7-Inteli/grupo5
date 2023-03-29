@@ -4,9 +4,6 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-<img src="![image](https://user-images.githubusercontent.com/123963161/228635656-fee66cde-ebb2-4870-ba9b-6ddaa987e0ce.png)"border="0"></a>
-</p>
-
 # Ala Land
 
 ## BumbaTech
@@ -14,13 +11,13 @@
 ## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Davi Rosalino Glória Motta</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Rodrigues Sotto Maior</a>, <a href="https://www.linkedin.com/in/victorbarq/">Manuela Dina De Mula Cury</a>, <a href="https://www.linkedin.com/in/victorbarq/">Marco Antonio Rizzi Meneguetti</a>, <a href="https://www.linkedin.com/in/luigi-ot%C3%A1vio-904475234/">Luigi Otávio Neves Macedo</a>
 
 ## Descrição
-<img src="![image](https://user-images.githubusercontent.com/123963161/228635656-fee66cde-ebb2-4870-ba9b-6ddaa987e0ce.png)">
 📜 Um pouco sobre Ala Land:
 <br><br>
 O projeto "Ala Land" consiste em um "serious games" que visa ensinar lógica computacional e reforçar - ou exercitar - conceitos matemáticos de maneira lúdica e interativa. A instituição parceira do projeto em questão é a UFAL - Universidade Federal de Alagoas -, que visa utilizar o game em turmas do ensino fundamental de escolas da rede pública alagoanas.
 <br><br>
 <p align="center">
-<img src="C:\Users\Inteli\Documents\GitHub\grupo5\imagens\printmenu.jpg" alt="FOTO DO J" border="0">
+<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="ALA LAND" border="0"></a>
+</p>
   Game by <a href="https://www.inteli.edu.br/">Inteli</a> <a href="https://github.com/2023M1T7-Inteli/grupo5"> BumbaTech</a> 
 </p>
 
