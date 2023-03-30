@@ -3,14 +3,15 @@ extends KinematicBody2D
 var comandos = []
 var graus = 90
 var anguloRad = deg2rad(graus)
-var rotaDireita = load("res://botões/botão_voltar.png")
-var rotaEsquerda = load("res://console/setaantihora.png")
+var rotaDireita = load("res://HUD/comando de giro.png")
+var rotaEsquerda = load("res://HUD/comando de giro.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
 var x = 0
 var y = 0
 var andando = false
 var j = 0
+
 
 func _on_touchDireita_pressed(): 
 	j += 1
@@ -130,7 +131,11 @@ func _on_touchIniciar_pressed(): #botão que lê e executa o console.
 	for i in range(0, comandos.size()):
 		
 		if(comandos[i] == "direita"):
+			#$Sprite.flip_h = true
+			#sprite.rotation += deg2rad(90)
+			
 			girarDireita() #chama função girarDireita.
+			
 			yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
 			
 		elif(comandos[i] == "esquerda"):
@@ -170,9 +175,12 @@ func _ready():
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2) #define a direção do eixo x positivo.
 	
 func _process(delta):
+#	if $RayCast2D.cast_to(PI/2):
+#		$Sprite.flip_h = true
+#		print("esquerda")
 	
 	if andando:
-		$".".move_and_slide(2.659*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		$".".move_and_slide(2*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		if get_slide_collision(0) != null or $".".position.x > x + 200: #parar o personagem se colidir ou se x > x + 200.
 			yield(get_tree().create_timer(0.475),"timeout") #tempo que o personagem se move pra frente.
 			andando = false #'desativa' o andando 
