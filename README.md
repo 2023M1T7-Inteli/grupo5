@@ -42,41 +42,41 @@ O critério de sucesso será a aprendizagem que as crianças e professores terã
 
 -Raiz<br>
 |<br>
-|-->docs<br>
-  &emsp;|-->html_01<br>
-  &emsp;|-->html_02<br>
-  &emsp;|-->html_03<br>
-  &emsp;|-->html_04<br>
-  &emsp;|-->html_05.1<br>
-  &emsp;|-->html_05.2<br>
-  &emsp;|-->html_05.3<br>
-  &emsp;|-->html_05.4<br>
-  &emsp;|-->html_05.5br>
-  &emsp;|-->html_05.6<br>
-  &emsp;|-->html_05.7<br>
-  &emsp;|-->html_05.8<br>
-|-->documentos<br>
-  &emsp;|-->GDD's_antigos<br>
-  &emsp;|GDD 0.5.5 - Grupo 5 - Turma 7<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->windows_02<br>
-|-->imagens<br>
-|-->src<br>
-  &emsp;|-->Projeto_01<br>
-  &emsp;|-->Projeto_02<br>
-  &emsp;|-->Projeto_03<br>
-  &emsp;|-->Projeto_04<br>
-  &emsp;|-->Projeto_05.1<br>
-  &emsp;|-->Projeto_05.2<br>
-  &emsp;|-->Projeto_05.3<br>
-  &emsp;|-->Projeto_05.4<br>
-  &emsp;|-->Projeto_05.5<br>
-  &emsp;|-->Projeto_05.6<br>
-  &emsp;|-->Projeto_05.7<br>
-  &emsp;|-->Projeto_05.8<br>
+* docs<br>
+  * html_01<br>
+  * html_02<br>
+  * html_03<br>
+  * html_04<br>
+  * html_05.1<br>
+  * html_05.2<br>
+  * html_05.3<br>
+  * html_05.4<br>
+  * html_05.5br>
+  * html_05.6<br>
+  * html_05.7<br>
+  * html_05.8<br>
+* documentos<br>
+  * GDD's_antigos<br>
+  * GDD 0.5.5 - Grupo 5 - Turma 7<br>
+* executáveis<br>
+  * windows<br>
+  * windows_02<br>
+* imagens<br>
+* src<br>
+  * Projeto_01<br>
+  * Projeto_02<br>
+  * Projeto_03<br>
+  * Projeto_04<br>
+  * Projeto_05.1<br>
+  * Projeto_05.2<br>
+  * Projeto_05.3<br>
+  * Projeto_05.4<br>
+  * Projeto_05.5<br>
+  * Projeto_05.6<br>
+  * Projeto_05.7<br>
+  * Projeto_05.8<br>
 
-|-->readme.md<br>
+* readme.md<br>
 
 
 ## 🛠 Instalação
@@ -100,26 +100,26 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.5.8 - 25/01/2022
+* 0.5.8 - 24/03/2023
     * ADD: Implementação de uma nova fase jogável, nomeada na engine como "desafio 2"
-* 0.5.7 - 25/01/2022
+* 0.5.7 - 20/03/2023
     * MUDANÇA: 
     * ADD: Animação do título do jogo no menu inicial
     * ADD: Criação e implementação de desafios matemáticos no desafio 1/fase 1
     * ADD: Animação dos coletáveis
     * ADD: Implementação de uma cena introdutória para a fase 2
-* 0.5.6 - 25/01/2022
+* 0.5.6 - 16/03/2023
     * CONSERTADO: Proporção entre o número de pixels andandos pelo personagem e o tamanho do Tile map utilizado no desafio 1/fase 1
     * MUDANÇA: Design do desafio1/fase 1
     * MUDANÇA: Sprite de mão do desafio 1/fase 1 alterada por uma Sprite autoral
     * MUDANÇA: Alteração do tutorial do desafio 1/fase 1
     * ADD: Indicativo de versionamento no canto inferior direito do menu inicial
     * ADD: Feedback sonoro ao recolher coletáveis
-* 0.5.5 - 25/01/2022
+* 0.5.5 - 15/03/2023
     * MUDANÇA: Alteração da indicação de interação com NPC
-* 0.5.4 - 25/01/2022
+* 0.5.4 - 14/03/2023
     * MUDANÇA: Redimensionamento dos personagens
-* 0.5.3 - 25/01/2022
+* 0.5.3 - 10/03/2023
     * CONSERTADO: Bugs no pause
     * MUDANÇA: Alteração do design da caixa de diálogo
     * MUDANÇA: Realocação de elementos do HUD do desafio 1/fase 1
@@ -127,7 +127,7 @@ A cada atualização os detalhes devem ser lançados aqui.
     * ADD: Botão de interação com suporte à touch-screen
     * ADD: Tutorial para o primeiro desafio jogável, a fase 1 (chamado de desafio 1 na engine)
     * ADD: Feedback visual de movimentação do personagem no desafio 1/fase 1 através da criação de mais sprites de movimentação
-* 0.5.2 - 25/01/2022
+* 0.5.2 - 08/03/2023
     * CONSERTADO: Coletáveis são recolhidos 1 a 1 e o score aumenta de 1 em 1 ponto
     * MUDANÇA: Cores dos botões do menu inicial
     * MUDANÇA: Sprite da casa
@@ -136,20 +136,20 @@ A cada atualização os detalhes devem ser lançados aqui.
     * ADD: Botões de movimentação com suporte à touch-screen na cena 2D, nomeada "Cena 1"
     * ADD: Botão de pause no desafio 1
 
-* 0.5.1 - 25/01/2022
+* 0.5.1 - 06/03/2022
     * MUDANÇA: Design do desafio 1
     * MUDANÇA: Sprites de coqueiro
     * CONSERTADO: Movimentação do personagem no desafio 1
     * ADD: Interação com NPC
     * ADD: Console onde se localizam as setas de movimentação do desafio 1
-* 0.4.0 - 15/01/2022
+* 0.4.0 - 03/03/2023
     * MUDANÇA: Alteração do design da sessão "O que é lógica de programação"
     * ADD: Sprites de respiração no personagem jogável e no NPC
-* 0.3. - 11/01/2022
+* 0.3. - 01/03/2023
     * MUDANÇA: Tela de fundo menu inicial
     * ADD: Mais coletáveis no desafio 1
     * ADD: Botões do menu inicial
-* 0.2.0 - 10/01/2022
+* 0.2.0 - 24/02/2023
     * O primeiro lançamento adequado
     * MUDANÇA: Troca de sprite do NPC
     * MUDANÇA: Tela de fundo menu inicial
@@ -157,7 +157,7 @@ A cada atualização os detalhes devem ser lançados aqui.
     * MUDANÇA: Tela de fundo da fase 1
     * ADD: Nova fase jogável, nomeada "desafio 1"
     * ADD: Funcionalidade "O que é lógica de programação", acessada através do botão de interrogação no menu principal
-* 0.1.0 - 01/01/2022
+* 0.1.0 - 10/02/2023
     * Trabalho em andamento 
     * ADD: Criação e implementação da mecânica utilizada na cena 1 
 
