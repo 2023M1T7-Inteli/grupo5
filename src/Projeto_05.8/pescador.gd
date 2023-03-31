@@ -7,6 +7,7 @@ var rotaDireita = load("res://HUD/comando de giro.png")
 var rotaEsquerda = load("res://HUD/comando de giro.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
+var personagemDescendo = load("res://personagem 2/jangada frente.png")
 var x = 0
 var y = 0
 var andando = false
@@ -172,16 +173,27 @@ func movimentoReto(): #função intermediária do avanço do personagem.
 	andando = true
 	
 func _ready():
-	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(-PI/2) #define a direção do eixo x positivo.
-	
+	$descendo.visible = false
+	$RayCast2D.cast_to = Vector2.RIGHT #define a direção do eixo x positivo.
 func _process(delta):
-#	if $RayCast2D.cast_to(PI/2):
-#		$Sprite.flip_h = true
-#		print("esquerda")
+	if $RayCast2D.cast_to.is_equal_approx(Vector2.DOWN):
+		$descendo.visible = true
+		$Sprite.visible = false
+		print("baixo")
+	elif $RayCast2D.cast_to.is_equal_approx(Vector2.UP):
+		print("cima")
+	elif $RayCast2D.cast_to.is_equal_approx(Vector2.RIGHT):
+		print("direita")
+	elif $RayCast2D.cast_to.is_equal_approx(Vector2.LEFT):
+		print("esquerda")
+	
 	
 	if andando:
-		$".".move_and_slide(2*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
-		if get_slide_collision(0) != null or $".".position.x > x + 200: #parar o personagem se colidir ou se x > x + 200.
-			yield(get_tree().create_timer(0.475),"timeout") #tempo que o personagem se move pra frente.
-			andando = false #'desativa' o andando 
-			
+		$".".move_and_slide(165*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		yield(get_tree().create_timer(0.4),"timeout")
+		andando = false #'desativa' o andando 
+		
+		if get_slide_collision(0) != null or $".".position.x > x + 110: #parar o personagem se colidir ou se x > x + 200.
+			#yield(get_tree().create_timer(0.4),"timeout") #tempo que o personagem se move pra frente.
+			#andando = false #'desativa' o andando 
+			pass
