@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Imagens/fundo_agua_desafio2.png" type="Texture" id=1]
 [ext_resource path="res://personagemoficial.tscn" type="PackedScene" id=2]
@@ -7,13 +7,13 @@
 [ext_resource path="res://console/botão_pausar.png" type="Texture" id=5]
 [ext_resource path="res://pausar.tscn" type="PackedScene" id=6]
 [ext_resource path="res://console/seta_grande1-removebg-preview (1).png" type="Texture" id=7]
-[ext_resource path="res://HUD/comando de giro.png" type="Texture" id=8]
+[ext_resource path="res://HUD/giro esquerda.png" type="Texture" id=8]
 [ext_resource path="res://console/botão_playNOVO.png" type="Texture" id=9]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=10]
 [ext_resource path="res://Imagens/jangada_lado.png" type="Texture" id=11]
 [ext_resource path="res://pescador.gd" type="Script" id=12]
 [ext_resource path="res://Imagens/chaoagua.png" type="Texture" id=13]
-[ext_resource path="res://personagem 2/Pixilart Sprite Sheet (1).png" type="Texture" id=14]
+[ext_resource path="res://personagem 2/jangadaladodireito.png" type="Texture" id=14]
 [ext_resource path="res://personagem 2/jangada frente.png" type="Texture" id=15]
 [ext_resource path="res://itensdodesafio/corais - cópia 3.png" type="Texture" id=16]
 [ext_resource path="res://fonte/Ningst Only Peace Font by 7Ntypes.otf" type="DynamicFontData" id=17]
@@ -23,6 +23,9 @@
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=21]
 [ext_resource path="res://676401__cjspellsfish__score-1.mp3" type="AudioStream" id=22]
 [ext_resource path="res://music/cena1_YU4ySoz2.ogg" type="AudioStream" id=23]
+[ext_resource path="res://personagem 2/jangadaesquerda.png" type="Texture" id=24]
+[ext_resource path="res://personagem 2/jangada costas.png" type="Texture" id=25]
+[ext_resource path="res://HUD/giro direita.png" type="Texture" id=26]
 
 [sub_resource type="TileSet" id=1]
 0/name = "quadrado_agua.png 0"
@@ -55,7 +58,7 @@
 1/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=87]
-extents = Vector2( 62.9795, 84.8741 )
+extents = Vector2( 134.948, 34.0985 )
 
 [sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 18 )
@@ -159,13 +162,13 @@ scale = Vector2( 3, 3 )
 normal = ExtResource( 7 )
 
 [node name="touchDireita" type="TouchScreenButton" parent="."]
-position = Vector2( 360.38, 582.386 )
+position = Vector2( 358.368, 593.382 )
 rotation = 3.14159
-scale = Vector2( 0.4, 0.6 )
-normal = ExtResource( 8 )
+scale = Vector2( 0.4, 0.4 )
+normal = ExtResource( 26 )
 
 [node name="touchIniciar" type="TouchScreenButton" parent="."]
-position = Vector2( 454.446, 520.484 )
+position = Vector2( 456.446, 520.486 )
 scale = Vector2( 3, 3 )
 normal = ExtResource( 9 )
 
@@ -220,8 +223,8 @@ scale = Vector2( 4, 4 )
 texture = ExtResource( 10 )
 
 [node name="bonecoteste" type="KinematicBody2D" parent="."]
-position = Vector2( 87.8381, 152.094 )
-scale = Vector2( 0.222307, 0.23463 )
+position = Vector2( 86.8328, 157.093 )
+scale = Vector2( 0.2, 0.2 )
 z_index = 10
 script = ExtResource( 12 )
 __meta__ = {
@@ -229,21 +232,9 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bonecoteste"]
+position = Vector2( -4.63257, 119.333 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 87 )
-
-[node name="Sprite" type="Sprite" parent="bonecoteste"]
-scale = Vector2( 4, 4.5 )
-texture = ExtResource( 11 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="garotonajangada" type="Sprite" parent="bonecoteste/Sprite"]
-position = Vector2( -14.406, 9.36195 )
-texture = ExtResource( 14 )
-flip_h = true
-hframes = 18
-vframes = 4
 
 [node name="descendo" type="Sprite" parent="bonecoteste"]
 visible = false
@@ -251,12 +242,29 @@ position = Vector2( 4.40237, 85.2436 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 15 )
 
+[node name="JangadaCostas" type="Sprite" parent="bonecoteste"]
+visible = false
+position = Vector2( 8.90549, 80.9861 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 25 )
+
+[node name="Jangadaesquerda" type="Sprite" parent="bonecoteste"]
+visible = false
+position = Vector2( 22.4626, 25.5934 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 24 )
+
+[node name="Jangadaladodireito" type="Sprite" parent="bonecoteste"]
+position = Vector2( -36.0151, 25.5344 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+
 [node name="RayCast2D" type="RayCast2D" parent="bonecoteste"]
 cast_to = Vector2( 0, 1 )
 
 [node name="espaco1" type="Sprite" parent="."]
 position = Vector2( 604.329, 518.596 )
-scale = Vector2( 0.2, 0.2 )
+scale = Vector2( 0.3, 0.3 )
 
 [node name="espaco2" type="Sprite" parent="."]
 position = Vector2( 699.447, 519.745 )
@@ -346,7 +354,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -365,7 +372,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -384,7 +390,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -403,7 +409,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -422,7 +428,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -441,7 +447,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -460,7 +466,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -479,7 +485,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -498,7 +504,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -517,7 +523,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -562,8 +568,8 @@ custom_fonts/font = SubResource( 86 )
 text = ":"
 
 [node name="touchEsquerda" type="TouchScreenButton" parent="."]
-position = Vector2( 146.445, 521.154 )
-scale = Vector2( 0.4, 0.6 )
+position = Vector2( 142.455, 512.152 )
+scale = Vector2( 0.4, 0.4 )
 normal = ExtResource( 8 )
 
 [node name="pontoSom2" type="AudioStreamPlayer" parent="."]

@@ -3,8 +3,8 @@ extends KinematicBody2D
 var comandos = []
 var graus = 90
 var anguloRad = deg2rad(graus)
-var rotaDireita = load("res://HUD/comando de giro.png")
-var rotaEsquerda = load("res://HUD/comando de giro.png")
+var rotaDireita = load("res://HUD/giro direita.png")
+var rotaEsquerda = load("res://HUD/giro esquerda.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
 var personagemDescendo = load("res://personagem 2/jangada frente.png")
@@ -178,22 +178,39 @@ func _ready():
 func _process(delta):
 	if $RayCast2D.cast_to.is_equal_approx(Vector2.DOWN):
 		$descendo.visible = true
-		$Sprite.visible = false
+		$JangadaCostas.visible = false
+		$Jangadaesquerda.visible = false
+		$Jangadaladodireito.visible = false
 		print("baixo")
+		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.UP):
+		$descendo.visible = false
+		$JangadaCostas.visible = true
+		$Jangadaesquerda.visible = false
+		$Jangadaladodireito.visible = false
 		print("cima")
+		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.RIGHT):
+		$descendo.visible = false
+		$JangadaCostas.visible = false
+		$Jangadaesquerda.visible = false
+		$Jangadaladodireito.visible = true
 		print("direita")
+		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.LEFT):
+		$descendo.visible = false
+		$JangadaCostas.visible = false
+		$Jangadaesquerda.visible = true
+		$Jangadaladodireito.visible = false
 		print("esquerda")
 	
-	
 	if andando:
-		$".".move_and_slide(165*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		$".".move_and_slide(158.4*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		yield(get_tree().create_timer(0.4),"timeout")
 		andando = false #'desativa' o andando 
 		
-		if get_slide_collision(0) != null or $".".position.x > x + 110: #parar o personagem se colidir ou se x > x + 200.
+		if get_slide_collision(0) != null:
+		#or $".".position.x > x + 110: #parar o personagem se colidir ou se x > x + 200.
 			#yield(get_tree().create_timer(0.4),"timeout") #tempo que o personagem se move pra frente.
 			#andando = false #'desativa' o andando 
 			pass
