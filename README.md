@@ -40,41 +40,45 @@ O critério de sucesso será a aprendizagem que as crianças e professores terã
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
-|<br>
+Raiz<br>
+
 * docs<br>
-  * html_01<br>
-  * html_02<br>
-  * html_03<br>
-  * html_04<br>
-  * html_05.1<br>
-  * html_05.2<br>
-  * html_05.3<br>
-  * html_05.4<br>
-  * html_05.5br>
-  * html_05.6<br>
-  * html_05.7<br>
-  * html_05.8<br>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_01/">html_01</a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_02/">html_02<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_03/">html_03<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_04/">html_04<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.1/">html_05.1<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.2/">html_05.2<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.3/">html_05.3<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.4/">html_05.4<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.5/">html_05.5<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.6/">html_05.6<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.7/">html_05.7<br></a>
+  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.8/">html_05.8<br></a>
 * documentos<br>
   * GDD's_antigos<br>
-  * GDD 0.5.5 - Grupo 5 - Turma 7<br>
-* executáveis<br>
+	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.1%20-%20Grupo%205%20-%20Turma%207.docx">GDD_01<br></a>
+	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.1%20-%20Grupo%205%20-%20Turma%207.docx">GDD_04<br></a>
+	 *  <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.4-%20Grupo%205%20-%20Turma%207.docx">GDD_0.5.5<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD%20-%20Grupo%205%20-%20Turma%207%20-%200.5.8.docx">GDD 0.5.5 - Grupo 5 - Turma 7<br>
+* executáveis<br></a>
   * windows<br>
   * windows_02<br>
 * imagens<br>
 * src<br>
-  * Projeto_01<br>
-  * Projeto_02<br>
-  * Projeto_03<br>
-  * Projeto_04<br>
-  * Projeto_05.1<br>
-  * Projeto_05.2<br>
-  * Projeto_05.3<br>
-  * Projeto_05.4<br>
-  * Projeto_05.5<br>
-  * Projeto_05.6<br>
-  * Projeto_05.7<br>
-  * Projeto_05.8<br>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_01">Projeto_01<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_02">Projeto_02<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_03">Projeto_03<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_04">Projeto_04<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.1">Projeto_05.1<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.2">Projeto_05.2<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.3">Projeto_05.3<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.4">Projeto_05.4<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.5">Projeto_05.5<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.6">Projeto_05.6<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.7">Projeto_05.7<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_05.8">Projeto_05.8<br></a>
+
 
 * readme.md<br>
 
