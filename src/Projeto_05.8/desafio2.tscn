@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Imagens/fundo_agua_desafio2.png" type="Texture" id=1]
 [ext_resource path="res://personagemoficial.tscn" type="PackedScene" id=2]
@@ -58,7 +58,7 @@
 1/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=87]
-extents = Vector2( 134.948, 34.0985 )
+extents = Vector2( 37.5079, 32.3789 )
 
 [sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 18 )
@@ -111,13 +111,82 @@ animations = [ {
 size = 24
 font_data = ExtResource( 17 )
 
+[sub_resource type="RectangleShape2D" id=88]
+extents = Vector2( 137.999, 2 )
+
+[sub_resource type="RectangleShape2D" id=89]
+extents = Vector2( 137.248, 1.43556 )
+
+[sub_resource type="RectangleShape2D" id=90]
+extents = Vector2( 10, 9.5005 )
+
+[sub_resource type="RectangleShape2D" id=91]
+extents = Vector2( 2.85875, 170.001 )
+
+[sub_resource type="RectangleShape2D" id=92]
+extents = Vector2( 2.92227, 73.0031 )
+
+[sub_resource type="RectangleShape2D" id=93]
+extents = Vector2( 19.0011, 4.99735 )
+
+[sub_resource type="RectangleShape2D" id=94]
+extents = Vector2( 3.45474, 84.0016 )
+
+[sub_resource type="RectangleShape2D" id=95]
+extents = Vector2( 37.4989, 3.51466 )
+
+[sub_resource type="RectangleShape2D" id=96]
+extents = Vector2( 5.49257, 17.5021 )
+
+[sub_resource type="RectangleShape2D" id=97]
+extents = Vector2( 285.999, 2.03456 )
+
+[sub_resource type="RectangleShape2D" id=98]
+extents = Vector2( 205.997, 4.50002 )
+
+[sub_resource type="RectangleShape2D" id=99]
+extents = Vector2( 5.98245, 65.5009 )
+
+[sub_resource type="RectangleShape2D" id=100]
+extents = Vector2( 4.77226, 51.3721 )
+
+[sub_resource type="RectangleShape2D" id=101]
+extents = Vector2( 6.01616, 102.888 )
+
+[sub_resource type="RectangleShape2D" id=102]
+extents = Vector2( 5.50009, 81.5508 )
+
+[sub_resource type="RectangleShape2D" id=103]
+extents = Vector2( 189.121, 5 )
+
+[sub_resource type="RectangleShape2D" id=104]
+extents = Vector2( 137.945, 4.00158 )
+
+[sub_resource type="RectangleShape2D" id=105]
+extents = Vector2( 3.63346, 115.481 )
+
+[sub_resource type="RectangleShape2D" id=106]
+extents = Vector2( 166.133, 1.95658 )
+
+[sub_resource type="RectangleShape2D" id=107]
+extents = Vector2( 139.506, 4.42118 )
+
+[sub_resource type="RectangleShape2D" id=108]
+extents = Vector2( 3.94322, 85.5066 )
+
+[sub_resource type="RectangleShape2D" id=109]
+extents = Vector2( 162.993, 3 )
+
+[sub_resource type="RectangleShape2D" id=110]
+extents = Vector2( 164.498, 3.00105 )
+
 [node name="desafio2" type="Node2D"]
 rotation = -0.00106497
 script = ExtResource( 20 )
 
 [node name="FundoAguaDesafio2" type="Sprite" parent="."]
 modulate = Color( 0, 0.929412, 1, 1 )
-position = Vector2( 504.675, 305.538 )
+position = Vector2( 518.598, 377.552 )
 scale = Vector2( 5.2, 5.2 )
 texture = ExtResource( 1 )
 
@@ -162,8 +231,8 @@ scale = Vector2( 3, 3 )
 normal = ExtResource( 7 )
 
 [node name="touchDireita" type="TouchScreenButton" parent="."]
-position = Vector2( 358.368, 593.382 )
-rotation = 3.14159
+position = Vector2( 251.454, 513.268 )
+rotation = 6.29835
 scale = Vector2( 0.4, 0.4 )
 normal = ExtResource( 26 )
 
@@ -232,8 +301,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bonecoteste"]
-position = Vector2( -4.63257, 119.333 )
-scale = Vector2( 1, 1 )
+position = Vector2( -7.65726, 117.613 )
 shape = SubResource( 87 )
 
 [node name="descendo" type="Sprite" parent="bonecoteste"]
@@ -354,6 +422,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -372,6 +441,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -390,7 +460,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -398,7 +468,7 @@ position = Vector2( 25.7144, 10.5952 )
 shape = SubResource( 83 )
 
 [node name="coletavel4" type="Area2D" parent="."]
-position = Vector2( 966.742, 243.03 )
+position = Vector2( 966.745, 240.03 )
 scale = Vector2( 0.7, 0.7 )
 __meta__ = {
 "_edit_group_": true
@@ -409,7 +479,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -428,7 +497,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -447,7 +515,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -466,7 +533,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -485,7 +551,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -504,7 +569,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -523,7 +588,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -579,6 +644,123 @@ stream = ExtResource( 22 )
 stream = ExtResource( 23 )
 volume_db = -15.0
 autoplay = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 128.822, 167.126 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 88 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 128.547, 192.126 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 89 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 62.8061, 179.568 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 90 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 297.758, 190.319 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 91 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 263.9, 94.2811 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 92 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 283.972, 26.3009 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 93 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 262.162, 276.282 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 94 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 226.122, 356.231 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 95 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 194.096, 371.708 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 96 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 473.581, 390.28 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 97 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 505.616, 356.434 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 98 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 755.656, 325.303 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 99 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 707.444, 306.381 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 100 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 755.854, 127.696 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 101 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 698.858, 143.293 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 102 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 565.847, 29.5985 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 103 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 554.873, 65.6241 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 104 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 383.092, 142.93 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 105 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 545.594, 255.529 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 106 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 563.258, 229.03 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 107 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 419.807, 148.945 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 108 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 912.755, 231.002 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 109 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 913.219, 259.951 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 110 )
 
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]
 [connection signal="pressed" from="touchDireita" to="bonecoteste" method="_on_touchDireita_pressed"]

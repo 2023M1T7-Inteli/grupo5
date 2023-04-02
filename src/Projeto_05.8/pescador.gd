@@ -1,6 +1,9 @@
 extends KinematicBody2D
 
 var comandos = []
+var X 
+var Y
+var parado = false
 var graus = 90
 var anguloRad = deg2rad(graus)
 var rotaDireita = load("res://HUD/giro direita.png")
@@ -176,12 +179,19 @@ func _ready():
 	$descendo.visible = false
 	$RayCast2D.cast_to = Vector2.RIGHT #define a direção do eixo x positivo.
 func _process(delta):
+	X = position.x
+	Y = position.y
+	
 	if $RayCast2D.cast_to.is_equal_approx(Vector2.DOWN):
 		$descendo.visible = true
 		$JangadaCostas.visible = false
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = false
 		print("baixo")
+		if get_slide_collision(0) != null:
+			parado = true
+			if parado == true:
+				parado1()
 		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.UP):
 		$descendo.visible = false
@@ -189,13 +199,21 @@ func _process(delta):
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = false
 		print("cima")
-		
+		if get_slide_collision(0) != null:
+			parado = true
+			if parado == true:
+				parado2()
+			
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.RIGHT):
 		$descendo.visible = false
 		$JangadaCostas.visible = false
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = true
 		print("direita")
+		if get_slide_collision(0) != null:
+			parado = true
+			if parado == true:
+				parado3()
 		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.LEFT):
 		$descendo.visible = false
@@ -203,14 +221,33 @@ func _process(delta):
 		$Jangadaesquerda.visible = true
 		$Jangadaladodireito.visible = false
 		print("esquerda")
-	
+		if get_slide_collision(0) != null:
+			parado = true
+			if parado == true:
+				parado4()
+			
 	if andando:
 		$".".move_and_slide(158.4*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		yield(get_tree().create_timer(0.4),"timeout")
 		andando = false #'desativa' o andando 
+			
+func parado1():
+	parado = false
+	if parado == false:
+		self.position.y += 0.2
+
+func parado2():
+	parado = false
+	if parado == false:
+		self.position.y -= 0.2
 		
-		if get_slide_collision(0) != null:
-		#or $".".position.x > x + 110: #parar o personagem se colidir ou se x > x + 200.
-			#yield(get_tree().create_timer(0.4),"timeout") #tempo que o personagem se move pra frente.
-			#andando = false #'desativa' o andando 
-			pass
+func parado3():
+	parado = false
+	if parado == false:
+		self.position.x -= 0.2
+	
+func parado4():
+	parado = false
+	if parado == false: 
+		self.position.x += 0.2
+
