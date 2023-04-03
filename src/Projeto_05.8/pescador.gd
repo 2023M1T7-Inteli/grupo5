@@ -1,8 +1,6 @@
 extends KinematicBody2D
 
 var comandos = []
-var X 
-var Y
 var parado = false
 var graus = 90
 var anguloRad = deg2rad(graus)
@@ -11,10 +9,10 @@ var rotaEsquerda = load("res://HUD/giro esquerda.png")
 var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
 var personagemDescendo = load("res://personagem 2/jangada frente.png")
-var x = 0
-var y = 0
 var andando = false
 var j = 0
+var voltarBaixo = false
+var i = 0
 
 
 func _on_touchDireita_pressed(): 
@@ -179,75 +177,85 @@ func _ready():
 	$descendo.visible = false
 	$RayCast2D.cast_to = Vector2.RIGHT #define a direção do eixo x positivo.
 func _process(delta):
-	X = position.x
-	Y = position.y
+	print(get_slide_collision(0))
+	print(i)
+	i = 1
+	
+	if parado == true:
+		parado = false
 	
 	if $RayCast2D.cast_to.is_equal_approx(Vector2.DOWN):
 		$descendo.visible = true
 		$JangadaCostas.visible = false
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = false
-		print("baixo")
-		if get_slide_collision(0) != null:
+		if get_slide_collision(i) != null && parado == false:
+			yield(get_tree().create_timer(0.4),"timeout")
+			self.position.y -= 0.5
 			parado = true
-			if parado == true:
-				parado1()
+			i = 0
+		
 		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.UP):
 		$descendo.visible = false
 		$JangadaCostas.visible = true
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = false
-		print("cima")
-		if get_slide_collision(0) != null:
+		parado = false
+		if get_slide_collision(0) != null && parado == false:
+			yield(get_tree().create_timer(0.4),"timeout")
+			self.position.y += 0.5
 			parado = true
-			if parado == true:
-				parado2()
+			
+			
+			
+	
 			
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.RIGHT):
 		$descendo.visible = false
 		$JangadaCostas.visible = false
 		$Jangadaesquerda.visible = false
 		$Jangadaladodireito.visible = true
-		print("direita")
-		if get_slide_collision(0) != null:
+		if get_slide_collision(0) != null && parado == false:
+			yield(get_tree().create_timer(0.4),"timeout")
+			self.position.x -= 0.5
 			parado = true
-			if parado == true:
-				parado3()
+		
 		
 	elif $RayCast2D.cast_to.is_equal_approx(Vector2.LEFT):
 		$descendo.visible = false
 		$JangadaCostas.visible = false
 		$Jangadaesquerda.visible = true
 		$Jangadaladodireito.visible = false
-		print("esquerda")
-		if get_slide_collision(0) != null:
+		if get_slide_collision(0) != null && parado == false:
+			yield(get_tree().create_timer(0.4),"timeout")
+			self.position.x += 0.5
 			parado = true
-			if parado == true:
-				parado4()
-			
+		
+		
 	if andando:
 		$".".move_and_slide(158.4*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		yield(get_tree().create_timer(0.4),"timeout")
 		andando = false #'desativa' o andando 
 			
-func parado1():
-	parado = false
-	if parado == false:
-		self.position.y += 0.2
-
-func parado2():
-	parado = false
-	if parado == false:
-		self.position.y -= 0.2
-		
-func parado3():
-	parado = false
-	if parado == false:
-		self.position.x -= 0.2
-	
-func parado4():
-	parado = false
-	if parado == false: 
-		self.position.x += 0.2
+#func parado1():
+#	if parado == true:
+#		self.position.y += 5
+#		parado = false
+#
+#func parado2():
+#	if parado == true:
+#		self.position.y -= 5
+#		parado = false
+#
+#func parado3():
+#	if parado == true:
+#		self.position.x -= 5
+#		parado = false
+#
+#func parado4():
+#	if parado == true: 
+#		self.position.x += 5
+#		parado = false
+#		print(parado)
 
