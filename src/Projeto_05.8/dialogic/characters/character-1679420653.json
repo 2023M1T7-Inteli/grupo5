@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Pescador",
+	"display_name_bool": true,
+	"id": "character-1679420653.json",
+	"mirror_portraits": false,
+	"name": "Pescador",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 240,
+	"offset_y": -20,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://personagem 2/pescadorgrande.png"
+		}
+	],
+	"scale": 700,
+	"theme": ""
+}
