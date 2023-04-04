@@ -1,4 +1,5 @@
 extends KinematicBody2D
+
 var play = false
 var iniciar = false
 var colisao = false
@@ -8,7 +9,7 @@ var graus = 90
 var anguloRad = deg2rad(graus)
 var rotaDireita = load("res://HUD/giro direita.png")
 var rotaEsquerda = load("res://HUD/giro esquerda.png")
-var reto = load ("res://HUD/seta direita.png")
+var reto = load ("res://console/seta_grande1-removebg-preview (1).png")
 var pescador = load("res://Imagens/jangada_lado.png")
 var personagemDescendo = load("res://personagem 2/jangada frente.png")
 var x = 0
@@ -17,7 +18,9 @@ var andando = false
 var j = 0
 var voltarBai = false
 var k = 0
-func _on_touchDireita_pressed():
+
+
+func _on_touchDireita_pressed(): 
 	if iniciar == false:
 		j += 1
 		while j <= 10: #load das sprites no console.
@@ -96,6 +99,7 @@ func _on_touchEsquerda_pressed():
 		if (comandos.size() < 10):	
 			k += 1
 			comandos.append("esquerda") #appenda 'esquerda' na lista de comandos.
+
 func _on_touchAvancar_pressed():
 	if iniciar == false:
 		j += 1
@@ -136,7 +140,6 @@ func _on_touchAvancar_pressed():
 	
 func _on_touchIniciar_pressed(): #botão que lê e executa o console.
 		iniciar = true
-		$"../touchIniciar".visible = false
 		if iniciar == true:
 			for cont in range(0, comandos.size()):
 				if(comandos[cont] == "direita"):
@@ -152,10 +155,9 @@ func _on_touchIniciar_pressed(): #botão que lê e executa o console.
 				elif (comandos[cont] == "avançar"):
 					movimentoReto() #chama função movimentoReto.
 					yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
-			
-				iniciar = false
+			iniciar = false
+					
 			comandos.clear() #limpa o array de comandos.
-			$"../touchIniciar".visible = true
 			
 			if comandos == []: #console vazio se lista de comandos estiver vazia.
 				$"../espaco1".texture = null
@@ -169,6 +171,7 @@ func _on_touchIniciar_pressed(): #botão que lê e executa o console.
 				$"../espaco9".texture = null
 				$"../espaco10".texture = null
 				j = 0
+
 func girarDireita(): #função de rotação em 90 graus sentido horário.
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(anguloRad)
 	
@@ -216,9 +219,9 @@ func _process(delta):
 			parado4()
 			
 	if andando:
-		$".".move_and_slide(158.4*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		$".".move_and_slide(157.15*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		yield(get_tree().create_timer(0.4),"timeout")
-		andando = false #'desativa' o andando
+		andando = false #'desativa' o andando 
 			
 func parado1():
 	parado = true
@@ -235,6 +238,7 @@ func parado2():
 	if parado == true:
 		self.position.y += 10
 		parado = false
+
 func parado3():
 	parado = true
 	colisao = false
@@ -242,6 +246,7 @@ func parado3():
 	if parado == true:		
 		self.position.x -= 10
 		parado = false
+
 func parado4():
 	parado = true
 	colisao = false
@@ -249,6 +254,9 @@ func parado4():
 	if parado == true:
 		self.position.x += 10
 		parado = false
+
 func _on_Area2D_body_entered(body):
 	if body.is_in_group("boneco"):
 		colisao = true
+		print(colisao)
+			

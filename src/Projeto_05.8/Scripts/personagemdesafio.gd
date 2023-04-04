@@ -6,7 +6,7 @@ var toqueCima = false
 var toqueEsquerda = false
 var listaComandos = []
 var contador = 0
-var iniciar= false
+var iniciar = false
 var x
 var y
 var listaSetas = []
@@ -138,29 +138,33 @@ func _on_iniciar_pressed():
 			$"../Cima4".visible = false
 #Função que manda o comando BAIXO para o personagem.
 func _on_baixo_pressed():
-	Global.mao = Global.mao + 1
-	listaSetas.append("baixo")
-	if listaSetas.size() < 5:
-		listaComandos.append("baixo")
+	if iniciar == false:
+		Global.mao = Global.mao + 1
+		listaSetas.append("baixo")
+		if listaSetas.size() < 5:
+			listaComandos.append("baixo")
 	
 #Função que manda o comando DIREITA para o personagem.
 func _on_direita_pressed():
-	Global.mao = Global.mao + 1
-	listaSetas.append("direita")
-	if listaSetas.size() < 5:
-		listaComandos.append("direita")
+	if iniciar == false:
+		Global.mao = Global.mao + 1
+		listaSetas.append("direita")
+		if listaSetas.size() < 5:
+			listaComandos.append("direita")
 
 #Função que manda o comando CIMA para o personagem.
 func _on_cima_pressed():
-	listaSetas.append("cima")
-	if listaSetas.size() < 5:
-		listaComandos.append("cima")
+	if iniciar == false:
+		listaSetas.append("cima")
+		if listaSetas.size() < 5:
+			listaComandos.append("cima")
 	
 #Função que manda o comando ESQUERDA para o personagem.
 func _on_esquerda_pressed():
-	listaSetas.append("esquerda")
-	if listaSetas.size() < 5:
-		listaComandos.append("esquerda")
+	if iniciar == false:
+		listaSetas.append("esquerda")
+		if listaSetas.size() < 5:
+			listaComandos.append("esquerda")
 		
 func _process(delta):
 	if iniciar:
