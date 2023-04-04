@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "João Miguel",
+	"display_name_bool": true,
+	"id": "character-1680573813.json",
+	"mirror_portraits": false,
+	"name": "João Miguel",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://personagem 2/Pixilart Sprite Sheet (1).png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,0 +1,114 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://pausar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://personagemoficial.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BotãoPausar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://interacao.gd" type="Script" id=4]
+[ext_resource path="res://professora.gd" type="Script" id=5]
+[ext_resource path="res://fonte/retro_gaming/Retro Gaming.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Imagens/pixil-frame-0 (16).png" type="Texture" id=7]
+[ext_resource path="res://Imagens/escola.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/mato.png" type="Texture" id=9]
+[ext_resource path="res://personagem 2/pescadorgrande.png" type="Texture" id=10]
+[ext_resource path="res://cenafinal.gd" type="Script" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 379.75, 3.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 87 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 5, 65.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 41.5, 59.75 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 32
+font_data = ExtResource( 6 )
+
+[node name="cenafinal" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="chao" type="StaticBody2D" parent="."]
+
+[node name="Mato" type="Sprite" parent="chao"]
+position = Vector2( 151, 588 )
+texture = ExtResource( 9 )
+
+[node name="Mato2" type="Sprite" parent="chao"]
+position = Vector2( 430, 588 )
+texture = ExtResource( 9 )
+
+[node name="Mato3" type="Sprite" parent="chao"]
+position = Vector2( 709, 589 )
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chao"]
+position = Vector2( 381, 588 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="chao"]
+position = Vector2( -7, 499 )
+shape = SubResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="chao"]
+position = Vector2( 762, 519 )
+shape = SubResource( 3 )
+
+[node name="Escola" type="Sprite" parent="."]
+position = Vector2( 898, 435 )
+texture = ExtResource( 8 )
+
+[node name="professora" type="Area2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="professora"]
+position = Vector2( 662, 523 )
+scale = Vector2( 2.7963, 3.25439 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="professora"]
+position = Vector2( 659, 515 )
+shape = SubResource( 4 )
+
+[node name="interacao" type="Sprite" parent="professora"]
+position = Vector2( 668, 415 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 4 )
+
+[node name="personagemoficial" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1379, -211 )
+scale = Vector2( 3, 3 )
+
+[node name="coletou" type="Label" parent="."]
+visible = false
+margin_left = 88.0
+margin_top = 130.0
+margin_right = 881.0
+margin_bottom = 244.0
+custom_fonts/font = SubResource( 5 )
+text = "PARABÉNS! VOCÊ COLETOU      SAIS-GEMAS"
+
+[node name="ponto" type="Label" parent="."]
+visible = false
+margin_left = 598.0
+margin_top = 130.0
+margin_right = 638.0
+margin_bottom = 171.0
+custom_fonts/font = SubResource( 6 )
+
+[node name="BotãoPausar" parent="." instance=ExtResource( 3 )]
+position = Vector2( 942, 15 )
+
+[node name="pausar" parent="." instance=ExtResource( 1 )]
+visible = false
+
+[connection signal="body_entered" from="professora" to="professora" method="_on_professora_body_entered"]
+[connection signal="body_exited" from="professora" to="professora" method="_on_professora_body_exited"]

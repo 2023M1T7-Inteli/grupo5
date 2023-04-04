@@ -332,43 +332,43 @@ cast_to = Vector2( 0, 1 )
 
 [node name="espaco1" type="Sprite" parent="."]
 position = Vector2( 604.329, 518.596 )
-scale = Vector2( 0.3, 0.3 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco2" type="Sprite" parent="."]
 position = Vector2( 699.447, 519.745 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco3" type="Sprite" parent="."]
 position = Vector2( 796.446, 520.849 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco4" type="Sprite" parent="."]
 position = Vector2( 885.453, 519.906 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco5" type="Sprite" parent="."]
 position = Vector2( 969.447, 520.034 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco6" type="Sprite" parent="."]
 position = Vector2( 607.39, 573.646 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco7" type="Sprite" parent="."]
 position = Vector2( 696.389, 573.742 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco8" type="Sprite" parent="."]
 position = Vector2( 795.375, 572.841 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco9" type="Sprite" parent="."]
 position = Vector2( 887.399, 573.96 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="espaco10" type="Sprite" parent="."]
 position = Vector2( 976.393, 572.041 )
-scale = Vector2( 1.4, 1.4 )
+scale = Vector2( 0.2, 0.2 )
 
 [node name="Corais-Cópia3" type="Sprite" parent="."]
 position = Vector2( 301.633, 344.321 )
@@ -422,7 +422,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -441,7 +441,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -460,7 +460,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -479,7 +479,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -498,7 +497,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -517,7 +515,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -536,7 +533,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -555,7 +551,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -574,7 +569,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -593,7 +588,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]

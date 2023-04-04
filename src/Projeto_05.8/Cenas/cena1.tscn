@@ -429,6 +429,7 @@ volume_db = -15.0
 autoplay = true
 
 [node name="pausar" parent="." instance=ExtResource( 15 )]
+visible = false
 z_index = 10
 
 [node name="BotãoPausar" parent="." instance=ExtResource( 23 )]
