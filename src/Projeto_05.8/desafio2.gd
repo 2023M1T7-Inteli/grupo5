@@ -3,6 +3,8 @@ extends Node2D
 onready var pontoSom2 = $pontoSom2
 onready var somCena = $somCena
 
+
+
 #Função que processa constantemente quando o mapa carregado.
 func _process(delta):
 	$ColorRect2/pontos.text = String(Global.pontos)
@@ -87,4 +89,5 @@ func _on_coletavel10_body_entered(body):
 	yield(get_tree().create_timer(0.2), "timeout")
 	pontoSom2.stop()
 
-
+func _on_botaoContinuar_pressed():
+	$tutorialDesafio2.visible = false

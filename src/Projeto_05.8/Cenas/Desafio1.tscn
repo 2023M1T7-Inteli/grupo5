@@ -1,4 +1,4 @@
-[gd_scene load_steps=126 format=2]
+[gd_scene load_steps=127 format=2]
 
 [ext_resource path="res://Cenas/continuar.gd" type="Script" id=1]
 [ext_resource path="res://Cenas/dedo2.gd" type="Script" id=2]
@@ -11,7 +11,7 @@
 [ext_resource path="res://console/seta_pequena.png" type="Texture" id=9]
 [ext_resource path="res://itens/rocha.png.png" type="Texture" id=10]
 [ext_resource path="res://BotãoPausar.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Imagens/botaoPlay-removebg-preview.png" type="Texture" id=12]
+[ext_resource path="res://Imagens/botãoPlay.png" type="Texture" id=12]
 [ext_resource path="res://itensdodesafio/676401__cjspellsfish__score-1.mp3" type="AudioStream" id=13]
 [ext_resource path="res://console/espaço_seta.png" type="Texture" id=14]
 [ext_resource path="res://chão/chao-corrigido.png" type="Texture" id=15]
@@ -22,7 +22,7 @@
 [ext_resource path="res://Cenas/dedo1.gd" type="Script" id=20]
 [ext_resource path="res://Cenas/saida.gd" type="Script" id=21]
 [ext_resource path="res://pausar.tscn" type="PackedScene" id=22]
-[ext_resource path="res://Imagens/fundo_pause.png" type="Texture" id=23]
+[ext_resource path="res://Imagens/fundo menu.png" type="Texture" id=23]
 [ext_resource path="res://Imagens/continuar.png" type="Texture" id=24]
 [ext_resource path="res://itens/placa seta.png" type="Texture" id=25]
 [ext_resource path="res://itens/coqueiro.png" type="Texture" id=26]
@@ -51,6 +51,7 @@
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=49]
 [ext_resource path="res://Imagens/alaland.png" type="Texture" id=50]
 [ext_resource path="res://botões/botao coletar.png" type="Texture" id=51]
+[ext_resource path="res://Imagens/menino.png" type="Texture" id=52]
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -579,6 +580,9 @@ font_data = ExtResource( 17 )
 size = 24
 font_data = ExtResource( 16 )
 
+[sub_resource type="RectangleShape2D" id=82]
+extents = Vector2( 26.5, 19 )
+
 [sub_resource type="DynamicFont" id=39]
 size = 24
 font_data = ExtResource( 17 )
@@ -612,9 +616,6 @@ font_data = ExtResource( 17 )
 [sub_resource type="DynamicFont" id=69]
 size = 43
 font_data = ExtResource( 17 )
-
-[sub_resource type="RectangleShape2D" id=82]
-extents = Vector2( 26.5, 19 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 27 )
@@ -679,6 +680,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -706,6 +708,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -723,6 +726,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -741,6 +745,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -1091,7 +1096,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 1
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1109,7 +1114,6 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1206,17 +1210,28 @@ stream = ExtResource( 3 )
 volume_db = -15.0
 autoplay = true
 
+[node name="bau2" type="Area2D" parent="."]
+position = Vector2( -196, -335 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bau2"]
+position = Vector2( 821, 385 )
+shape = SubResource( 82 )
+
+[node name="Sprite" type="Sprite" parent="bau2"]
+position = Vector2( 834, 385 )
+scale = Vector2( 0.265625, 0.304688 )
+texture = ExtResource( 50 )
+
 [node name="Tut2" type="ColorRect" parent="."]
-visible = false
 margin_left = -9.0
 margin_right = 1031.0
 margin_bottom = 600.0
-color = Color( 0.419608, 0.623529, 0.690196, 1 )
+color = Color( 0.0235294, 0.631373, 0.376471, 1 )
 
 [node name="FundoPause" type="Sprite" parent="Tut2"]
 modulate = Color( 0, 1, 0.0156863, 1 )
-position = Vector2( 523, 448 )
-scale = Vector2( 5.08, 4.39 )
+position = Vector2( 517.65, 299.705 )
+scale = Vector2( 5.08359, 3.73204 )
 texture = ExtResource( 23 )
 
 [node name="Label" type="Label" parent="Tut2"]
@@ -1229,24 +1244,24 @@ custom_fonts/font = SubResource( 39 )
 text = "FASE 1 - Floresta da Sal-Gema"
 
 [node name="Printconsole2" type="Sprite" parent="Tut2"]
-position = Vector2( 759, 352 )
-scale = Vector2( 0.818162, 0.816667 )
+position = Vector2( 817, 351 )
+scale = Vector2( 2.57954, 2.57483 )
 texture = ExtResource( 12 )
 
 [node name="printsetas" type="Sprite" parent="Tut2"]
-position = Vector2( 670, 246 )
+position = Vector2( 820, 236 )
 scale = Vector2( 0.388195, 0.449681 )
 texture = ExtResource( 4 )
 
 [node name="Pontos" type="Sprite" parent="Tut2"]
-position = Vector2( 520, 609 )
+position = Vector2( 809, 631 )
 scale = Vector2( 2.325, 2.325 )
 texture = ExtResource( 5 )
 
 [node name="Label4" type="Label" parent="Tut2"]
 margin_left = 93.0
 margin_top = 139.0
-margin_right = 524.0
+margin_right = 459.0
 margin_bottom = 439.0
 rect_scale = Vector2( 1.4337, 1.2515 )
 custom_fonts/font = SubResource( 41 )
@@ -1256,15 +1271,14 @@ text = "                                    Instruções
 . Selecione as setas desejadas.
 
 
-. Após selecionar as setas, aperte o botão
- PLAY e veja o personagem se movimentar!
+. Após selecionar as setas, aperte o botão PLAY e veja o personagem se movimentar!
 
 
 . Colete toas as sal-gemas!"
 autowrap = true
 
 [node name="continuar2" type="TouchScreenButton" parent="Tut2"]
-position = Vector2( 882, 547 )
+position = Vector2( 827, 538 )
 normal = ExtResource( 24 )
 
 [node name="Tut1" type="ColorRect" parent="."]
@@ -1273,12 +1287,12 @@ margin_left = -14.0
 margin_top = 3.0
 margin_right = 1026.0
 margin_bottom = 603.0
-color = Color( 0.419608, 0.623529, 0.690196, 1 )
+color = Color( 0.0235294, 0.631373, 0.376471, 1 )
 
 [node name="FundoPause" type="Sprite" parent="Tut1"]
-modulate = Color( 0, 1, 0.015625, 1 )
-position = Vector2( 523, 448 )
-scale = Vector2( 5.08, 4.39 )
+modulate = Color( 0, 1, 0.0156863, 1 )
+position = Vector2( 522, 296.205 )
+scale = Vector2( 5.08, 3.72586 )
 texture = ExtResource( 23 )
 
 [node name="Label" type="Label" parent="Tut1"]
@@ -1324,9 +1338,14 @@ scale = Vector2( 3.085, 3.045 )
 texture = ExtResource( 5 )
 
 [node name="continuar1" type="TouchScreenButton" parent="Tut1"]
-position = Vector2( 882, 547 )
+position = Vector2( 829, 533 )
 normal = ExtResource( 24 )
 script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Tut1"]
+position = Vector2( 852, 184 )
+scale = Vector2( 0.401471, 0.401471 )
+texture = ExtResource( 52 )
 
 [node name="pontoSom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 13 )
@@ -1563,18 +1582,6 @@ normal = ExtResource( 40 )
 position = Vector2( 60, 202 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 51 )
-
-[node name="bau2" type="Area2D" parent="."]
-position = Vector2( -196, -335 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bau2"]
-position = Vector2( 821, 385 )
-shape = SubResource( 82 )
-
-[node name="Sprite" type="Sprite" parent="bau2"]
-position = Vector2( 834, 385 )
-scale = Vector2( 0.265625, 0.304688 )
-texture = ExtResource( 50 )
 
 [node name="PreDesafio2" type="Sprite" parent="."]
 visible = false
@@ -1822,6 +1829,7 @@ texture = ExtResource( 51 )
 [connection signal="body_entered" from="Bau" to="." method="_on_Bau_body_entered"]
 [connection signal="body_entered" from="coletavel2" to="." method="_on_coletavel2_body_entered"]
 [connection signal="body_entered" from="coletavel3" to="." method="_on_coletavel3_body_entered"]
+[connection signal="body_entered" from="bau2" to="." method="_on_bau2_body_entered"]
 [connection signal="released" from="Tut2/continuar2" to="." method="_on_continuar2_released"]
 [connection signal="released" from="Tut1/continuar1" to="." method="_on_continuar1_released"]
 [connection signal="pressed" from="PreDesafio/PreDesafio" to="." method="_on_PreDesafio_pressed"]
@@ -1836,7 +1844,6 @@ texture = ExtResource( 51 )
 [connection signal="pressed" from="DesafioMat3/Resposta errada 32" to="." method="_on_Resposta_errada_32_pressed"]
 [connection signal="pressed" from="TenteNovamente/TentarDenovo" to="." method="_on_TentarDenovo_pressed"]
 [connection signal="pressed" from="Premio/Premio" to="." method="_on_Premio_pressed"]
-[connection signal="body_entered" from="bau2" to="." method="_on_bau2_body_entered"]
 [connection signal="pressed" from="PreDesafio2/PreDesafio1" to="." method="_on_PreDesafio1_pressed"]
 [connection signal="pressed" from="DesafioMat4/RespostaCerta11" to="." method="_on_RespostaCerta11_pressed"]
 [connection signal="pressed" from="DesafioMat4/RespostaErrada112" to="." method="_on_RespostaErrada112_pressed"]

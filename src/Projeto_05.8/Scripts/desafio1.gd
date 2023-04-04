@@ -170,7 +170,7 @@ func _on_continuar2_released():
 #Função que esconde o primeiro tutorial do desafio 1.
 func _on_continuar1_released():
 	$Tut1/continuar1.position = Vector2(-200,0)
-	$Tut2/continuar2.position = Vector2(882,547)
+	$Tut2/continuar2.position = Vector2(829,533)
 	$Tut1.visible = false
 	$Tut2.visible = true
 

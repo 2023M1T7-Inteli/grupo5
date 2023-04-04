@@ -139,38 +139,8 @@ func _on_touchAvancar_pressed():
 			comandos.append("avançar")
 	
 func _on_touchIniciar_pressed(): #botão que lê e executa o console.
-		iniciar = true
-		if iniciar == true:
-			for cont in range(0, comandos.size()):
-				if(comandos[cont] == "direita"):
-					#$Sprite.flip_h = true
-					#sprite.rotation += deg2rad(90)
-					girarDireita() #chama função girarDireita.
-					yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
-				
-				elif(comandos[cont] == "esquerda"):
-					girarEsquerda() #chama função girarEsquerda.
-					yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
-					
-				elif (comandos[cont] == "avançar"):
-					movimentoReto() #chama função movimentoReto.
-					yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
-			iniciar = false
-					
-			comandos.clear() #limpa o array de comandos.
-			
-			if comandos == []: #console vazio se lista de comandos estiver vazia.
-				$"../espaco1".texture = null
-				$"../espaco2".texture = null
-				$"../espaco3".texture = null
-				$"../espaco4".texture = null
-				$"../espaco5".texture = null
-				$"../espaco6".texture = null
-				$"../espaco7".texture = null
-				$"../espaco8".texture = null
-				$"../espaco9".texture = null
-				$"../espaco10".texture = null
-				j = 0
+		if (iniciar == false):
+			play()
 
 func girarDireita(): #função de rotação em 90 graus sentido horário.
 	$RayCast2D.cast_to = $RayCast2D.cast_to.rotated(anguloRad)
@@ -259,4 +229,35 @@ func _on_Area2D_body_entered(body):
 	if body.is_in_group("boneco"):
 		colisao = true
 		print(colisao)
+
+func play():
+	iniciar = true
+	if iniciar == true:
+		for cont in range(0, comandos.size()):
+			if(comandos[cont] == "direita"):
+				girarDireita() #chama função girarDireita.
+				yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+				
+			elif(comandos[cont] == "esquerda"):
+				girarEsquerda() #chama função girarEsquerda.
+				yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+					
+			elif (comandos[cont] == "avançar"):
+				movimentoReto() #chama função movimentoReto.
+				yield(get_tree().create_timer(1.2), "timeout") #intervalo de 1 segundo em a execução dos comandos.
+		iniciar = false	
+		comandos.clear() #limpa o array de comandos.
+			
+		if comandos == []: #console vazio se lista de comandos estiver vazia.
+			$"../espaco1".texture = null
+			$"../espaco2".texture = null
+			$"../espaco3".texture = null
+			$"../espaco4".texture = null
+			$"../espaco5".texture = null
+			$"../espaco6".texture = null
+			$"../espaco7".texture = null
+			$"../espaco8".texture = null
+			$"../espaco9".texture = null
+			$"../espaco10".texture = null
+			j = 0
 			
