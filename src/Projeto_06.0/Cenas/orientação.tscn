@@ -75,7 +75,7 @@ scale = Vector2( 5.3, 3.795 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-modulate = Color( 0, 0, 0, 1 )
+modulate = Color( 0.372549, 0.372549, 0.372549, 1 )
 margin_left = 69.0
 margin_top = 119.0
 margin_right = 814.0
@@ -85,7 +85,7 @@ custom_fonts/font = SubResource( 1 )
 text = "Conhecendo mais..."
 
 [node name="Label2" type="Label" parent="."]
-modulate = Color( 0, 0, 0, 1 )
+modulate = Color( 0.372549, 0.372549, 0.372549, 1 )
 margin_left = 67.0
 margin_top = 184.0
 margin_right = 854.0
