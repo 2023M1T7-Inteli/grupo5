@@ -138,22 +138,22 @@ font_data = ExtResource( 17 )
 extents = Vector2( 30.5, 8.99999 )
 
 [sub_resource type="RectangleShape2D" id=94]
-extents = Vector2( 6.49942, 82.5013 )
+extents = Vector2( 6.49942, 80.4948 )
 
 [sub_resource type="RectangleShape2D" id=102]
-extents = Vector2( 8.74341, 85.5026 )
+extents = Vector2( 6.74207, 79.9994 )
 
 [sub_resource type="RectangleShape2D" id=107]
-extents = Vector2( 139, 11.4253 )
+extents = Vector2( 139.998, 7.99988 )
 
 [sub_resource type="RectangleShape2D" id=110]
 extents = Vector2( 164.498, 6.00158 )
 
 [sub_resource type="RectangleShape2D" id=108]
-extents = Vector2( 6.99846, 85.0086 )
+extents = Vector2( 5.49871, 81.001 )
 
 [sub_resource type="RectangleShape2D" id=109]
-extents = Vector2( 164.999, 8.99944 )
+extents = Vector2( 164.999, 8.50029 )
 
 [sub_resource type="RectangleShape2D" id=106]
 extents = Vector2( 166.13, 6.99897 )
@@ -162,7 +162,7 @@ extents = Vector2( 166.13, 6.99897 )
 extents = Vector2( 4.93793, 121.478 )
 
 [sub_resource type="RectangleShape2D" id=104]
-extents = Vector2( 135.444, 8.48423 )
+extents = Vector2( 133.948, 6.49787 )
 
 [sub_resource type="RectangleShape2D" id=103]
 extents = Vector2( 189.121, 7.99787 )
@@ -171,13 +171,13 @@ extents = Vector2( 189.121, 7.99787 )
 extents = Vector2( 5.50113, 103.998 )
 
 [sub_resource type="RectangleShape2D" id=100]
-extents = Vector2( 8.77123, 50.9999 )
+extents = Vector2( 8.77123, 49.9997 )
 
 [sub_resource type="RectangleShape2D" id=99]
 extents = Vector2( 5.00247, 68.9997 )
 
 [sub_resource type="RectangleShape2D" id=98]
-extents = Vector2( 205.997, 11.6982 )
+extents = Vector2( 205.997, 9.9999 )
 
 [sub_resource type="RectangleShape2D" id=97]
 extents = Vector2( 286, 5.62905 )
@@ -186,13 +186,13 @@ extents = Vector2( 286, 5.62905 )
 extents = Vector2( 6.50211, 30.5016 )
 
 [sub_resource type="RectangleShape2D" id=95]
-extents = Vector2( 35.5031, 11.2526 )
+extents = Vector2( 35.5031, 9.4995 )
 
 [sub_resource type="RectangleShape2D" id=92]
 extents = Vector2( 7.00051, 73.0031 )
 
 [sub_resource type="RectangleShape2D" id=91]
-extents = Vector2( 5.99952, 169.499 )
+extents = Vector2( 5.99952, 168 )
 
 [sub_resource type="RectangleShape2D" id=90]
 extents = Vector2( 10, 30.4984 )
@@ -535,7 +535,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -554,7 +553,6 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -573,7 +571,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -592,7 +590,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -611,7 +609,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -630,7 +628,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -649,7 +647,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -668,7 +666,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -687,7 +685,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -706,7 +704,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -770,15 +768,18 @@ position = Vector2( 278.474, 30.2971 )
 shape = SubResource( 93 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 254.204, 277.783 )
+position = Vector2( 254.204, 275.777 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 94 )
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 702.102, 147.245 )
+position = Vector2( 700.101, 145.747 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 102 )
 
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 565.765, 222.026 )
+position = Vector2( 564.767, 218.601 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 107 )
 
 [node name="CollisionShape2D23" type="CollisionShape2D" parent="Area2D"]
@@ -786,11 +787,13 @@ position = Vector2( 911.722, 264.972 )
 shape = SubResource( 110 )
 
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 428.842, 148.447 )
+position = Vector2( 430.342, 146.458 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 108 )
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 911.767, 218.97 )
+position = Vector2( 911.767, 218.471 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 109 )
 
 [node name="CollisionShape2D19" type="CollisionShape2D" parent="Area2D"]
@@ -802,7 +805,8 @@ position = Vector2( 381.788, 148.927 )
 shape = SubResource( 105 )
 
 [node name="CollisionShape2D17" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 557.374, 70.1068 )
+position = Vector2( 558.871, 72.0932 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 104 )
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="Area2D"]
@@ -814,7 +818,8 @@ position = Vector2( 752.369, 122.804 )
 shape = SubResource( 101 )
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 703.445, 308.75 )
+position = Vector2( 703.445, 307.75 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 100 )
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="Area2D"]
@@ -822,7 +827,8 @@ position = Vector2( 751.653, 328.802 )
 shape = SubResource( 99 )
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 505.616, 349.236 )
+position = Vector2( 505.616, 347.538 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 98 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D"]
@@ -834,7 +840,8 @@ position = Vector2( 191.107, 367.704 )
 shape = SubResource( 96 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 224.126, 348.493 )
+position = Vector2( 224.126, 346.74 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 95 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D"]
@@ -842,7 +849,8 @@ position = Vector2( 253.899, 94.2812 )
 shape = SubResource( 92 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 302.798, 190.821 )
+position = Vector2( 302.798, 189.322 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 91 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
@@ -995,7 +1003,7 @@ margin_top = -179.0
 margin_right = 347.0
 margin_bottom = -66.0
 custom_fonts/font = SubResource( 118 )
-text = "Quanto é 12 x 2?
+text = "Quanto é 11 x 2?
 "
 align = 1
 autowrap = true
@@ -1431,7 +1439,7 @@ scale = Vector2( 1.27595, 1.27595 )
 texture = ExtResource( 33 )
 
 [node name="pausar" parent="." instance=ExtResource( 6 )]
-scale = Vector2( 1, 1 )
+visible = false
 z_index = 15
 
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]
