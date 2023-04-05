@@ -680,7 +680,7 @@ position = Vector2( 21.25, -10 )
 scale = Vector2( 1.4, 1.4 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -708,7 +708,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -726,7 +726,7 @@ position = Vector2( 36, 32 )
 scale = Vector2( 1.15, 1.14444 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -745,7 +745,7 @@ position = Vector2( 16, 22.9167 )
 scale = Vector2( 0.991665, 1.01852 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 4
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -1081,7 +1081,7 @@ shape = SubResource( 63 )
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1096,7 +1096,7 @@ position = Vector2( 19.2624, -17.275 )
 scale = Vector2( 1.41188, 1.37889 )
 frames = SubResource( 75 )
 animation = "SalGema"
-frame = 5
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -1114,6 +1114,7 @@ position = Vector2( 15.0625, 16.5 )
 scale = Vector2( 1.04687, 1.08889 )
 frames = SubResource( 75 )
 animation = "SalGema"
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -1202,7 +1203,6 @@ margin_bottom = -427.0
 custom_fonts/font = SubResource( 8 )
 
 [node name="pausar" parent="." instance=ExtResource( 22 )]
-visible = false
 z_index = 10
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -1221,7 +1221,7 @@ shape = SubResource( 82 )
 position = Vector2( 816, 370 )
 scale = Vector2( 0.749998, 0.76375 )
 frames = SubResource( 62 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="Tut2" type="ColorRect" parent="."]

@@ -116,7 +116,6 @@ custom_fonts/font = SubResource( 6 )
 position = Vector2( 932, 27 )
 
 [node name="pausar" parent="." instance=ExtResource( 1 )]
-visible = false
 
 [connection signal="body_entered" from="professora" to="professora" method="_on_professora_body_entered"]
 [connection signal="body_exited" from="professora" to="professora" method="_on_professora_body_exited"]

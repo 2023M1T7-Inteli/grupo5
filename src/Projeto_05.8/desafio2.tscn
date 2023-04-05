@@ -337,10 +337,6 @@ position = Vector2( 947, 22 )
 normal = ExtResource( 5 )
 action = "Pause"
 
-[node name="pausar" parent="." instance=ExtResource( 6 )]
-visible = false
-z_index = 15
-
 [node name="touchAvancar" type="TouchScreenButton" parent="."]
 position = Vector2( 100.378, 584.107 )
 rotation = 3.14159
@@ -539,7 +535,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -558,7 +554,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -577,7 +573,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -596,7 +592,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -615,7 +611,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -634,7 +630,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -653,7 +649,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -672,7 +668,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -691,7 +687,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -710,7 +706,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -870,14 +866,13 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau1"]
 position = Vector2( 92.4279, -2.95287 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 114 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau1"]
 position = Vector2( 86.3703, -6.01669 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
-frame = 6
+frame = 10
 playing = true
 
 [node name="Bau2" type="Area2D" parent="."]
@@ -889,14 +884,13 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau2"]
 position = Vector2( 92.4279, -2.95287 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 114 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau2"]
 position = Vector2( 86.3703, -6.01669 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
-frame = 6
+frame = 10
 playing = true
 
 [node name="PlacaSeta" type="Sprite" parent="."]
@@ -1139,7 +1133,6 @@ texture = ExtResource( 46 )
 [node name="PreDesafio2" type="Sprite" parent="."]
 visible = false
 position = Vector2( 591, 349 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 43 )
 
 [node name="ColorRect" type="ColorRect" parent="PreDesafio2"]
@@ -1436,6 +1429,10 @@ normal = ExtResource( 32 )
 position = Vector2( 382.547, 425.408 )
 scale = Vector2( 1.27595, 1.27595 )
 texture = ExtResource( 33 )
+
+[node name="pausar" parent="." instance=ExtResource( 6 )]
+scale = Vector2( 1, 1 )
+z_index = 15
 
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]
 [connection signal="pressed" from="touchDireita" to="bonecoteste" method="_on_touchDireita_pressed"]
