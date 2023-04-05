@@ -1,4 +1,5 @@
 extends Node2D
+var i = 0
 
 #Aqui tem a função que roda assim que o mapa é carregado.
 func _ready():
@@ -30,3 +31,11 @@ func _on_continuar_pressed():
 	get_tree().paused = false
 	$ColorRect/Label.visible = false
 	$ColorRect.visible = false
+
+func _on_Button2_pressed():
+	i += 1
+	if i % 2 == 0:
+		$"../AudioStreamPlayer".play()
+		
+	else:
+		$"../AudioStreamPlayer".stop()

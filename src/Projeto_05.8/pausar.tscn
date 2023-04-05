@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://fonte/retro_gaming/Retro Gaming.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://botões/New Piskel (44).png" type="Texture" id=2]
 [ext_resource path="res://Scripts/pausar.gd" type="Script" id=3]
 [ext_resource path="res://Imagens/menudepausa2.png" type="Texture" id=4]
 [ext_resource path="res://Imagens/menu.png" type="Texture" id=5]
 [ext_resource path="res://Imagens/continuar.png" type="Texture" id=6]
+[ext_resource path="res://botões/New Piskel (43).png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=16]
 size = 8
@@ -33,14 +35,21 @@ text = "JOGO PAUSADO"
 align = 1
 
 [node name="continuar" type="TouchScreenButton" parent="ColorRect"]
-position = Vector2( -3.25, 10.75 )
+position = Vector2( -22, 32.75 )
 scale = Vector2( 0.358458, 0.61747 )
 normal = ExtResource( 6 )
 
 [node name="Button" type="TouchScreenButton" parent="ColorRect"]
-position = Vector2( -41.25, 12 )
+position = Vector2( -14.5, 13.5 )
 scale = Vector2( 0.386287, 0.535713 )
 normal = ExtResource( 5 )
 
+[node name="Button2" type="TouchScreenButton" parent="ColorRect"]
+position = Vector2( -11.25, -13.25 )
+scale = Vector2( 0.2, 0.2 )
+normal = ExtResource( 7 )
+pressed = ExtResource( 2 )
+
 [connection signal="pressed" from="ColorRect/continuar" to="." method="_on_continuar_pressed"]
 [connection signal="pressed" from="ColorRect/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="ColorRect/Button2" to="." method="_on_Button2_pressed"]

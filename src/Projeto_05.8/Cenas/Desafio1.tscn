@@ -49,7 +49,7 @@
 [ext_resource path="res://Imagens/caixaPerguntas.png" type="Texture" id=47]
 [ext_resource path="res://botões/botão_voltar.png" type="Texture" id=48]
 [ext_resource path="res://itens/SalGemaMov.png" type="Texture" id=49]
-[ext_resource path="res://Imagens/alaland.png" type="Texture" id=50]
+[ext_resource path="res://botões/botãoPlay.png" type="Texture" id=50]
 [ext_resource path="res://botões/botao coletar.png" type="Texture" id=51]
 [ext_resource path="res://Imagens/menino.png" type="Texture" id=52]
 
@@ -814,9 +814,9 @@ anims/parado = SubResource( 49 )
 anims/subir = SubResource( 48 )
 
 [node name="iniciar" type="TouchScreenButton" parent="."]
-position = Vector2( 504, 512 )
-scale = Vector2( 3.5, 3.5 )
-normal = ExtResource( 29 )
+position = Vector2( 501, 511 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 50 )
 
 [node name="BotãoPausar" parent="." instance=ExtResource( 11 )]
 
@@ -1081,7 +1081,7 @@ shape = SubResource( 63 )
 position = Vector2( -7.57575, 7.63364 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 62 )
-frame = 5
+frame = 3
 playing = true
 
 [node name="coletavel2" type="Area2D" parent="."]
@@ -1214,15 +1214,18 @@ autoplay = true
 position = Vector2( -196, -335 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bau2"]
-position = Vector2( 821, 385 )
+position = Vector2( 821, 398 )
 shape = SubResource( 82 )
 
-[node name="Sprite" type="Sprite" parent="bau2"]
-position = Vector2( 834, 385 )
-scale = Vector2( 0.265625, 0.304688 )
-texture = ExtResource( 50 )
+[node name="Baú2" type="AnimatedSprite" parent="bau2"]
+position = Vector2( 816, 370 )
+scale = Vector2( 0.749998, 0.76375 )
+frames = SubResource( 62 )
+frame = 3
+playing = true
 
 [node name="Tut2" type="ColorRect" parent="."]
+visible = false
 margin_left = -9.0
 margin_right = 1031.0
 margin_bottom = 600.0

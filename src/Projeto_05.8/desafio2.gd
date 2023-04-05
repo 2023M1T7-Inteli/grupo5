@@ -40,6 +40,7 @@ func _on_coletavel4_body_entered(body):
 	pontoSom2.play()
 	yield(get_tree().create_timer(0.2), "timeout")
 	pontoSom2.stop()
+	get_tree().change_scene("res://Cenas/cenafinal.tscn")
 
 #Função que coleta a SAL-GEMA
 func _on_coletavel5_body_entered(body):
@@ -91,3 +92,4 @@ func _on_coletavel10_body_entered(body):
 
 func _on_botaoContinuar_pressed():
 	$tutorialDesafio2.visible = false
+	$bonecoteste.visible = true
