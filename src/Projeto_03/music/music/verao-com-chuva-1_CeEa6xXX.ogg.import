@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/verao-com-chuva-1_CeEa6xXX.ogg-bd4cdadb7c302a6aef17cf9eadc72dc7.oggstr"
+
+[deps]
+
+source_file="res://music/music/verao-com-chuva-1_CeEa6xXX.ogg"
+dest_files=[ "res://.import/verao-com-chuva-1_CeEa6xXX.ogg-bd4cdadb7c302a6aef17cf9eadc72dc7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

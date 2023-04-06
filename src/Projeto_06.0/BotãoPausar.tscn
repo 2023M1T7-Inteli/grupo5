@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://botões/botão pause.png" type="Texture" id=1]
+
+[node name="BotãoPausar" type="TouchScreenButton"]
+position = Vector2( 945, 19 )
+normal = ExtResource( 1 )
+action = "Pause"

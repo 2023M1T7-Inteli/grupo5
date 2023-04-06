@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Imagens/caixaPerguntas.png" type="Texture" id=2]
+[ext_resource path="res://fonte/retro_gaming/Retro Gaming.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://botões/3botao.png" type="Texture" id=4]
+[ext_resource path="res://botões/11botao.png" type="Texture" id=5]
+[ext_resource path="res://botões/17botao.png" type="Texture" id=6]
+[ext_resource path="res://chão/grama.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 43
+font_data = ExtResource( 3 )
+
+[node name="DesafioMat2" type="Node2D"]
+
+[node name="DesafioMat2" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 7 )
+
+[node name="ColorRect" type="ColorRect" parent="DesafioMat2"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="DesafioMat2"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="DesafioMat2"]
+margin_left = -247.0
+margin_top = -179.0
+margin_right = 347.0
+margin_bottom = -66.0
+custom_fonts/font = SubResource( 1 )
+text = "Quanto é 8 + 9?
+"
+align = 1
+autowrap = true
+
+[node name="RespostaCerta" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( 231, 14 )
+normal = ExtResource( 6 )
+
+[node name="RespostaErrada1" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( -184, 14 )
+normal = ExtResource( 5 )
+
+[node name="Resposta errada 2" type="TouchScreenButton" parent="DesafioMat2"]
+position = Vector2( 17, 14 )
+normal = ExtResource( 4 )
+
+[connection signal="pressed" from="DesafioMat2/RespostaCerta" to="." method="_on_RespostaCerta_pressed"]
+[connection signal="pressed" from="DesafioMat2/RespostaErrada1" to="." method="_on_RespostaErrada1_pressed"]
+[connection signal="pressed" from="DesafioMat2/Resposta errada 2" to="." method="_on_Resposta_errada_2_pressed"]
