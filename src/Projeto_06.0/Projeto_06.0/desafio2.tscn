@@ -534,7 +534,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel1"]
@@ -553,7 +553,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 5
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel2"]
@@ -572,7 +572,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 4
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel3"]
@@ -591,7 +591,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel4"]
@@ -610,7 +610,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel5"]
@@ -629,7 +629,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel6"]
@@ -648,7 +648,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel7"]
@@ -667,7 +667,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel8"]
@@ -686,7 +686,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel9"]
@@ -705,7 +705,7 @@ position = Vector2( 28.8571, 9.25 )
 scale = Vector2( 1.41428, 1.36667 )
 frames = SubResource( 82 )
 animation = "SalGema"
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="coletavel10"]
@@ -867,7 +867,7 @@ shape = SubResource( 114 )
 position = Vector2( 957.364, 202.554 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
-frame = 10
+frame = 9
 playing = true
 
 [node name="Bau2" type="Area2D" parent="."]
@@ -882,7 +882,7 @@ shape = SubResource( 114 )
 position = Vector2( 81.811, 4.66761 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
-frame = 10
+frame = 9
 playing = true
 
 [node name="PlacaSeta" type="Sprite" parent="."]
