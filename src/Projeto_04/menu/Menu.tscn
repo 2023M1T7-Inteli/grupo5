@@ -1,8 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/alaland.png" type="Texture" id=2]
-[ext_resource path="res://music/music/verao-com-chuva-1_CeEa6xXX.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Imagens/fundomenu.png" type="Texture" id=4]
 [ext_resource path="res://botões/New Piskel (40).png" type="Texture" id=5]
 [ext_resource path="res://botões/New Piskel (41).png" type="Texture" id=6]
@@ -43,7 +42,6 @@ texture_hover = ExtResource( 10 )
 texture_disabled = ExtResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="musica"]
-stream = ExtResource( 3 )
 volume_db = -15.0
 autoplay = true
 

@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/New Piskel (6).png" type="Texture" id=2]
-[ext_resource path="res://music/music/verao-com-chuva-1_CeEa6xXX.ogg" type="AudioStream" id=3]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -56,7 +55,6 @@ margin_bottom = 82.0
 text = "MÚSICA"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="musica"]
-stream = ExtResource( 3 )
 volume_db = -15.0
 autoplay = true
 

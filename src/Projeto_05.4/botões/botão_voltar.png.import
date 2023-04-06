@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/botão_voltar.png-74fba7d28fe36c6613a5c46d95ecf28c.stex"
+path="res://.import/botão_voltar.png-2f6ccf0b3a49b60a9cd3e4a8cc6cfa6f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://botões/botão_voltar.png"
-dest_files=[ "res://.import/botão_voltar.png-74fba7d28fe36c6613a5c46d95ecf28c.stex" ]
+source_file="res://botões/botão_voltar.png"
+dest_files=[ "res://.import/botão_voltar.png-2f6ccf0b3a49b60a9cd3e4a8cc6cfa6f.stex" ]
 
 [params]
 

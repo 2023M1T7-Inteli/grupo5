@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cocos - cópia 2.png-0fd5ed8555c1dbc499a0ba11c8a4079f.stex"
+path="res://.import/cocos - cópia 2.png-18233cfd2428ffb2372e26dc6e7c9b06.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://itensdodesafio/cocos - cópia 2.png"
-dest_files=[ "res://.import/cocos - cópia 2.png-0fd5ed8555c1dbc499a0ba11c8a4079f.stex" ]
+source_file="res://itensdodesafio/cocos - cópia 2.png"
+dest_files=[ "res://.import/cocos - cópia 2.png-18233cfd2428ffb2372e26dc6e7c9b06.stex" ]
 
 [params]
 
