@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Imagens/caixaPerguntas.png" type="Texture" id=2]
+[ext_resource path="res://botões/botão_voltar.png" type="Texture" id=3]
+[ext_resource path="res://fonte/retro_gaming/Retro Gaming.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://chão/grama.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 43
+font_data = ExtResource( 4 )
+
+[node name="TenteNovamente" type="Node2D"]
+
+[node name="TenteNovamente" type="Sprite" parent="."]
+position = Vector2( 457, 314 )
+texture = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="TenteNovamente"]
+modulate = Color( 0.211765, 0.211765, 0.211765, 0.6 )
+margin_left = -584.0
+margin_top = -426.0
+margin_right = 695.0
+margin_bottom = 408.0
+
+[node name="CaixaPerguntas" type="Sprite" parent="TenteNovamente"]
+position = Vector2( 60, -16 )
+scale = Vector2( 14.25, 17.3333 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="TenteNovamente"]
+margin_left = -229.0
+margin_top = -155.0
+margin_right = 365.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 1 )
+text = "Não foi desta vez...
+Tente novamente!
+"
+align = 1
+autowrap = true
+
+[node name="TentarDenovo" type="TouchScreenButton" parent="TenteNovamente"]
+position = Vector2( -4, 16 )
+scale = Vector2( 5.6, 4.32 )
+normal = ExtResource( 3 )
+
+[connection signal="pressed" from="TenteNovamente/TentarDenovo" to="." method="_on_TentarDenovo_pressed"]

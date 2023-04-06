@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fonte/Ningst Only Peace Font by 7Ntypes.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Imagens/D6fip+.png" type="Texture" id=2]
+[ext_resource path="res://orientação.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="foto" type="Sprite" parent="."]
+position = Vector2( 521, 289 )
+scale = Vector2( 2.53543, 2.53543 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 33.0
+margin_top = 10.0
+margin_right = 778.0
+margin_bottom = 81.0
+input_pass_on_modal_close_click = false
+custom_fonts/font = SubResource( 1 )
+text = "O que é lógica de programação?"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 25.0
+margin_top = 135.0
+margin_right = 2474.0
+margin_bottom = 622.0
+custom_fonts/font = SubResource( 2 )
+text = "Lógica de programação é a organização coesa de uma sequência de instruções
+ voltadas à resolução de um problema, ou à criação de um software
+ ou aplicação. A lógica de programação é o conhecimento anterior 
+a qualquer outro quando falamos em desenvolvimento web porque é a partir dele
+ que os aprendizados posteriores, como por exemplo o das linguagens 
+de programação, fará sentido.
+"
+
+[node name="voltar" type="Button" parent="."]
+margin_left = 31.0
+margin_top = 521.0
+margin_right = 232.0
+margin_bottom = 583.0
+text = "VOLTAR"
+
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
