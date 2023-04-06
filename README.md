@@ -49,22 +49,28 @@ Raiz<br>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_04/">html_04<br></a>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.1/">html_05.1<br></a>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.2/">html_05.2<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.3/">html_05.3<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.4/">html_05.4<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.5/">html_05.5<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.6/">html_05.6<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.7/">html_05.7<br></a>
-  *  <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.8/">html_05.8<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.3/">html_05.3<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.4/">html_05.4<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.5/">html_05.5<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.6/">html_05.6<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.7/">html_05.7<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.8/">html_05.8<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/">html_06<br></a>
+  
 * documentos<br>
   * GDD's_antigos<br>
 	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.1%20-%20Grupo%205%20-%20Turma%207.docx">GDD_01<br></a>
 	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.1%20-%20Grupo%205%20-%20Turma%207.docx">GDD_04<br></a>
-	 *  <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.4-%20Grupo%205%20-%20Turma%207.docx">GDD_0.5.5<br></a>
-  * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD%20-%20Grupo%205%20-%20Turma%207%20-%200.5.8.docx">GDD 0.5.5 - Grupo 5 - Turma 7<br>
+	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.5.5%20-%20Grupo%205%20-%20Turma%207.docx">GDD_0.5.5<br></a>
+	 * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD's_Antigos/GDD%200.5.8%20-%20Grupo%205%20-%20Turma%207.docx">GDD_0.5.8<br></a>
+  * <a href="https://github.com/2023M1T7-Inteli/grupo5/blob/main/documentos/GDD%20-%20Grupo%205%20-%20Turma%207%20(2).docx">GDD 0.6 - Grupo 5 - Turma 7<br>
+  
 * executáveis<br></a>
   * windows<br>
   * windows_02<br>
+  
 * imagens<br>
+
 * src<br>
   * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_01">Projeto_01<br></a>
   * <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/src/Projeto_02">Projeto_02<br></a>
