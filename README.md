@@ -55,8 +55,7 @@ Raiz<br>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.6/">html_05.6<br></a>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.7/">html_05.7<br></a>
   * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.8/">html_05.8<br></a>
-  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_05.9/">html_05.9<br></a>
-  * <a href="https://2023m1t7-inteli.github.io/grupo5/html_06/">html_06<br></a>
+  * <a href="https://2023m1t7-inteli.github.io/grupo5/">html_06<br></a>
   
 * documentos<br>
   * GDD's_antigos<br>
