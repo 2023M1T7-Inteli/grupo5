@@ -137,10 +137,10 @@ font_data = ExtResource( 17 )
 extents = Vector2( 30.5, 8.99999 )
 
 [sub_resource type="RectangleShape2D" id=94]
-extents = Vector2( 6.49942, 80.4948 )
+extents = Vector2( 5.50121, 79.994 )
 
 [sub_resource type="RectangleShape2D" id=102]
-extents = Vector2( 6.74207, 79.9994 )
+extents = Vector2( 5.28464, 78.9983 )
 
 [sub_resource type="RectangleShape2D" id=107]
 extents = Vector2( 139.998, 7.99988 )
@@ -155,28 +155,28 @@ extents = Vector2( 5.49871, 81.001 )
 extents = Vector2( 164.999, 8.50029 )
 
 [sub_resource type="RectangleShape2D" id=106]
-extents = Vector2( 166.13, 6.99897 )
+extents = Vector2( 163.129, 6.00002 )
 
 [sub_resource type="RectangleShape2D" id=105]
 extents = Vector2( 4.93793, 121.478 )
 
 [sub_resource type="RectangleShape2D" id=104]
-extents = Vector2( 133.948, 6.49787 )
+extents = Vector2( 133.948, 5.49736 )
 
 [sub_resource type="RectangleShape2D" id=103]
-extents = Vector2( 189.121, 7.99787 )
+extents = Vector2( 189.121, 6.50001 )
 
 [sub_resource type="RectangleShape2D" id=101]
 extents = Vector2( 5.50113, 103.998 )
 
 [sub_resource type="RectangleShape2D" id=100]
-extents = Vector2( 8.77123, 49.9997 )
+extents = Vector2( 8.77123, 47.5004 )
 
 [sub_resource type="RectangleShape2D" id=99]
 extents = Vector2( 5.00247, 68.9997 )
 
 [sub_resource type="RectangleShape2D" id=98]
-extents = Vector2( 205.997, 9.9999 )
+extents = Vector2( 204.498, 9.9999 )
 
 [sub_resource type="RectangleShape2D" id=97]
 extents = Vector2( 286, 5.62905 )
@@ -185,13 +185,13 @@ extents = Vector2( 286, 5.62905 )
 extents = Vector2( 6.50211, 30.5016 )
 
 [sub_resource type="RectangleShape2D" id=95]
-extents = Vector2( 35.5031, 9.4995 )
+extents = Vector2( 34.5042, 8.99893 )
 
 [sub_resource type="RectangleShape2D" id=92]
-extents = Vector2( 7.00051, 73.0031 )
+extents = Vector2( 6.00117, 73.0031 )
 
 [sub_resource type="RectangleShape2D" id=91]
-extents = Vector2( 5.99952, 168 )
+extents = Vector2( 5.49793, 165.5 )
 
 [sub_resource type="RectangleShape2D" id=90]
 extents = Vector2( 10, 30.4984 )
@@ -200,10 +200,10 @@ extents = Vector2( 10, 30.4984 )
 extents = Vector2( 104.999, 5.99837 )
 
 [sub_resource type="RectangleShape2D" id=88]
-extents = Vector2( 103.999, 11.0011 )
+extents = Vector2( 103, 9.51401 )
 
 [sub_resource type="RectangleShape2D" id=114]
-extents = Vector2( 16.848, 18.2325 )
+extents = Vector2( 16.848, 13.3385 )
 
 [sub_resource type="AtlasTexture" id=50]
 atlas = ExtResource( 38 )
@@ -430,13 +430,13 @@ texture = ExtResource( 25 )
 
 [node name="Jangadaesquerda" type="Sprite" parent="bonecoteste"]
 visible = false
-position = Vector2( 22.4626, 25.5934 )
-scale = Vector2( 2, 2 )
+position = Vector2( 19.7171, 25.5934 )
+scale = Vector2( 2.03138, 2 )
 texture = ExtResource( 24 )
 
 [node name="Jangadaladodireito" type="Sprite" parent="bonecoteste"]
-position = Vector2( -36.0151, 25.5344 )
-scale = Vector2( 2, 2 )
+position = Vector2( -32.4851, 25.5344 )
+scale = Vector2( 2.04034, 2 )
 texture = ExtResource( 14 )
 
 [node name="RayCast2D" type="RayCast2D" parent="bonecoteste"]
@@ -766,11 +766,21 @@ position = Vector2( 278.474, 30.2971 )
 shape = SubResource( 93 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 254.204, 275.777 )
 shape = SubResource( 94 )
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 700.101, 145.747 )
+=======
+position = Vector2( 253.206, 275.276 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 94 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 698.644, 146.748 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 102 )
 
 [node name="CollisionShape2D20" type="CollisionShape2D" parent="Area2D"]
@@ -790,7 +800,8 @@ position = Vector2( 911.767, 218.471 )
 shape = SubResource( 109 )
 
 [node name="CollisionShape2D19" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 545.592, 263.579 )
+position = Vector2( 542.591, 264.578 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 106 )
 
 [node name="CollisionShape2D18" type="CollisionShape2D" parent="Area2D"]
@@ -798,11 +809,17 @@ position = Vector2( 381.788, 148.927 )
 shape = SubResource( 105 )
 
 [node name="CollisionShape2D17" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 558.871, 72.0932 )
+=======
+position = Vector2( 558.871, 73.0937 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 104 )
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 565.847, 26.6006 )
+position = Vector2( 565.847, 25.1027 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 103 )
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D"]
@@ -810,7 +827,12 @@ position = Vector2( 752.369, 122.804 )
 shape = SubResource( 101 )
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 703.445, 307.75 )
+=======
+position = Vector2( 696.674, 306.742 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 100 )
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="Area2D"]
@@ -818,7 +840,12 @@ position = Vector2( 751.653, 328.802 )
 shape = SubResource( 99 )
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 505.616, 347.538 )
+=======
+position = Vector2( 503.133, 343.534 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 98 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D"]
@@ -830,15 +857,26 @@ position = Vector2( 191.107, 367.704 )
 shape = SubResource( 96 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 224.126, 346.74 )
+=======
+position = Vector2( 223.127, 346.24 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 95 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 253.899, 94.2812 )
+position = Vector2( 252.9, 94.2812 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 92 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 position = Vector2( 302.798, 189.322 )
+=======
+position = Vector2( 303.3, 186.822 )
+scale = Vector2( 1, 1 )
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 shape = SubResource( 91 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
@@ -850,43 +888,47 @@ position = Vector2( 154.787, 201.139 )
 shape = SubResource( 89 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 152.834, 157.137 )
+position = Vector2( 151.835, 155.65 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 88 )
 
 [node name="Bau1" type="Area2D" parent="."]
-position = Vector2( 215.936, 60.23 )
+position = Vector2( 153.933, 62.1638 )
 scale = Vector2( 0.66, 0.655 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau1"]
-position = Vector2( 92.4279, -2.95287 )
+position = Vector2( 958.803, 274.312 )
 shape = SubResource( 114 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau1"]
-position = Vector2( 86.3703, -6.01669 )
+position = Vector2( 957.364, 202.554 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 frame = 1
+=======
+frame = 11
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 playing = true
 
 [node name="Bau2" type="Area2D" parent="."]
-position = Vector2( 408.942, 54.434 )
+position = Vector2( 408.795, 193.435 )
 scale = Vector2( 0.66, 0.655 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bau2"]
-position = Vector2( 92.4279, -2.95287 )
+position = Vector2( 84.7716, 71.8468 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 114 )
 
 [node name="Baú" type="AnimatedSprite" parent="Bau2"]
-position = Vector2( 86.3703, -6.01669 )
+position = Vector2( 81.811, 4.66761 )
 scale = Vector2( 1.13636, 1.16603 )
 frames = SubResource( 115 )
+<<<<<<< HEAD:src/Projeto_05.8/Projeto_05.8/desafio2.tscn
 frame = 1
+=======
+frame = 11
+>>>>>>> ade68dba04fe0964622551361965cbfa0456d94c:src/Projeto_06.0/desafio2.tscn
 playing = true
 
 [node name="PlacaSeta" type="Sprite" parent="."]
@@ -1427,7 +1469,6 @@ scale = Vector2( 1.27595, 1.27595 )
 texture = ExtResource( 33 )
 
 [node name="pausar" parent="." instance=ExtResource( 6 )]
-visible = false
 z_index = 15
 
 [connection signal="pressed" from="touchAvancar" to="bonecoteste" method="_on_touchAvancar_pressed"]

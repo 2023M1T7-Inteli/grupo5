@@ -191,7 +191,7 @@ func _process(delta):
 			parado4()
 
 	if andando:
-		$".".move_and_slide(157.35*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
+		$".".move_and_slide(157.45*$RayCast2D.cast_to) #função que avança o personagem em direção ao eixo x positivo do mesmo.
 		yield(get_tree().create_timer(0.4),"timeout")
 		andando = false #'desativa' o andando
 
@@ -327,16 +327,7 @@ func _on_Premio_pressed():
 
 
 
-func _on_Bau2_body_entered(body):
-	$"../Bau2".queue_free()
-	$"../PreDesafio1".queue_free()
-	$"../DesafioMat1".queue_free()
-	$"../DesafioMat2".queue_free()
-	$"../DesafioMat3".queue_free()
-	$"../TenteNovamente".queue_free()
-	$"../Premio".queue_free()
-	
-	
+func _on_Bau2_body_entered(body):	
 	if body.is_in_group("boneco"):
 		$"../PreDesafio2".visible = true
 		$".".visible = false
