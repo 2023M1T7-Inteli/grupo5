@@ -16,7 +16,7 @@
 O projeto "Ala Land" consiste em um "serious games" que visa ensinar lógica computacional e reforçar - ou exercitar - conceitos matemáticos de maneira lúdica e interativa. A instituição parceira do projeto em questão é a UFAL - Universidade Federal de Alagoas -, que visa utilizar o game em turmas do ensino fundamental de escolas da rede pública alagoanas.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="ALA LAND" border="0"></a>
+<img src="https://s3.amazonaws.com/gupy5/production/companies/26702/images/jobs/2537199/20220705010027980_socialPicture.png" alt="ALA LAND" border="0"></a>
 </p>
   Game by <a href="https://www.inteli.edu.br/">Inteli</a> <a href="https://github.com/2023M1T7-Inteli/grupo5"> BumbaTech</a> 
 </p>
