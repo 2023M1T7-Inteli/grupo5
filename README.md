@@ -95,6 +95,7 @@ Raiz<br>
 
 Não há instalação! Baixe os arquivos disponíveis em <a href="https://github.com/2023M1T7-Inteli/grupo5/tree/main/docs/html_05.5"></a>
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Ou clique <a href="https://2023m1t7-inteli.github.io/grupo5/">aqui</a> para jogar!
 
 ## 💻 Configuração para Desenvolvimento
 
